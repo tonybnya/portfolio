@@ -322,5 +322,6 @@ blockquote {
 @media (max-width: 650px) {
   #inspiration {
     grid-template-columns: 100%;
+    margin: 4% auto;
   }
 }
