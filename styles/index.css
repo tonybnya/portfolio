@@ -281,6 +281,7 @@ label > h4 {
 blockquote {
   font-family: 'Special Elite', cursive;
   font-size: 20px;
+  text-align: justify;
   margin-top: 4%;
   margin-bottom: 4%;
 }
@@ -322,6 +323,6 @@ blockquote {
 @media (max-width: 650px) {
   #inspiration {
     grid-template-columns: 100%;
-    margin: 4% auto;
+    margin: 5% 5%;
   }
 }
