@@ -325,4 +325,7 @@ blockquote {
     grid-template-columns: 100%;
     margin: 5% 5%;
   }
+  blockquote {
+    text-align: justify;
+  }
 }
