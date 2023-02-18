@@ -90,6 +90,12 @@ hr {
 
 .tonybnya {
   font-family: 'Aladin', cursive;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.tonybnya:hover {
+  scale: 1.1;
 }
 
 .icon {
@@ -145,8 +151,8 @@ hr {
 }
 
 #intro > .social > .rs:hover {
-  scale: .1;
-  color: var(--clr-1);
+  scale: 1.1;
+  color: var(--clr-2);
 }
 
 /* About Section Styles */
