@@ -14,6 +14,7 @@ const body = document.body;
 body.style.backgroundColor = bgcl;
 body.style.color = tcl;
 mode.innerText = dark;
+mode.style.cursor = 'pointer';
 
 mode.addEventListener('click', function() {
     if (mode.innerText === light) {
