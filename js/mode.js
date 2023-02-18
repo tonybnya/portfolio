@@ -1,5 +1,3 @@
-const log = (arg) => console.log(arg);
-
 const mode = document.querySelector(".icon-mode");
 
 const light = 'light_mode';
@@ -28,5 +26,3 @@ mode.addEventListener('click', function() {
         mode.innerText = light;
     }
 });
-
-log(mode);
