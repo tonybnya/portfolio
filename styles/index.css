@@ -33,8 +33,6 @@ html {
 }
 
 body {
-  /* background-color: var(--clr-6); */
-  /* color: var(--clr-10); */
   background-color: var(--clr-1);
   color: var(--clr-white);
   font-family: 'Noto Sans', sans-serif;
@@ -65,7 +63,6 @@ a {
 }
 
 .btn {
-  /* background-color: var(--clr-8); */
   background-color: var(--clr-10);
   text-decoration: none;
   padding: 5px 10px;
@@ -91,7 +88,6 @@ hr {
 }
 
 .tonybnya {
-  /* font-family: 'Aladin', cursive; */
   font-family: 'Rubik Vinyl', cursive;
   font-size: 25px;
   font-weight: bolder;
@@ -137,7 +133,6 @@ hr {
 #projects > .projects-heading,
 .i-am > h3,
 .i-like > h3 {
-  /* font-family: 'Aladin', cursive; */
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
@@ -321,7 +316,6 @@ blockquote {
 }
 
 /* Media Queries */
-/* @media (max-width: 480px) { */
 @media (max-width: 650px) {
   #about-grid {
     grid-template-columns: 100%;
