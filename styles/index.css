@@ -349,5 +349,8 @@ blockquote {
   }
   blockquote {
     text-align: justify;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
