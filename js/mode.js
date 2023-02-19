@@ -9,7 +9,6 @@ const dark = 'dark_mode';
 const bgcd = '#223C50';
 const tcd = '#FFFFFF';
 
-// Set initial state
 body.style.backgroundColor = bgcl;
 body.style.color = tcl;
 mode.innerText = dark;
