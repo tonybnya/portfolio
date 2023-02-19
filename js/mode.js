@@ -1,3 +1,4 @@
+const body = document.body;
 const mode = document.querySelector(".icon-mode");
 
 const light = 'light_mode';
@@ -7,8 +8,6 @@ const tcl = '#001F3F';
 const dark = 'dark_mode';
 const bgcd = '#223C50';
 const tcd = '#FFFFFF';
-
-const body = document.body;
 
 // Set initial state
 body.style.backgroundColor = bgcl;
