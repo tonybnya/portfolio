@@ -38,12 +38,12 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: 'Roboto Mono', monospace;
-}
+/* h1, */
+/* h2, */
+/* h3, */
+/* h4 { */
+/*   font-family: 'Roboto Mono', monospace; */
+/* } */
 
 .container > section {
   margin: 20px auto;
