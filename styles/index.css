@@ -165,10 +165,6 @@ hr {
   cursor: pointer
 }
 
-/* .resume { */
-/*   background-color: var(--clr-8); */
-/* } */
-
 /* Main Container Styles */
 .container {
   max-width: 840px;
@@ -197,11 +193,16 @@ hr {
 .i-am > h3,
 .i-like > h3 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 30px;
 }
 
 #intro > .social,
 #intro > h1 {
   margin-top: 2%;
+}
+
+#intro > h4 {
+  font-size: 15px;
 }
 
 #intro > .social > .rs {
