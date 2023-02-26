@@ -35,7 +35,7 @@ html {
 body {
   background-color: var(--clr-1);
   color: var(--clr-white);
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans', 'Helvetica', 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 .container > section {
@@ -203,6 +203,7 @@ hr {
 
 #intro > h4 {
   font-size: 15px;
+  font-family: 'Noto Sans', 'Helvetica', 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 #intro > .social > .rs {
