@@ -1,8 +1,11 @@
 import React from 'react'
+import Title from './Title'
 
 function Progression() {
   return (
-    <div>Progression</div>
+    <div>
+      <Title>Progression/Timeline</Title>
+    </div>
   )
 }
 

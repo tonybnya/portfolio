@@ -1,8 +1,11 @@
 import React from 'react'
+import Title from './Title'
 
 function Projects() {
   return (
-    <div>Projects</div>
+    <div>
+      <Title>Projects</Title>
+    </div>
   )
 }
 

@@ -1,8 +1,11 @@
 import React from 'react'
+import Title from './Title'
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <div>
+      <Title>Contact</Title>
+    </div>
   )
 }
 
