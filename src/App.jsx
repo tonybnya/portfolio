@@ -9,6 +9,7 @@ function App() {
   return (
     <div className='container mx-auto px-4 max-sm:px-6'>
       <Intro />
+      <hr className='border-2 mb-8'/>
       <Projects />
       <Progression />
       <Contact />
