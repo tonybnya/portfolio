@@ -10,13 +10,13 @@ function Intro() {
         alt="profile"
         className="inline-block w-48 max-sm:w-32 pb-4 shadow-inner shadow-transparent saturate-100 rounded-full"
       />
-      <h1 className="font-righteous text-5xl tracking-wider md:text-3xl max-sm:text-2xl">
+      <h1 className="dark:text-gray-50 font-righteous text-5xl tracking-wider md:text-3xl max-sm:text-2xl">
         Tony B. NYA
       </h1>
-      <h3 className="font-righteous text-xl font-medium tracking-wider pt-2 md:text-sm max-sm:text-xs">
+      <h3 className="dark:text-white font-righteous text-xl font-medium tracking-wider pt-2 md:text-sm max-sm:text-xs">
         Software Engineer | Web Developer | Open Sourcer{" "}
       </h3>
-      <p className="text-justify py-4 font-light text-sm tracking-wide max-sm:text-xs">
+      <p className="dark:text-zinc-50 text-justify py-4 font-light text-sm tracking-wide max-sm:text-xs">
         Dedicated and adaptable professional with a Bachelor Degree in Computer
         Science and 8 years of background in Diplomacy and Administration.
         Graduated from the 12-month Software Engineering Program with{" "}

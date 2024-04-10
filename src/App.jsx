@@ -63,21 +63,21 @@ function App() {
   );
 
   return (
-    <>
+    <div className="dark:bg-stone-900">
       <div className="flex items-center justify-between p-4">
         <div className="flex items-center font-righteous gap-2 max-sm:left-4">
           <a
             href="#"
-            className="inline-flex items-center justify-center text-decoration-none bg-black text-white rounded-full w-12 h-12 text-2xl"
+            className="inline-flex items-center justify-center text-decoration-none bg-black dark:bg-gray-50 text-white dark:text-black rounded-full w-12 h-12 text-2xl"
           >
             P
           </a>
-          <span>Portfolio</span>
+          <span className="dark:text-gray-50">Portfolio</span>
         </div>
         <button
           type="button"
           onClick={handleThemeSwitch}
-          className="p-2 bg-sky-50 text-lg rounded-md dark:bg-orange-300 max-sm:right-4"
+          className="p-2 text-black bg-black rounded-md dark:bg-orange-300 max-sm:right-4"
         >
           {theme === "dark" ? sun : moon}
         </button>
@@ -90,7 +90,7 @@ function App() {
         <Contact />
         <Footer />
       </div>
-    </>
+    </div>
   );
 }
 
