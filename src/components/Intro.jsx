@@ -18,8 +18,9 @@ function Intro() {
       </h3>
       <p className="dark:text-zinc-50 text-justify py-4 font-light text-sm tracking-wide max-sm:text-xs">
         Dedicated and adaptable professional with a Bachelor Degree in Computer
-        Science and 8 years of background in Diplomacy and Administration.
-        Graduated from the 12-month Software Engineering Program with{" "}
+        Science and almost a decade of experience/background in Diplomacy and
+        Administration. Graduated from the 12-month Software Engineering Program
+        with{" "}
         <a className="underline" href="https://www.alxafrica.com">
           ALX
         </a>
@@ -32,11 +33,11 @@ function Intro() {
           className="underline"
           href="https://github.blog/2023-10-09-skilling-african-developers-through-all-in-africa/"
         >
-          All In Africa
+          All In Open Source
         </a>{" "}
-        Program by GitHub. Skilled in project management, problem-solving, and
-        collaboration, with a strong foundation in software development and soft
-        skills certified by{" "}
+        Program by GitHub. Skilled in project management, writing,
+        problem-solving, essential AI career tools, with a strong foundation in
+        Software Development and a Soft Skills Certified by{" "}
         <a className="underline" href="https://www.helloelton.com">
           Hello Elton
         </a>
