@@ -1,6 +1,8 @@
 import React from "react";
 import profile from "/assets/profile.png";
 import badge from "/assets/all-in-open-source-contributor.png";
+import resume from "/assets/CV-tonybnya.pdf";
+import Button from "./Button";
 
 function Intro() {
   return (
@@ -44,6 +46,11 @@ function Intro() {
         . Passionate about leveraging technology to drive innovation and solve
         complex challenges.
       </p>
+
+      <a href={resume} target="_blank">
+        <Button btn="Download My Resume" />
+      </a>
+
       <a
         href="https://www.credly.com/earner/earned/badge/d11a9129-997c-4a1d-8ec7-7ec66c08c477"
         target="_blank"
@@ -55,4 +62,3 @@ function Intro() {
 }
 
 export default Intro;
-
