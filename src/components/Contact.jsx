@@ -1,5 +1,6 @@
 import React from "react";
 import Title from "./Title";
+import Button from "./Button";
 
 function Contact() {
   return (
@@ -29,12 +30,13 @@ function Contact() {
             rows="10"
             className="p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none"
           />
-          <button
-            type="button"
-            className="text-center mr-auto ml-auto inline-block px-8 py-3 w-max text-base font-medium rounded-md font-righteous text-white bg-gradient-to-r from-blue-500 to-pink-500 drop-shadow-md"
-          >
-            Work With Me
-          </button>
+          {/* <button */}
+          {/*   type="button" */}
+          {/*   className="text-center mr-auto ml-auto inline-block px-8 py-3 w-max text-base font-medium rounded-md font-righteous text-white bg-gradient-to-r from-blue-500 to-pink-500 drop-shadow-md" */}
+          {/* > */}
+          {/*   Work With Me */}
+          {/* </button> */}
+          <Button btn="Work With Me" />
         </form>
       </div>
     </div>
@@ -42,4 +44,3 @@ function Contact() {
 }
 
 export default Contact;
-
