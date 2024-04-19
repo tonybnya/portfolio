@@ -8,7 +8,7 @@ function Contact() {
       <Title>Contact</Title>
       <div className="flex justify-center items-center">
         <form
-          action="https://getform.io/f/pbmqpeeb"
+          action="https://getform.io/f/lbkmekyb"
           method="POST"
           className="flex flex-col w-full md:w-7/12"
         >
@@ -19,7 +19,7 @@ function Contact() {
             className="p-2 bg-transparent border-2 rounded-md focus:outline-none"
           />
           <input
-            type="text"
+            type="email"
             name="email"
             placeholder="Email"
             className="my-2 p-2 bg-transparent border-2 rounded-md focus:outline-none"
@@ -30,13 +30,12 @@ function Contact() {
             rows="10"
             className="p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none"
           />
-          {/* <button */}
-          {/*   type="button" */}
-          {/*   className="text-center mr-auto ml-auto inline-block px-8 py-3 w-max text-base font-medium rounded-md font-righteous text-white bg-gradient-to-r from-blue-500 to-pink-500 drop-shadow-md" */}
-          {/* > */}
-          {/*   Work With Me */}
-          {/* </button> */}
-          <Button btn="Work With Me" />
+          <button
+            type="submit"
+            className="text-center mr-auto ml-auto inline-block px-8 py-3 w-max text-base font-medium rounded-md font-righteous text-white bg-gradient-to-r from-blue-500 to-pink-500 drop-shadow-md"
+          >
+            Work With Me
+          </button>
         </form>
       </div>
     </div>
