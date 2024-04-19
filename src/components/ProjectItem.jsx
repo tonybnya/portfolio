@@ -5,7 +5,7 @@ function ProjectItem({ imgUrl, title, description, stack, link, source }) {
     <div className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden">
       <img
         src={imgUrl}
-        alt="portfolio"
+        alt={title}
         className="w-full h-36 md:h-48 object-cover"
       />
       <div className="w-full p-4 dark:text-gray-50">
@@ -34,4 +34,3 @@ function ProjectItem({ imgUrl, title, description, stack, link, source }) {
 }
 
 export default ProjectItem;
-
