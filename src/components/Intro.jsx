@@ -21,12 +21,12 @@ function Intro() {
       <p className="dark:text-zinc-50 text-justify py-4 font-light text-sm tracking-wide max-sm:text-xs">
         Dedicated and adaptable professional with a Bachelor&apos;s Degree in
         Computer Science and almost a decade of experience/background in
-        Diplomacy and Public Administration. Graduated from AI Career Essentials
+        Diplomacy and Public Administration. Graduated in AI Career Essentials
         (AiCE) and 12-month Software Engineering Programs with{" "}
         <a className="underline" href="https://www.alxafrica.com">
           ALX
         </a>
-        , 6-month Web Development by{" "}
+        , in 6-month Web Development by{" "}
         <a className="underline" href="https://sayna.io">
           Sayna Academy
         </a>
