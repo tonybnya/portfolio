@@ -10,7 +10,7 @@ function Intro() {
       <img
         src={profile}
         alt="profile"
-        className="inline-block w-48 max-sm:w-32 pb-4 shadow-inner shadow-transparent saturate-100 rounded-full"
+        className="inline-block w-48 max-sm:w-32 pb-4 shadow-transparent rounded-full"
       />
       <h1 className="dark:text-gray-50 font-righteous text-5xl tracking-wider md:text-3xl max-sm:text-2xl">
         Tony B. NYA
