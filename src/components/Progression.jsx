@@ -1,25 +1,26 @@
-import React from "react";
 import Title from "./Title";
-import timelines from "../data/timelines";
-import TimelineItem from "./TimelineItem";
+import progression from "../data/progression";
+import ProgressionItem from "./ProgressionItem";
 
 function Progression() {
   return (
     <div className="dark:text-gray-50">
-      <Title>Progression/Timeline</Title>
-      <div className="flex flex-col md:flex-row justify-center my-20 w-full md:w-7/12">
-        {timelines.map((timeline) => {
-          <TimelineItem
-            year={timeline.year}
-            title={timeline.title}
-            duration={timeline.duration}
-            details={timeline.details}
-          />;
-        })}
+      <Title>Progression</Title>
+      <div className="flex flex-col md:flex-row justify-center my-20">
+        <div className="w-full md:w-7/12">
+          {progression.map((step, index) => (
+            <ProgressionItem
+              key={index}
+              year={step.year}
+              milestone={step.milestone}
+              duration={step.duration}
+              details={step.details}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
 }
 
 export default Progression;
-
