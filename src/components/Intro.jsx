@@ -21,8 +21,8 @@ function Intro() {
       <p className="dark:text-zinc-50 text-justify py-4 font-light text-sm tracking-wide max-sm:text-xs">
         Dedicated and adaptable professional with a Bachelor&apos;s Degree in
         Computer Science and almost a decade of experience/background in
-        Diplomacy and Administration. Graduated from AI Career Essentials (AiCE)
-        and 12-month Software Engineering Programs with{" "}
+        Diplomacy and Public Administration. Graduated from AI Career Essentials
+        (AiCE) and 12-month Software Engineering Programs with{" "}
         <a className="underline" href="https://www.alxafrica.com">
           ALX
         </a>
