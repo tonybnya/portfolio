@@ -15,14 +15,14 @@ const progression = [
   },
   {
     year: "2023",
-    milestone: "Software Engineering Graduated - ALX",
+    milestone: "Software Engineer - ALX",
     duration: "12 months",
     details:
       "Over a transformative 12-month journey, I immersed myself in a comprehensive software engineering course designed by the amazing ALX, to equip aspiring developers with the skills and knowledge needed to thrive in the industry. Throughout the program, I delved deeply into various facets of Software Engineering, covering topics such as programming languages, data structures and algorithms, software architecture, system design, project management.... Through a blend of theoretical learning and practical application, I gained proficiency in a wide array of technologies and methodologies, including but not limited to C, Python, JavaScript, version control systems, agile development practices, and software design patterns, databases. Hands-on projects, collaborative assignments, and real-world simulations provided invaluable opportunities to apply theoretical concepts in practical scenarios, fostering a deep understanding of software engineering principles. This intensive course not only expanded my technical capabilities but also instilled in me a strong and growth problem-solving mindset, effective communication skills, and a passion for continuous learning and innovation in the ever-evolving field of Software Engineering.",
   },
   {
     year: "2022",
-    milestone: "Front-End Web Development Gratuated - Sayna Academy",
+    milestone: "Front-End Web Developer - Sayna Academy",
     duration: "6 months",
     details:
       "As a participant in the Talent4Startups (T4SU) program facilitated by Sayna Academy, a Franco-Malagasy company, I dedicated six months to fine-tuning my skills in Front-End programming. Throughout the program, I engaged in hands-on projects utilizing React, Angular, and Figma, gaining practical experience and proficiency in these technologies. Additionally, I seized opportunities to apply my newly acquired skills in professional internship settings, where I tackled real-world challenges and further refined my expertise. This immersive experience provided me with a solid foundation in Front-End development and equipped me with the practical knowledge needed to excel in the field.",
@@ -36,7 +36,8 @@ const progression = [
   },
   {
     year: "2013",
-    milestone: "Full Job - Embassy of Cameroon in Congo Brazzaville",
+    milestone:
+      "Ambassador's Head of Office & IT - Embassy of Cameroon in Congo",
     duration: "8 years",
     details:
       "During my 8-year job at the Embassy of Cameroon in Congo, where I served as the head of the Ambassador's private office and oversaw the Embassy's IT pool, I honed a unique blend of diplomatic, administrative, and technological skills. Leading the Ambassador's private office demanded a keen understanding of diplomatic protocols, effective communication, and exceptional organizational abilities to facilitate smooth operations and ensure the Ambassador's engagements were executed seamlessly. Additionally, as head of the Embassy's IT pool, I played a pivotal role in modernizing and maintaining the Embassy's technological infrastructure, enhancing efficiency, and security. Balancing diplomatic responsibilities with IT management required adaptability, strategic thinking, and a strong commitment to excellence. This multifaceted role provided me with invaluable experience in navigating complex diplomatic environments while leveraging technology to optimize embassy operations.",
