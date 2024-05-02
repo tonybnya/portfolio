@@ -14,7 +14,7 @@ const projects = [
     description:
       "Embark on a thrilling journey through the Batman universe with KaKo, an innovative e-commerce platform that brings the essence of Gotham City to your fingertips. Immerse yourself in a world where the iconic meets the extraordinary.",
     stack: ["React", "Tailwind", "Vite", "Flask", "MySQL"],
-    link: "https://tonybnya.github.io/portfolio/",
+    link: "https://kako-coming-soon-page.onrender.com/",
     source: "https://github.com/tonybnya/kako",
   },
   {
