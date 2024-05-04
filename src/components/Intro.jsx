@@ -23,15 +23,20 @@ function Intro() {
         Computer Science and almost a decade of experience/background in
         Diplomacy and Public Administration. Graduated in AI Career Essentials
         (AiCE) and 12-month Software Engineering Programs with{" "}
-        <a className="underline" href="https://www.alxafrica.com">
+        <a
+          target="_blank"
+          className="underline"
+          href="https://www.alxafrica.com"
+        >
           ALX
         </a>
         , in 6-month Web Development by{" "}
-        <a className="underline" href="https://sayna.io">
+        <a target="_blank" className="underline" href="https://sayna.io">
           Sayna Academy
         </a>
         , and the inaugural cohort of the{" "}
         <a
+          target="_blank"
           className="underline"
           href="https://github.blog/2023-10-09-skilling-african-developers-through-all-in-africa/"
         >
@@ -40,7 +45,11 @@ function Intro() {
         Program by GitHub. Skilled in project management, writing,
         problem-solving, essential AI career tools, with a strong foundation in
         Software Development and a Soft Skills Certified by{" "}
-        <a className="underline" href="https://www.helloelton.com">
+        <a
+          target="_blank"
+          className="underline"
+          href="https://www.helloelton.com"
+        >
           Hello Elton
         </a>
         . Passionated about leveraging technology to drive innovation and solve
