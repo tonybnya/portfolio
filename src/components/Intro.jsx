@@ -16,7 +16,7 @@ function Intro() {
         Tony B. NYA
       </h1>
       <h3 className="dark:text-white font-righteous text-xl font-medium tracking-wider pt-2 md:text-sm max-sm:text-xs">
-        Software Engineer | Web Developer | Open Sourcer{" "}
+        Software Engineer | Freelancer | Open Sourcer{" "}
       </h3>
       <p className="dark:text-zinc-50 text-justify py-4 font-light text-sm tracking-wide max-sm:text-xs">
         Dedicated and adaptable professional with a Bachelor&apos;s Degree in
