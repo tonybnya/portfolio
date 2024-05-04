@@ -9,7 +9,7 @@ function ProgressionItem({ year, milestone, duration, details }) {
           <span className="inline-block px-2 py-1 font-semibold text-white bg-stone-900 dark:bg-black rounded-md">
             {year}
           </span>
-          <h3 className="text-lg font-semibold text-stone-900 dark:text-white">
+          <h3 className="text-md font-semibold text-stone-900 dark:text-white">
             {milestone}
           </h3>
           <div className="my-1 text-sm font-normal flex items-center gap-1 leading-none text-stone-400">
