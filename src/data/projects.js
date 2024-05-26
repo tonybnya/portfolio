@@ -14,7 +14,7 @@ const projects = [
     description:
       "Building a CRUD API with Python, Django, and Django REST to serve my Portfolio website with projects, and timelines (milestones or progression or steps as a Software Engineer) progressively.",
     stack: ["Python", "Django", "Django REST"],
-    link: "https://github.com/tonybnya/portfolio-api",
+    link: "https://portfolio-api-ikc3.onrender.com/api",
     source: "https://github.com/tonybnya/portfolio-api",
   },
   {
