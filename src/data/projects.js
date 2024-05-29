@@ -12,7 +12,7 @@ const projects = [
     imgUrl: "/assets/4.png",
     title: "Portfolio API",
     description:
-      "Building a CRUD API with Node.js, Express, and MongoDB to serve my Portfolio website with projects, and timelines (milestones or progression or steps as a Software Engineer) progressively.",
+      "Building a CRUD API with Node.js, Express, and MongoDB to serve my Developer Portfolio website with projects, and timelines (milestones or progression steps as a Software Engineer) progressively.",
     stack: ["Express", "MongoDB", "Node.js"],
     link: "https://portfolio-api-ikc3.onrender.com/api",
     source: "https://github.com/tonybnya/portfolio-api",
