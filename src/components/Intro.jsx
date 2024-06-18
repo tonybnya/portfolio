@@ -16,13 +16,12 @@ function Intro() {
         Tony B. NYA
       </h1>
       <h3 className="dark:text-white font-righteous text-xl font-medium tracking-wider pt-2 md:text-sm max-sm:text-xs">
-        Software Engineer | Freelancer | Open Sourcer{" "}
+        ✨ Software Engineer | Freelancer | Open Sourcer ✨{" "}
       </h3>
       <p className="dark:text-zinc-50 text-justify py-4 font-light text-sm tracking-wide max-sm:text-xs">
-        Dedicated and adaptable professional with a Bachelor&apos;s Degree in
-        Computer Science and almost a decade of experience/background in
-        Diplomacy and Public Administration. Graduated in AI Career Essentials
-        (AiCE) and 12-month Software Engineering Programs with{" "}
+        Dedicated and adaptable professional, I&apos;m a Software Engineer
+        Graduated in ✨ 12-month Software Engineering Programs and ✨ Artificial
+        Intelligence Career Essentials (AiCE) by{" "}
         <a
           target="_blank"
           className="underline"
@@ -30,11 +29,11 @@ function Intro() {
         >
           ALX
         </a>
-        , in 6-month Web Development by{" "}
+        , in ✨ 6-month Web Development by{" "}
         <a target="_blank" className="underline" href="https://sayna.io">
           Sayna Academy
         </a>
-        , and the inaugural cohort of the{" "}
+        , and ✨ the inaugural cohort of the{" "}
         <a
           target="_blank"
           className="underline"
@@ -42,9 +41,16 @@ function Intro() {
         >
           All In Open Source
         </a>{" "}
-        Program by GitHub. Skilled in project management, writing,
-        problem-solving, essential AI career tools, with a strong foundation in
-        Software Development and a Soft Skills Certified by{" "}
+        Program by{" "}
+        <a target="_blank" className="underline" href="https://github.com">
+          GitHub
+        </a>
+        . I&apos;m also holding a ✨ Bachelor&apos;s Degree in Computer Science
+        and almost a ✨ decade of experience/background in Diplomacy and Public
+        Administration. Skilled in &bull; Project Management, &bull; Writing,
+        &bull; Problem-Solving, &bull; Essential AI Career Tools, with a &bull;
+        strong foundation in Software Development and a &bull; Soft Skills
+        Certified by{" "}
         <a
           target="_blank"
           className="underline"
@@ -52,8 +58,8 @@ function Intro() {
         >
           Hello Elton
         </a>
-        . Passionated about leveraging technology to drive innovation and solve
-        complex challenges, with growth and lifelong learning mindset.
+        . I&apos;m passionated about leveraging technology to drive innovation
+        and solve complex challenges, with growth and lifelong learning mindset.
       </p>
 
       <a href={resume} target="_blank">
