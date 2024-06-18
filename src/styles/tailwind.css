@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* TODO: add a slider or carousel for each project card */
+/**/
+/* /* Carousel */ */
+/* .carousel { */
+/*   flex: 1; */
+/*   display: flex; */
+/*   flex-direction: column; */
+/*   position: relative; /* Added to position controls */ */
+/*   width: 100%; /* Adjust the width of the carousel relative to the card */ */
+/*   margin-left: 20px; /* Optional: Adds some space between the info and carousel */
+/* } */
+/**/
+/* .carousel-images { */
+/*   display: flex; */
+/*   flex: 1; /* Allows the carousel to fill the space */ */
+/*   overflow: hidden; */
+/*   position: relative; /* Ensure the images container doesn't overlap controls */ */
+/* } */
+/**/
+/* /* Carousel Controls */ */
+/* .carousel-control { */
+/*   position: absolute; */
+/*   top: 50%; */
+/*   transform: translateY(-50%); */
+/*   color: white; */
+/*   font-size: 24px; */
+/*   background-color: rgba(0, 0, 0, 0.5); */
+/*   padding: 10px; */
+/*   cursor: pointer; */
+/*   user-select: none; /* Prevent text selection */ */
+/*   z-index: 10; /* Ensure controls are above the images */ */
+/* } */
+/**/
+/* .carousel-control.prev { */
+/*   left: 0; */
+/*   border-radius: 3px 0 0 3px; /* Adjusted for consistency */ */
+/* } */
+/**/
+/* .carousel-control.next { */
+/*   right: 0; */
+/*   border-radius: 0 3px 3px 0; /* Adjusted for consistency */ */
+/* } */
