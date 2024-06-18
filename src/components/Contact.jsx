@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Title from "./Title";
+import Button from "./Button";
+
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -70,12 +72,11 @@ const Contact = () => {
             rows="10"
             className="p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none"
           />
-          <button
+          <Button
             type="submit"
-            className="text-center mr-auto ml-auto inline-block px-8 py-3 w-max text-base font-medium rounded-md font-righteous text-white bg-gradient-to-r from-blue-500 to-pink-500 drop-shadow-md"
-          >
-            Work With Me
-          </button>
+            text="Work With Me"
+            icon={<i className="fa-solid fa-paper-plane"></i>}
+          />
         </form>
       </div>
     </div>

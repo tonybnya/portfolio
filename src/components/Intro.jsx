@@ -57,7 +57,11 @@ function Intro() {
       </p>
 
       <a href={resume} target="_blank">
-        <Button btn="Download My Resume" />
+        <Button
+          type="button"
+          text="Download My Resume"
+          icon={<i className="fa-solid fa-download"></i>}
+        />
       </a>
 
       <a
