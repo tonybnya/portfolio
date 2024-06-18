@@ -1,5 +1,3 @@
-// import progression from "../data/progression";
-
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -18,10 +16,8 @@ function Progression() {
         const res = await axios.get(timelinesAPI);
 
         setTimelines(res.data);
-        console.log(res.data);
       } catch (err) {
         setError(err);
-        console.error("Error fetching Timelines:", err);
       }
     };
 
@@ -33,15 +29,19 @@ function Progression() {
       <Title>Progression</Title>
       <div className="flex flex-col md:flex-row justify-center my-20">
         <div className="w-full md:w-7/12">
-          {timelines.map((step) => (
-            <ProgressionItem
-              key={step._id}
-              year={step.year}
-              timeline={step.timeline}
-              duration={step.duration}
-              details={step.details}
-            />
-          ))}
+          {error ? (
+            <p>&quot;Error fetching timelines!&quot;</p>
+          ) : (
+            timelines.map((step) => (
+              <ProgressionItem
+                key={step._id}
+                year={step.year}
+                timeline={step.timeline}
+                duration={step.duration}
+                details={step.details}
+              />
+            ))
+          )}
         </div>
       </div>
     </div>

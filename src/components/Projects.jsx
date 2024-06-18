@@ -1,5 +1,3 @@
-// import projects from "../data/projects";
-
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -17,11 +15,9 @@ function Projects() {
       try {
         const res = await axios.get(projectsAPI);
 
-        console.log(res.data);
         setProjects(res.data);
       } catch (err) {
         setError(err);
-        console.error("Error fetching projects:", err);
       }
     };
 
@@ -33,17 +29,21 @@ function Projects() {
       <Title>Portfolio</Title>
       <div className="flex flex-col md:flex-row items-center justify-center mb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {projects.map((project) => (
-            <ProjectItem
-              key={project._id}
-              image={project.images[0]}
-              title={project.title}
-              description={project.description}
-              tags={project.tags}
-              link={project.liveUrl}
-              source={project.sourceUrl}
-            />
-          ))}
+          {error ? (
+            <p>&quot;Error fetching projects!&quot;</p>
+          ) : (
+            projects.map((project) => (
+              <ProjectItem
+                key={project._id}
+                image={project.images[0]}
+                title={project.title}
+                description={project.description}
+                tags={project.tags}
+                link={project.liveUrl}
+                source={project.sourceUrl}
+              />
+            ))
+          )}
         </div>
       </div>
     </div>
