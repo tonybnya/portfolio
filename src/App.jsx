@@ -84,10 +84,13 @@ function App() {
       </div>
       <div className="container mx-auto px-4 max-sm:px-6">
         <Intro />
-        <hr className="border-2 mb-8" />
+        <hr className="border-1 mb-12" />
         <Projects />
+        <hr className="border-1 mb-12" />
         <Progression />
+        <hr className="border-1 mb-12" />
         <Contact />
+        <hr className="border-1 mb-12" />
         <Footer />
       </div>
     </div>

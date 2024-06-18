@@ -3,7 +3,7 @@ import Social from "./Social";
 
 function Footer() {
   return (
-    <div className="text-center border-t-2 py-4 dark:text-gray-50">
+    <div className="text-center py-4 dark:text-gray-50">
       <Social />
       <p className="font-light mt-2">
         &copy; {new Date().getFullYear()} Tony B. NYA &bull; All Rights
@@ -14,4 +14,3 @@ function Footer() {
 }
 
 export default Footer;
-
