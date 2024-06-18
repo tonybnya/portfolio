@@ -6,8 +6,7 @@ function Footer() {
     <div className="text-center py-4 dark:text-gray-50">
       <Social />
       <p className="font-light mt-2">
-        &copy; {new Date().getFullYear()} Tony B. NYA &bull; All Rights
-        Reserved.
+        &copy; Copyright {new Date().getFullYear()} &bull; All Rights Reserved.
       </p>
     </div>
   );
