@@ -41,8 +41,8 @@ function Projects() {
                 title={project.title}
                 description={project.description}
                 tags={project.tags}
-                link={project.liveUrl}
-                source={project.sourceUrl}
+                liveUrl={project.liveUrl}
+                sourceUrl={project.sourceUrl}
               />
             ))
           )}
