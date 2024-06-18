@@ -30,7 +30,7 @@ function Projects() {
       <div className="flex flex-col md:flex-row items-center justify-center mb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {error ? (
-            <p>&quot;Error fetching projects!&quot;</p>
+            <p>Error fetching projects!</p>
           ) : (
             projects.map((project) => (
               <ProjectItem

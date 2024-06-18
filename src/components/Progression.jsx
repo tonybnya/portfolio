@@ -30,7 +30,7 @@ function Progression() {
       <div className="flex flex-col md:flex-row justify-center my-20">
         <div className="w-full md:w-7/12">
           {error ? (
-            <p>&quot;Error fetching timelines!&quot;</p>
+            <p>Error fetching timelines!</p>
           ) : (
             timelines.map((step) => (
               <ProgressionItem

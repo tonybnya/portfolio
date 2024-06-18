@@ -62,6 +62,10 @@ function App() {
     </svg>
   );
 
+  // TODO: add slider or carousel image for each project card
+  // TODO: add animations with Framer Motion or Tailwindcss Animated
+  // TODO: write some tests with Vitest
+
   return (
     <div className="dark:bg-stone-900">
       <div className="flex items-center justify-between p-4">
