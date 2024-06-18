@@ -1,22 +1,47 @@
-import projects from "../data/projects";
+// import projects from "../data/projects";
+
+import { useEffect, useState } from "react";
+import axios from "axios";
+
 import ProjectItem from "./ProjectItem";
 import Title from "./Title";
 
 function Projects() {
+  const [projects, setProjects] = useState([]);
+  const [error, setError] = useState(null);
+
+  const projectsAPI = "https://portfolio-api-nq76.onrender.com/api/projects";
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const res = await axios.get(projectsAPI);
+
+        console.log(res.data);
+        setProjects(res.data);
+      } catch (err) {
+        setError(err);
+        console.error("Error fetching projects:", err);
+      }
+    };
+
+    fetchProjects();
+  }, []);
+
   return (
     <div className="dark:text-gray-50">
       <Title>Portfolio</Title>
       <div className="flex flex-col md:flex-row items-center justify-center mb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <ProjectItem
-              key={index}
-              imgUrl={project.imgUrl}
+              key={project._id}
+              image={project.images[0]}
               title={project.title}
               description={project.description}
-              stack={project.stack}
-              link={project.link}
-              source={project.source}
+              tags={project.tags}
+              link={project.liveUrl}
+              source={project.sourceUrl}
             />
           ))}
         </div>

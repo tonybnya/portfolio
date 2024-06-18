@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
 import Progression from "./components/Progression";
@@ -7,6 +8,25 @@ import Footer from "./components/Footer";
 
 function App() {
   const [theme, setTheme] = useState(null);
+  const [timelines, setTimelines] = useState([]);
+  const [error, setError] = useState(null);
+
+  const timelinesAPI = "https://portfolio-api-nq76.onrender.com/api/timelines";
+
+  useEffect(() => {
+    const fetchTimelines = async () => {
+      try {
+        const res = await axios.get(timelinesAPI);
+        setTimelines(res.data);
+        console.log(res.data);
+      } catch (err) {
+        setError(err);
+        console.error("Error fetching Timelines:", err);
+      }
+    };
+
+    fetchTimelines();
+  }, []);
 
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {

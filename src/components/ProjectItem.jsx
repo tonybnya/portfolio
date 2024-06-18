@@ -1,10 +1,10 @@
 import React from "react";
 
-function ProjectItem({ imgUrl, title, description, stack, link, source }) {
+function ProjectItem({ image, title, description, tags, liveUrl, sourceUrl }) {
   return (
     <div className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden">
       <img
-        src={imgUrl}
+        src={image}
         alt={title}
         className="w-full h-36 md:h-48 object-cover"
       />
@@ -14,20 +14,20 @@ function ProjectItem({ imgUrl, title, description, stack, link, source }) {
         </h3>
         <p className="text-justify mb-2 font-light">{description}</p>
         <p className="flex flex-wrap gap-2 flex-row items-center justify-start mb-4 text-xs md:text-sm">
-          {stack.map((item, index) => (
+          {tags.map((tag, index) => (
             <span
               key={index}
               className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-gray-50 rounded-md"
             >
-              {item}
+              {tag}
             </span>
           ))}
         </p>
         <div className="flex gap-3">
-          <a href={link} target="_blank">
+          <a href={liveUrl} target="_blank">
             <i className="fa-solid fa-globe"></i> Live
           </a>
-          <a href={source} target="_blank">
+          <a href={sourceUrl} target="_blank">
             <i className="fa-brands fa-github"></i> Source
           </a>
         </div>
