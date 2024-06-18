@@ -1,18 +1,43 @@
+// import progression from "../data/progression";
+
+import { useEffect, useState } from "react";
+import axios from "axios";
+
 import Title from "./Title";
-import progression from "../data/progression";
 import ProgressionItem from "./ProgressionItem";
 
 function Progression() {
+  const [timelines, setTimelines] = useState([]);
+  const [error, setError] = useState(null);
+
+  const timelinesAPI = "https://portfolio-api-nq76.onrender.com/api/timelines";
+
+  useEffect(() => {
+    const fetchTimelines = async () => {
+      try {
+        const res = await axios.get(timelinesAPI);
+
+        setTimelines(res.data);
+        console.log(res.data);
+      } catch (err) {
+        setError(err);
+        console.error("Error fetching Timelines:", err);
+      }
+    };
+
+    fetchTimelines();
+  }, []);
+
   return (
     <div className="dark:text-gray-50">
       <Title>Progression</Title>
       <div className="flex flex-col md:flex-row justify-center my-20">
         <div className="w-full md:w-7/12">
-          {progression.map((step, index) => (
+          {timelines.map((step) => (
             <ProgressionItem
-              key={index}
+              key={step._id}
               year={step.year}
-              milestone={step.milestone}
+              timeline={step.timeline}
               duration={step.duration}
               details={step.details}
             />

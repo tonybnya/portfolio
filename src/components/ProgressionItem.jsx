@@ -1,6 +1,6 @@
 import React from "react";
 
-function ProgressionItem({ year, milestone, duration, details }) {
+function ProgressionItem({ year, timeline, duration, details }) {
   return (
     <ol className="flex flex-col md-flex-row relative border-l border-stone-900 dark:border-white">
       <li className="mb-10 ml-4">
@@ -10,7 +10,7 @@ function ProgressionItem({ year, milestone, duration, details }) {
             {year}
           </span>
           <h3 className="text-md font-semibold text-stone-900 dark:text-white">
-            {milestone}
+            {timeline}
           </h3>
           <div className="my-1 text-sm font-normal flex items-center gap-1 leading-none text-stone-400">
             <svg
