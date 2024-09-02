@@ -62,6 +62,14 @@ function App() {
     </svg>
   );
 
+  const animateElements = document.querySelectorAll(".animate");
+
+  animateElements.forEach((element, index) => {
+    setTimeout(() => {
+      element.classList.add("show");
+    }, index * 1000);
+  });
+
   // TODO: add slider or carousel image for each project card
   // TODO: add animations with Framer Motion or Tailwindcss Animated
   // TODO: write some tests with Vitest
@@ -87,15 +95,15 @@ function App() {
         </button>
       </div>
       <div className="container mx-auto px-4 max-sm:px-6">
-        <Intro />
-        <hr className="border-1 mb-12" />
-        <Projects />
-        <hr className="border-1 mb-12" />
-        <Progression />
-        <hr className="border-1 mb-12" />
-        <Contact />
-        <hr className="border-1 mb-12" />
-        <Footer />
+        <Intro className="animate" />
+        <hr className="border-1 mb-12 animate" />
+        <Projects className="animate" />
+        <hr className="border-1 mb-12 animate" />
+        <Progression className="animate" />
+        <hr className="border-1 mb-12 animate" />
+        <Contact className="animate" />
+        <hr className="border-1 mb-12 animate" />
+        <Footer className="animate" />
       </div>
     </div>
   );
