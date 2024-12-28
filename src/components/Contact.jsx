@@ -10,20 +10,55 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const validateForm = () => {
+    const newErrors = {};
+    
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+    }
+    
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Email is invalid";
+    }
+    
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required";
+    }
+    
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+    
+    // Clear error when user starts typing
+    if (errors[name]) {
+      setErrors(prev => ({ ...prev, [name]: '' }));
+    }
   };
 
   const sendEmail = (e) => {
     e.preventDefault();
+    
+    if (!validateForm()) {
+      return;
+    }
+
+    setIsSubmitting(true);
 
     emailjs
       .sendForm(
         "service_hqan2qq",
         "template_3emhzxb",
         e.target,
-        "rViCArmTeZsa-lczA",
+        "rViCArmTeZsa-lczA"
       )
       .then((response) => {
         console.log("Email sent successfully!", response.status, response.text);
@@ -38,7 +73,10 @@ const Contact = () => {
       })
       .catch((error) => {
         console.error("Error sending email:", error);
-        alert("Error sending email!");
+        alert(`Error sending email: ${error.text || 'Unknown error'}`);
+      })
+      .finally(() => {
+        setIsSubmitting(false);
       });
   };
 
@@ -47,35 +85,53 @@ const Contact = () => {
       <Title>Contact</Title>
       <div className="flex justify-center items-center">
         <form className="flex flex-col w-full md:w-7/12" onSubmit={sendEmail}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            value={formData.name}
-            onChange={handleChange}
-            className="p-2 bg-transparent border-2 rounded-md focus:outline-none"
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={formData.email}
-            onChange={handleChange}
-            className="my-2 p-2 bg-transparent border-2 rounded-md focus:outline-none"
-          />
-          <textarea
-            type="text"
-            name="message"
-            placeholder="Message"
-            value={formData.message}
-            onChange={handleChange}
-            rows="10"
-            className="p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none"
-          />
+          <div className="mb-2">
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              value={formData.name}
+              onChange={handleChange}
+              className={`p-2 w-full bg-transparent border-2 rounded-md focus:outline-none ${
+                errors.name ? 'border-red-500' : ''
+              }`}
+            />
+            {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
+          </div>
+          
+          <div className="my-2">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+              className={`p-2 w-full bg-transparent border-2 rounded-md focus:outline-none ${
+                errors.email ? 'border-red-500' : ''
+              }`}
+            />
+            {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+          </div>
+          
+          <div className="mb-4">
+            <textarea
+              name="message"
+              placeholder="Message"
+              value={formData.message}
+              onChange={handleChange}
+              rows="10"
+              className={`p-2 w-full bg-transparent border-2 rounded-md focus:outline-none ${
+                errors.message ? 'border-red-500' : ''
+              }`}
+            />
+            {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
+          </div>
+          
           <Button
             type="submit"
-            text="Work With Me"
+            text={isSubmitting ? "Sending..." : "Work With Me"}
             icon={<i className="fa-solid fa-paper-plane"></i>}
+            disabled={isSubmitting}
           />
         </form>
       </div>
