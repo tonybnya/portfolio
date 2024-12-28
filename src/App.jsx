@@ -75,7 +75,7 @@ function App() {
   // TODO: write some tests with Vitest
 
   return (
-    <div className="dark:bg-stone-900">
+    <div className="dark:bg-stone-900 bg-gray-50">
       <div className="flex items-center justify-between p-4">
         <div className="flex items-center font-righteous gap-2 max-sm:left-4">
           <a
@@ -84,7 +84,7 @@ function App() {
           >
             P
           </a>
-          <span className="dark:text-gray-50">Portfolio</span>
+          <span className="dark:text-gray-50 text-black">Portfolio</span>
         </div>
         <button
           type="button"
