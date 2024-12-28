@@ -47,8 +47,8 @@ function Intro() {
         </a>
         . I&apos;m also holding a ✨ Bachelor&apos;s Degree in Computer Science
         and almost a ✨ decade of experience/background in Diplomacy and Public
-        Administration. Skilled in &bull; Project Management, &bull; Writing,
-        &bull; Problem-Solving, &bull; Essential AI Career Tools, with a &bull;
+        Administration. Skilled in &bull; Project Management &bull; Writing
+        &bull; Problem-Solving &bull; Essential AI Career Tools, with a &bull;
         strong foundation in Software Development and a &bull; Soft Skills
         Certified by{" "}
         <a
