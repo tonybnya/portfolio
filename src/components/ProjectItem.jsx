@@ -25,10 +25,10 @@ function ProjectItem({ image, title, description, tags, liveUrl, sourceUrl }) {
         </p>
         <div className="flex gap-3">
           <a href={liveUrl} target="_blank">
-            <i className="fa-solid fa-globe"></i> Live
+            Live <i class="fa-solid fa-square-up-right"></i>
           </a>
           <a href={sourceUrl} target="_blank">
-            <i className="fa-brands fa-github"></i> Source
+            Source <i className="fa-brands fa-github"></i>
           </a>
         </div>
       </div>
