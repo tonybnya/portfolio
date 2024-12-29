@@ -12,10 +12,10 @@ function Intro() {
         alt="profile"
         className="inline-block w-48 max-sm:w-32 pb-4 shadow-transparent rounded-full"
       />
-      <h1 className="dark:text-gray-50 text-black font-righteous text-5xl tracking-wider md:text-3xl max-sm:text-2xl">
+      <h1 className="font-righteous text-5xl tracking-wider md:text-3xl max-sm:text-2xl bg-gradient-to-r from-black via-gray-500 to-black dark:from-white dark:via-gray-700 dark:to-white inline-block text-transparent bg-clip-text">
         Tony B. NYA
       </h1>
-      <h3 className="dark:text-white text-black font-righteous text-xl font-medium tracking-wider pt-2 md:text-sm max-sm:text-xs">
+      <h3 className="dark:text-gray-500 text-black font-righteous text-xl font-medium tracking-wider pt-2 md:text-sm max-sm:text-xs">
         Software Engineer | Freelancer | Open Sourcer{" "}
       </h3>
       <p className="dark:text-zinc-50 text-black text-justify py-4 font-light text-sm tracking-wide max-sm:text-xs">
