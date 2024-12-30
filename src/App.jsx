@@ -84,7 +84,7 @@ function App() {
           >
             P
           </a>
-          <span className="dark:text-gray-50 text-black">Portfolio</span>
+          <span className="dark:text-gray-50 text-black tracking-wider">Portfolio</span>
         </div>
         <button
           type="button"

@@ -9,7 +9,7 @@ function ProjectItem({ image, title, description, tags, liveUrl, sourceUrl }) {
         className="w-full h-36 md:h-48 object-cover"
       />
       <div className="w-full p-4 dark:text-gray-50 text-black">
-        <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-righteous">
+        <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-righteous tracking-wide">
           {title}
         </h3>
         <p className="text-justify mb-2 font-light">{description}</p>
