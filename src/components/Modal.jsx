@@ -32,7 +32,8 @@ const Modal = ({ title, description }) => {
             </div>
 
             <div className="p-4">
-              <p className="text-gray-700 tracking-wide text-justify">{description}</p>
+              <p className="text-black tracking-wide text-justify">{description}</p>
+              {/* <p className="text-gray-700 tracking-wide text-justify">{description}</p> */}
             </div>
 
             <div className="border-t px-4 py-2 flex justify-end">
