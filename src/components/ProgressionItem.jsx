@@ -31,13 +31,9 @@ const ProgressionItem = ({ year, timeline, duration, details }) => {
             {duration}
           </div>
         </p>
-        {/* <p className="my-2 text-base text-justify font-normal text-stone-500 tracking-wide">
-          {details}
-        </p> */}
-        {/* <div className="my-2 text-base text-justify font-normal text-stone-500 tracking-wide">
+        <div className="pt-4 flex justify-start">
           <Modal title={timeline} description={details} />
-        </div> */}
-        <Modal title={timeline} description={details} />
+        </div>
       </li>
     </ol>
   );

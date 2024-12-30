@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Modal = ({ title, description }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex">
       <button
         onClick={() => setIsOpen(true)}
-        className="group flex items-center text-center tracking-wide gap-3 mr-auto ml-auto px-8 py-3 w-max text-base font-medium rounded-md font-righteous text-white bg-gradient-to-r from-blue-500 to-pink-500 drop-shadow-md"
+        className="group flex justify-start items-center text-center tracking-wide gap-3 mr-auto ml-auto px-8 py-3 w-max text-base font-medium rounded-md font-righteous text-white bg-gradient-to-r from-blue-500 to-pink-500 drop-shadow-md"
       >
         Details
         <div className="absolute inset-0 h-full w-full scale-0 rounded-md transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
@@ -30,7 +30,7 @@ const Modal = ({ title, description }) => {
             </div>
 
             <div className="p-4">
-              <p>{description}</p>
+              <p className="text-gray-700">{description}</p>
             </div>
 
             <div className="border-t px-4 py-2 flex justify-end">
