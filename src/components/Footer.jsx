@@ -1,7 +1,7 @@
 import React from "react";
 import Social from "./Social";
 
-function Footer() {
+const Footer = () => {
   return (
     <div className="text-center py-4 dark:text-gray-50 text-black">
       <Social />

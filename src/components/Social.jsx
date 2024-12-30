@@ -1,6 +1,6 @@
 import React from "react";
 
-function Social() {
+const Social = () => {
   return (
     <div className="flex flex-wrap justify-center gap-2">
       <a

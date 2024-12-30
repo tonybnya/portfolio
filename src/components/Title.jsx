@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Title({children, id}) {
+const Title = ({children, id}) => {
   return (
       <h1
           id={id && id}

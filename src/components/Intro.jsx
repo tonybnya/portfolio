@@ -4,7 +4,7 @@ import badge from "/assets/all-in-open-source-contributor.png";
 import resume from "/assets/CV-tonybnya.pdf";
 import Button from "./Button";
 
-function Intro() {
+const Intro = () => {
   return (
     <div className="flex flex-col justify-center items-center py-6 w-2/4 mx-auto max-sm:w-full">
       <img

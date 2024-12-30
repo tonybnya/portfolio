@@ -4,7 +4,7 @@ import axios from "axios";
 import ProjectItem from "./ProjectItem";
 import Title from "./Title";
 
-function Projects() {
+const Projects = () => {
   const [projects, setProjects] = useState([]);
   const [error, setError] = useState(null);
 

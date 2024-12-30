@@ -4,7 +4,7 @@ import axios from "axios";
 import Title from "./Title";
 import ProgressionItem from "./ProgressionItem";
 
-function Progression() {
+const Progression = () => {
   const [timelines, setTimelines] = useState([]);
   const [error, setError] = useState(null);
 

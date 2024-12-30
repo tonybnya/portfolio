@@ -1,6 +1,6 @@
-import React from "react";
+import  Modal from "./Modal";
 
-function ProgressionItem({ year, timeline, duration, details }) {
+const ProgressionItem = ({ year, timeline, duration, details }) => {
   return (
     <ol className="flex flex-col md-flex-row relative border-l border-stone-900 dark:border-white">
       <li className="mb-10 ml-4">
@@ -31,9 +31,13 @@ function ProgressionItem({ year, timeline, duration, details }) {
             {duration}
           </div>
         </p>
-        <p className="my-2 text-base text-justify font-normal text-stone-500 tracking-wide">
+        {/* <p className="my-2 text-base text-justify font-normal text-stone-500 tracking-wide">
           {details}
-        </p>
+        </p> */}
+        {/* <div className="my-2 text-base text-justify font-normal text-stone-500 tracking-wide">
+          <Modal title={timeline} description={details} />
+        </div> */}
+        <Modal title={timeline} description={details} />
       </li>
     </ol>
   );
