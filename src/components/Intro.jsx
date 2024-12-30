@@ -18,7 +18,7 @@ function Intro() {
       <h3 className="dark:text-gray-500 text-black font-righteous text-xl font-medium tracking-wider pt-2 md:text-sm max-sm:text-xs">
         Software Engineer | Freelancer | Open Sourcer{" "}
       </h3>
-      <p className="dark:text-zinc-50 text-black text-justify py-4 font-light text-sm tracking-wide max-sm:text-xs">
+      <p className="dark:text-zinc-50 text-black text-justify py-4 font-light text-sm tracking-wider max-sm:text-xs">
         Dedicated and adaptable professional, I&apos;m a Software Engineer
         Graduated in ✨ <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">12-month Software Engineering</span> Programs and ✨ <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">Artificial
         Intelligence Career Essentials</span> (AiCE) by{" "}

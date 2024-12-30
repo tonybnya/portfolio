@@ -31,7 +31,7 @@ function ProgressionItem({ year, timeline, duration, details }) {
             {duration}
           </div>
         </p>
-        <p className="my-2 text-base text-justify font-normal text-stone-500">
+        <p className="my-2 text-base text-justify font-normal text-stone-500 tracking-wide">
           {details}
         </p>
       </li>
