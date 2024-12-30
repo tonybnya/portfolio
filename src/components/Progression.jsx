@@ -30,7 +30,7 @@ const Progression = () => {
       <div className="flex flex-col md:flex-row justify-center my-20">
         <div className="w-full md:w-7/12">
           {error ? (
-            <p>Error fetching timelines!</p>
+            <p className="text-center mx-auto">Error fetching progression!</p>
           ) : (
             timelines.map((step) => (
               <ProgressionItem
