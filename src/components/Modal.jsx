@@ -4,7 +4,7 @@ const Modal = ({ title, description }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="">
+    <div>
       <button
         onClick={() => setIsOpen(true)}
         className="group flex justify-start items-center text-center tracking-wide gap-3 mr-auto ml-auto px-8 py-1 w-max text-base font-medium rounded-md font-righteous text-white bg-gradient-to-r from-[#007A5E] via-[#CE1126] to-[#FCD116] drop-shadow-md"
@@ -24,14 +24,15 @@ const Modal = ({ title, description }) => {
           ></div>
 
           <div
-            className="bg-white rounded-md shadow-xl overflow-hidden max-w-md w-full sm:w-96 md:w-1/2 lg:w-2/3 xl:w-1/3 z-50 transform transition-transform duration-300"
+            // className="bg-white rounded-md shadow-xl overflow-hidden max-w-md w-full sm:w-96 md:w-1/2 lg:w-2/3 xl:w-1/3 z-50 transform transition-transform duration-300"
+            className="bg-white rounded-md shadow-xl max-w-md w-full sm:w-96 md:w-1/2 lg:w-2/3 xl:w-1/3 z-50 max-h-[90vh] flex flex-col"
           >
             {/* <div className="bg-gradient-to-r from-black via-blue-500 to-red-900 text-white px-4 py-2 flex justify-between"> */}
             <div className="bg-gradient-to-r from-[#007A5E] via-[#CE1126] to-[#FCD116] text-white px-4 py-2 flex justify-center">
               <h2 className="text-lg font-bold font-righteous tracking-wider">{title}</h2>
             </div>
 
-            <div className="p-4">
+            <div className="p-4 overflow-y-auto flex-grow">
               <p className="text-black tracking-wide text-justify">{description}</p>
               {/* <p className="text-gray-700 tracking-wide text-justify">{description}</p> */}
             </div>
