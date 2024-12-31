@@ -4,6 +4,7 @@ import profile from "/assets/profile.png";
 import badge from "/assets/all-in-open-source-contributor.png";
 import resume from "/assets/CV-tonybnya.pdf";
 import Button from "./Button";
+import Social from "./Social";
 
 const Intro = () => {
   return (
@@ -18,7 +19,7 @@ const Intro = () => {
           Tony B. NYA
         </h1>
         <h3 className="dark:text-gray-500 text-black font-righteous text-xl font-medium tracking-wider pt-2 md:text-sm max-sm:text-xs">
-          Software Engineer | Freelancer | Open Sourcer{" "}
+          Software Engineer{" "}
         </h3>
         <p className="dark:text-zinc-50 text-black text-justify py-4 font-light text-sm tracking-wider max-sm:text-xs">
           Dedicated and adaptable professional, I&apos;m a Software Engineer
@@ -67,18 +68,22 @@ const Intro = () => {
           and solve complex challenges, with growth and lifelong learning mindset.
         </p>
 
+        <div className="flex gap-2 py-4">
+          <Social />
+        </div>
+
         <div className="flex gap-2 max-lg:flex-col">
           <a href={resume} target="_blank">
             <Button
               type="button"
-              text="Download My Resume"
+              text="Resume"
               icon={<i className="fa-solid fa-download"></i>}
             />
           </a>
           <a href="#contact">
             <Button
               type="button"
-              text="Contact Me"
+              text="Contact"
               icon={<i className="fa-solid fa-envelope"></i>}
             />
           </a>
