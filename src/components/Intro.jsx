@@ -9,7 +9,7 @@ import Social from "./Social";
 const Intro = () => {
   return (
     <div className="flex justify-center items-center max-lg:flex-col">
-      <div className="flex flex-col justify-center items-center py-6 w-2/4 mx-auto max-sm:w-full">
+      <div className="flex flex-col justify-center items-center py-6 w-3/4 mx-auto max-sm:w-full">
         <img
           src={profile}
           alt="profile"
@@ -96,7 +96,7 @@ const Intro = () => {
           <img src={badge} alt="" className="inline-block w-28" />
         </a>
       </div>
-      <div>
+      <div className="flex flex-col gap-4 justify-center items-center w-full">
         <DotLottieReact
           src="https://lottie.host/45e3d71a-c783-4c04-84d7-a529f667c8f8/4zdFKQb256.lottie"
           loop

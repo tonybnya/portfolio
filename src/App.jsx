@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
+
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
 import Progression from "./components/Progression";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import SkillsSlider from "./components/SkillsSlider";
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -96,6 +98,10 @@ function App() {
       </div>
       <div className="container mx-auto px-4 max-sm:px-6">
         <Intro className="animate" />
+        <hr className="border-1 mb-12 animate" />
+
+        <SkillsSlider />
+
         <hr className="border-1 mb-12 animate" />
         <Projects className="animate" />
         <hr className="border-1 mb-12 animate" />
