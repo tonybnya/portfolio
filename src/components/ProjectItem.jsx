@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 const ProjectItem = ({ images, title, description, tags, liveUrl, sourceUrl }) => {
+  // TODO: add an icon near to each title - the icon/logo of the project
+  // The Portfolio API should probably be changed for that
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
