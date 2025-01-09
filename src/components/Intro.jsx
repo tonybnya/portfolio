@@ -1,8 +1,8 @@
 import React from "react";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import profile from "/assets/profile.png";
-import badge from "/assets/all-in-open-source-contributor.png";
-import resume from "/assets/CV-tonybnya.pdf";
+import profile from "/assets/images/profile.png";
+import badge from "/assets/images/all-in-open-source-contributor.png";
+import resume from "/assets/docs/CV-tonybnya.pdf";
 import Button from "./Button";
 import Social from "./Social";
 
@@ -93,7 +93,7 @@ const Intro = () => {
           href="https://www.credly.com/earner/earned/badge/d11a9129-997c-4a1d-8ec7-7ec66c08c477"
           target="_blank"
         >
-          <img src={badge} alt="" className="inline-block w-28 animate-spin hover:animate-none" />
+          <img src={badge} alt="" className="inline-block w-28 animate-spin hover:animate-none hover:scale-150" />
         </a>
       </div>
       <div className="flex flex-col gap-4 justify-center items-center w-full">
