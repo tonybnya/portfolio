@@ -7,7 +7,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import SkillsSlider from "./components/SkillsSlider";
 
-function App() {
+const App = () => {
+  // TODO: mode toggler doesn't work in production - FIX
   const [theme, setTheme] = useState(null);
 
   useEffect(() => {
@@ -71,10 +72,6 @@ function App() {
       element.classList.add("show");
     }, index * 1000);
   });
-
-  // TODO: add slider or carousel image for each project card
-  // TODO: add animations with Framer Motion or Tailwindcss Animated
-  // TODO: write some tests with Vitest
 
   return (
     <div className="dark:bg-stone-900 bg-gray-50">
