@@ -35,9 +35,9 @@ const Projects = () => {
             projects.map((project) => (
               <ProjectItem
                 key={project._id}
-                image={project.images[0]}
+                // image={project.images[0]}
                 // TODO: add a slider or carousel for each project card
-                // images={project.images}
+                images={project.images}
                 title={project.title}
                 description={project.description}
                 tags={project.tags}
