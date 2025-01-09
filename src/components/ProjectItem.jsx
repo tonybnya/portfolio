@@ -35,11 +35,21 @@ const ProjectItem = ({ images, title, description, tags, liveUrl, sourceUrl }) =
         onMouseEnter={() => setIsAutoPlaying(false)}
         onMouseLeave={() => setIsAutoPlaying(true)}
       >
-        <img
-          src={images[currentImageIndex]}
-          alt={`${title} image ${currentImageIndex + 1}`}
-          className="w-full h-36 md:h-48 object-cover"
-        />
+        <div className="overflow-hidden">
+          <div 
+            className="flex transition-transform duration-500 ease-in-out"
+            style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
+          >
+            {images.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`${title} image ${index + 1}`}
+                className="w-full h-36 md:h-48 object-cover flex-shrink-0"
+              />
+            ))}
+          </div>
+        </div>
         {images.length > 1 && (
           <>
             <button
