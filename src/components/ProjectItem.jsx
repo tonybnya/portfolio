@@ -1,7 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const ProjectItem = ({ images, title, description, tags, liveUrl, sourceUrl }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
+  useEffect(() => {
+    let intervalId;
+    
+    if (isAutoPlaying && images.length > 1) {
+      intervalId = setInterval(() => {
+        nextImage();
+      }, 3000);
+    }
+
+    return () => {
+      if (intervalId) {
+        clearInterval(intervalId);
+      }
+    };
+  }, [isAutoPlaying, images.length]);
 
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % images.length);
@@ -13,7 +30,11 @@ const ProjectItem = ({ images, title, description, tags, liveUrl, sourceUrl }) =
 
   return (
     <div className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden">
-      <div className="relative">
+      <div
+        className="relative"
+        onMouseEnter={() => setIsAutoPlaying(false)}
+        onMouseLeave={() => setIsAutoPlaying(true)}
+      >
         <img
           src={images[currentImageIndex]}
           alt={`${title} image ${currentImageIndex + 1}`}
