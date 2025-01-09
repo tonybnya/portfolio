@@ -77,14 +77,14 @@ const Intro = () => {
             <Button
               type="button"
               text="Resume"
-              icon={<i className="fa-solid fa-download"></i>}
+              icon={<i className="fa-solid fa-download animate-bounce"></i>}
             />
           </a>
           <a href="#contact">
             <Button
               type="button"
               text="Contact"
-              icon={<i className="fa-solid fa-envelope"></i>}
+              icon={<i className="fa-solid fa-envelope animate-bounce"></i>}
             />
           </a>
         </div>
@@ -93,7 +93,7 @@ const Intro = () => {
           href="https://www.credly.com/earner/earned/badge/d11a9129-997c-4a1d-8ec7-7ec66c08c477"
           target="_blank"
         >
-          <img src={badge} alt="" className="inline-block w-28" />
+          <img src={badge} alt="" className="inline-block w-28 animate-spin hover:animate-none" />
         </a>
       </div>
       <div className="flex flex-col gap-4 justify-center items-center w-full">

@@ -130,7 +130,7 @@ const Contact = () => {
           <Button
             type="submit"
             text={isSubmitting ? "Sending..." : "Work With Me"}
-            icon={<i className="fa-solid fa-paper-plane"></i>}
+            icon={<i className="fa-solid fa-paper-plane animate-bounce"></i>}
             disabled={isSubmitting}
           />
         </form>
