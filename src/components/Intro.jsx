@@ -43,13 +43,9 @@ const Intro = () => {
             className="underline font-semibold text-gray-900 dark:text-white decoration-indigo-500"
             href="https://github.blog/2023-10-09-skilling-african-developers-through-all-in-africa/"
           >
-            All In Open Source
+            GitHub All In Open Source
           </a>{" "}
-          Program by{" "}
-          <a target="_blank" className="underline font-semibold text-gray-900 dark:text-white decoration-indigo-500" href="https://github.com">
-            GitHub
-          </a>
-          . I&apos;m also holding a ✨ <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">
+          program. I&apos;m also holding a ✨ <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">
           Bachelor&apos;s Degree in Computer Science</span>{" "}
           and almost a ✨ <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">
           decade of experience/background in Diplomacy and Public
