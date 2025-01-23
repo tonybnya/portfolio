@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Title from "./Title";
 import Button from "./Button";
 
@@ -15,38 +15,38 @@ const Contact = () => {
 
   const validateForm = () => {
     const newErrors = {};
-    
+
     if (!formData.name.trim()) {
       newErrors.name = "Name is required";
     }
-    
+
     if (!formData.email.trim()) {
       newErrors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = "Email is invalid";
     }
-    
+
     if (!formData.message.trim()) {
       newErrors.message = "Message is required";
     }
-    
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-    
+    setFormData((prev) => ({ ...prev, [name]: value }));
+
     // Clear error when user starts typing
     if (errors[name]) {
-      setErrors(prev => ({ ...prev, [name]: '' }));
+      setErrors((prev) => ({ ...prev, [name]: "" }));
     }
   };
 
   const sendEmail = (e) => {
     e.preventDefault();
-    
+
     if (!validateForm()) {
       return;
     }
@@ -73,7 +73,7 @@ const Contact = () => {
       })
       .catch((error) => {
         console.error("Error sending email:", error);
-        alert(`Error sending email: ${error.text || 'Unknown error'}`);
+        alert(`Error sending email: ${error.text || "Unknown error"}`);
       })
       .finally(() => {
         setIsSubmitting(false);
@@ -81,7 +81,10 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="flex flex-col mb-10 mx-auto dark:text-gray-50 text-black">
+    <div
+      id="contact"
+      className="flex flex-col mb-10 mx-auto dark:text-gray-50 text-black"
+    >
       <Title>Contact</Title>
       <div className="flex justify-center items-center">
         <form className="flex flex-col w-full md:w-7/12" onSubmit={sendEmail}>
@@ -93,12 +96,14 @@ const Contact = () => {
               value={formData.name}
               onChange={handleChange}
               className={`p-2 w-full bg-transparent border-2 rounded-md focus:outline-none ${
-                errors.name ? 'border-red-500' : ''
+                errors.name ? "border-red-500" : ""
               }`}
             />
-            {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
+            {errors.name && (
+              <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+            )}
           </div>
-          
+
           <div className="my-2">
             <input
               type="email"
@@ -107,12 +112,14 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               className={`p-2 w-full bg-transparent border-2 rounded-md focus:outline-none ${
-                errors.email ? 'border-red-500' : ''
+                errors.email ? "border-red-500" : ""
               }`}
             />
-            {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+            {errors.email && (
+              <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+            )}
           </div>
-          
+
           <div className="mb-4">
             <textarea
               name="message"
@@ -121,12 +128,14 @@ const Contact = () => {
               onChange={handleChange}
               rows="10"
               className={`p-2 w-full bg-transparent border-2 rounded-md focus:outline-none ${
-                errors.message ? 'border-red-500' : ''
+                errors.message ? "border-red-500" : ""
               }`}
             />
-            {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
+            {errors.message && (
+              <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+            )}
           </div>
-          
+
           <Button
             type="submit"
             text={isSubmitting ? "Sending..." : "Work With Me"}

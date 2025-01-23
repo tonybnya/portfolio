@@ -1,6 +1,13 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-const ProjectItem = ({ images, title, description, tags, liveUrl, sourceUrl }) => {
+const ProjectItem = ({
+  images,
+  title,
+  description,
+  tags,
+  liveUrl,
+  sourceUrl,
+}) => {
   // TODO: add an icon near to each title - the icon/logo of the project
   // The Portfolio API should probably be changed for that
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -8,7 +15,7 @@ const ProjectItem = ({ images, title, description, tags, liveUrl, sourceUrl }) =
 
   useEffect(() => {
     let intervalId;
-    
+
     if (isAutoPlaying && images.length > 1) {
       intervalId = setInterval(() => {
         nextImage();
@@ -38,7 +45,7 @@ const ProjectItem = ({ images, title, description, tags, liveUrl, sourceUrl }) =
         onMouseLeave={() => setIsAutoPlaying(true)}
       >
         <div className="overflow-hidden">
-          <div 
+          <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
           >
@@ -87,7 +94,9 @@ const ProjectItem = ({ images, title, description, tags, liveUrl, sourceUrl }) =
         <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-righteous tracking-wide">
           {title}
         </h3>
-        <p className="text-justify mb-2 font-light tracking-wide">{description}</p>
+        <p className="text-justify mb-2 font-light tracking-wide">
+          {description}
+        </p>
         <p className="flex flex-wrap gap-2 flex-row items-center justify-start mb-4 text-xs md:text-sm">
           {tags.map((tag, index) => (
             <span
@@ -109,6 +118,6 @@ const ProjectItem = ({ images, title, description, tags, liveUrl, sourceUrl }) =
       </div>
     </div>
   );
-}
+};
 
 export default ProjectItem;

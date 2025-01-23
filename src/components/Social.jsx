@@ -1,11 +1,10 @@
-import React from "react";
-
 const Social = () => {
   return (
     <div className="flex flex-wrap justify-center gap-2">
       <a
         href="https://github.com/tonybnya"
-        className="bg-stone-400 dark:bg-white p-2 font-semibold text-black inline-flex items-center space-x-2 rounded-full hover:text-stone-400 hover:bg-black"
+        className="bg-black p-2 font-semibold text-black inline-flex items-center space-x-2 rounded-full hover:text-stone-400 hover:bg-black"
+        // className="bg-stone-400 dark:bg-white p-2 font-semibold text-black inline-flex items-center space-x-2 rounded-full hover:text-stone-400 hover:bg-black"
         target="_blank"
       >
         <svg
@@ -29,7 +28,8 @@ const Social = () => {
       </a>
       <a
         href="https://linkedin.com/in/tonybnya"
-        className="bg-stone-400 dark:bg-white p-2 font-semibold text-black inline-flex items-center space-x-2 rounded-full hover:text-stone-400 hover:bg-black"
+        className="bg-black p-2 font-semibold text-black inline-flex items-center space-x-2 rounded-full hover:text-stone-400 hover:bg-black"
+        // className="bg-stone-400 dark:bg-white p-2 font-semibold text-black inline-flex items-center space-x-2 rounded-full hover:text-stone-400 hover:bg-black"
         target="_blank"
       >
         <svg
@@ -45,7 +45,8 @@ const Social = () => {
       </a>
       <a
         href="https://twitter.com/tonybnya"
-        className="bg-stone-400 dark:bg-white p-2 font-semibold text-black inline-flex items-center space-x-2 rounded-full hover:text-stone-400 hover:bg-black"
+        className="bg-black p-2 font-semibold text-black inline-flex items-center space-x-2 rounded-full hover:text-stone-400 hover:bg-black/50"
+        // className="bg-stone-400 dark:bg-white p-2 font-semibold text-black inline-flex items-center space-x-2 rounded-full hover:text-stone-400 hover:bg-black"
         target="_blank"
       >
         <svg
@@ -59,7 +60,6 @@ const Social = () => {
       </a>
     </div>
   );
-}
+};
 
 export default Social;
-

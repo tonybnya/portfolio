@@ -1,5 +1,4 @@
-import React from "react";
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import profile from "/assets/images/profile.png";
 import badge from "/assets/images/all-in-open-source-contributor.png";
 import resume from "/assets/docs/CV-tonybnya.pdf";
@@ -22,9 +21,16 @@ const Intro = () => {
           Software Engineer{" "}
         </h3>
         <p className="first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left dark:text-zinc-50 text-black text-justify py-4 font-light text-sm tracking-wider max-sm:text-xs">
-          As a skilled professional, I&apos;m a Software Engineer
-          Graduated in ✨ <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">12-month Software Engineering</span> and ✨ <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">Artificial
-          Intelligence Career Essentials</span> (AiCE) programs by{" "}
+          As a skilled professional, I&apos;m a Software Engineer Graduated in
+          ✨{" "}
+          <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">
+            12-month Software Engineering
+          </span>{" "}
+          and ✨{" "}
+          <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">
+            Artificial Intelligence Career Essentials
+          </span>{" "}
+          (AiCE) programs by{" "}
           <a
             target="_blank"
             className="underline font-semibold text-gray-900 dark:text-white decoration-indigo-500"
@@ -32,9 +38,16 @@ const Intro = () => {
           >
             ALX
           </a>
-          , in ✨ <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">
-          6-month Web Development</span> by{" "}
-          <a target="_blank" className="underline font-semibold text-gray-900 dark:text-white decoration-indigo-500" href="https://sayna.io">
+          , in ✨{" "}
+          <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">
+            6-month Web Development
+          </span>{" "}
+          by{" "}
+          <a
+            target="_blank"
+            className="underline font-semibold text-gray-900 dark:text-white decoration-indigo-500"
+            href="https://sayna.io"
+          >
             Sayna Academy
           </a>
           , and ✨ the inaugural cohort of the{" "}
@@ -45,14 +58,22 @@ const Intro = () => {
           >
             GitHub All In Open Source
           </a>{" "}
-          program. I&apos;m also holding a ✨ <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">
-          Bachelor&apos;s Degree in Computer Science</span>{" "}
-          and almost a ✨ <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">
-          decade of experience/background in Diplomacy and Public
-          Administration</span>. Skilled in &bull; Project Management &bull; Writing
-          &bull; Problem-Solving &bull; Essential AI Career Tools, with a &bull;
-          strong foundation in Software Development and a &bull; <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">
-          Soft Skills Certified</span> by{" "}
+          program. I&apos;m also holding a ✨{" "}
+          <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">
+            Bachelor&apos;s Degree in Computer Science
+          </span>{" "}
+          and almost a ✨{" "}
+          <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">
+            decade of experience/background in Diplomacy and Public
+            Administration
+          </span>
+          . Skilled in &bull; Project Management &bull; Writing &bull;
+          Problem-Solving &bull; Essential AI Career Tools, with a &bull; strong
+          foundation in Software Development and a &bull;{" "}
+          <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">
+            Soft Skills Certified
+          </span>{" "}
+          by{" "}
           <a
             target="_blank"
             className="underline font-semibold text-gray-900 dark:text-white decoration-indigo-500"
@@ -61,7 +82,8 @@ const Intro = () => {
             Hello Elton
           </a>
           . I&apos;m passionated about leveraging technology to drive innovation
-          and solve complex challenges, with growth and lifelong learning mindset.
+          and solve complex challenges, with growth and lifelong learning
+          mindset.
         </p>
 
         <div className="flex gap-2 py-4">
@@ -89,7 +111,11 @@ const Intro = () => {
           href="https://www.credly.com/earner/earned/badge/d11a9129-997c-4a1d-8ec7-7ec66c08c477"
           target="_blank"
         >
-          <img src={badge} alt="" className="inline-block w-28 animate-pulse hover:animate-none hover:scale-150" />
+          <img
+            src={badge}
+            alt=""
+            className="inline-block w-28 animate-pulse hover:animate-none hover:scale-150"
+          />
         </a>
       </div>
       <div className="flex flex-col gap-4 justify-center items-center w-full">
@@ -103,6 +129,6 @@ const Intro = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Intro;

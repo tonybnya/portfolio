@@ -1,10 +1,11 @@
-import  Modal from "./Modal";
+import Modal from "./Modal";
 
 const ProgressionItem = ({ year, timeline, duration, details }) => {
   return (
     <ol className="flex flex-col md-flex-row relative border-l border-stone-900 dark:border-white">
       <li className="mb-10 ml-4">
-        <div className="absolute w-3 h-3 bg-black dark:bg-stone-200 rounded-full mt-1.5 -left-1.5 border border-white" />
+        {/* <div className="absolute w-3 h-3 bg-black dark:bg-stone-200 rounded-full mt-1.5 -left-1.5 border border-white" /> */}
+        <div className="absolute w-3 h-3 bg-white rounded-full mt-1.5 -left-1.5 border border-white" />
         <p className="flex flex-wrap gap-4 flex-row items-center justify-start text-xs md:text-sm">
           <span className="inline-block px-2 py-1 font-semibold text-white bg-stone-900 dark:bg-black rounded-md">
             {year}
@@ -37,6 +38,6 @@ const ProgressionItem = ({ year, timeline, duration, details }) => {
       </li>
     </ol>
   );
-}
+};
 
 export default ProgressionItem;

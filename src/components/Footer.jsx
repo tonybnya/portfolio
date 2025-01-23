@@ -1,4 +1,3 @@
-import React from "react";
 import Social from "./Social";
 
 const Footer = () => {
@@ -10,6 +9,6 @@ const Footer = () => {
       </p>
     </div>
   );
-}
+};
 
 export default Footer;
