@@ -38,7 +38,8 @@ const ProjectItem = ({
   };
 
   return (
-    <div className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden">
+    // <div className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden">
+    <div className="border-2 border-white rounded-md overflow-hidden">
       <div
         className="relative"
         onMouseEnter={() => setIsAutoPlaying(false)}
@@ -90,7 +91,8 @@ const ProjectItem = ({
           </>
         )}
       </div>
-      <div className="w-full p-4 dark:text-gray-50 text-black">
+      {/* <div className="w-full p-4 dark:text-gray-50 text-black"> */}
+      <div className="w-full p-4 text-gray-50">
         <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-righteous tracking-wide">
           {title}
         </h3>
@@ -101,17 +103,26 @@ const ProjectItem = ({
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-gray-50 rounded-md"
+              className="inline-block px-2 py-1 font-semibold border-2 border-gray-50 rounded-md"
+              // className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-gray-50 rounded-md"
             >
               {tag}
             </span>
           ))}
         </p>
-        <div className="flex gap-3">
-          <a href={liveUrl} target="_blank">
+        <div className="flex gap-2">
+          <a
+            href={liveUrl}
+            target="_blank"
+            className="bg-black px-4 py-2 rounded-md hover:bg-black/50"
+          >
             Live <i class="fa-solid fa-square-up-right"></i>
           </a>
-          <a href={sourceUrl} target="_blank">
+          <a
+            href={sourceUrl}
+            target="_blank"
+            className="bg-black px-4 py-2 rounded-md hover:bg-black/50"
+          >
             Source <i className="fa-brands fa-github"></i>
           </a>
         </div>

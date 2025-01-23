@@ -14,38 +14,43 @@ const Intro = () => {
           alt="profile"
           className="inline-block lg:w-24 max-lg:w-16 pb-4 shadow-transparent drop-shadow-custom animate-pulse rounded-full"
         />
-        <h1 className="font-righteous text-5xl tracking-wider md:text-3xl max-sm:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-black via-gray-500 to-black dark:from-white dark:via-gray-700 dark:to-white inline-block">
+        {/* <h1 className="font-righteous text-5xl tracking-wider md:text-3xl max-sm:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-black via-gray-500 to-black dark:from-white dark:via-gray-700 dark:to-white inline-block"> */}
+        <h1 className="font-righteous text-5xl tracking-wider md:text-3xl max-sm:text-2xl text-white inline-block">
           Tony B. NYA
         </h1>
-        <h3 className="dark:text-gray-500 text-black font-righteous text-xl font-medium tracking-wider pt-2 md:text-sm max-sm:text-xs">
+        {/* <h3 className="dark:text-gray-500 text-black font-righteous text-xl font-medium tracking-wider pt-2 md:text-sm max-sm:text-xs">
+          Software Engineer{" "}
+        </h3> */}
+        <h3 className="text-gray-500 font-righteous text-xl font-medium tracking-wider pt-2 md:text-sm max-sm:text-xs">
           Software Engineer{" "}
         </h3>
-        <p className="first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left dark:text-zinc-50 text-black text-justify py-4 font-light text-sm tracking-wider max-sm:text-xs">
+        {/* <p className="first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left dark:text-zinc-50 text-black text-justify py-4 font-light text-sm tracking-wider max-sm:text-xs"> */}
+        <p className="first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light text-sm tracking-wider max-sm:text-xs">
           As a skilled professional, I&apos;m a Software Engineer Graduated in
           ✨{" "}
-          <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">
+          <span className="underline font-bold text-white decoration-pink-500 decoration-2">
             12-month Software Engineering
           </span>{" "}
           and ✨{" "}
-          <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">
+          <span className="underline font-bold text-white decoration-pink-500 decoration-2">
             Artificial Intelligence Career Essentials
           </span>{" "}
           (AiCE) programs by{" "}
           <a
             target="_blank"
-            className="underline font-semibold text-gray-900 dark:text-white decoration-indigo-500"
+            className="underline font-semibold text-white decoration-indigo-500"
             href="https://www.alxafrica.com"
           >
             ALX
           </a>
           , in ✨{" "}
-          <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">
+          <span className="underline font-bold text-white decoration-pink-500 decoration-2">
             6-month Web Development
           </span>{" "}
           by{" "}
           <a
             target="_blank"
-            className="underline font-semibold text-gray-900 dark:text-white decoration-indigo-500"
+            className="underline font-semibold text-white decoration-indigo-500"
             href="https://sayna.io"
           >
             Sayna Academy
@@ -53,30 +58,30 @@ const Intro = () => {
           , and ✨ the inaugural cohort of the{" "}
           <a
             target="_blank"
-            className="underline font-semibold text-gray-900 dark:text-white decoration-indigo-500"
+            className="underline font-semibold text-white decoration-indigo-500"
             href="https://github.blog/2023-10-09-skilling-african-developers-through-all-in-africa/"
           >
             GitHub All In Open Source
           </a>{" "}
           program. I&apos;m also holding a ✨{" "}
-          <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">
+          <span className="underline font-bold text-white decoration-pink-500 decoration-2">
             Bachelor&apos;s Degree in Computer Science
           </span>{" "}
           and almost a ✨{" "}
-          <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">
+          <span className="underline font-bold text-white decoration-pink-500 decoration-2">
             decade of experience/background in Diplomacy and Public
             Administration
           </span>
           . Skilled in &bull; Project Management &bull; Writing &bull;
           Problem-Solving &bull; Essential AI Career Tools, with a &bull; strong
           foundation in Software Development and a &bull;{" "}
-          <span className="underline font-bold text-gray-900 dark:text-white decoration-pink-500 decoration-2">
+          <span className="underline font-bold text-white decoration-pink-500 decoration-2">
             Soft Skills Certified
           </span>{" "}
           by{" "}
           <a
             target="_blank"
-            className="underline font-semibold text-gray-900 dark:text-white decoration-indigo-500"
+            className="underline font-semibold text-white decoration-indigo-500"
             href="https://www.helloelton.com"
           >
             Hello Elton
