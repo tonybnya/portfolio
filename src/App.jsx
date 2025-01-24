@@ -75,7 +75,8 @@ const App = () => {
 
   return (
     // <div className="dark:bg-stone-900 bg-gray-50">
-    <div className="bg-stone-900">
+    // <div className="bg-stone-900">
+    <div className="bg-[#0f1115]">
       <div className="flex items-center justify-between p-4">
         <div className="flex items-center font-righteous gap-2 max-sm:left-4">
           <a

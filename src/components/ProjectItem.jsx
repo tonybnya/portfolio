@@ -39,7 +39,8 @@ const ProjectItem = ({
 
   return (
     // <div className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden">
-    <div className="border-2 border-white rounded-md overflow-hidden">
+    // <div className="border-2 border-white rounded-md overflow-hidden">
+    <div className="border-2 border-black rounded-md overflow-hidden">
       <div
         className="relative"
         onMouseEnter={() => setIsAutoPlaying(false)}
@@ -99,18 +100,19 @@ const ProjectItem = ({
         <p className="text-justify mb-2 font-light tracking-wide">
           {description}
         </p>
-        <p className="flex flex-wrap gap-2 flex-row items-center justify-start mb-4 text-xs md:text-sm">
+        <p className="flex flex-wrap gap-2 flex-row items-center justify-start my-4 text-xs md:text-sm">
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="inline-block px-2 py-1 font-semibold border-2 border-gray-50 rounded-md"
+              className="inline-block px-2 py-1 font-semibold border-2 border-black text-gray-400 rounded-md"
+              // className="inline-block px-2 py-1 font-semibold border-2 border-gray-50 rounded-md"
               // className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-gray-50 rounded-md"
             >
               {tag}
             </span>
           ))}
         </p>
-        <div className="flex gap-2">
+        <div className="flex gap-2 text-gray-600">
           <a
             href={liveUrl}
             target="_blank"
