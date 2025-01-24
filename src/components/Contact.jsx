@@ -81,10 +81,7 @@ const Contact = () => {
   };
 
   return (
-    <div
-      id="contact"
-      className="flex flex-col mb-10 mx-auto dark:text-gray-50 text-black"
-    >
+    <div id="contact" className="flex flex-col mb-10 mx-auto text-gray-50">
       <Title>Contact</Title>
       <div className="flex justify-center items-center">
         <form className="flex flex-col w-full md:w-7/12" onSubmit={sendEmail}>
