@@ -1,4 +1,5 @@
 // import { useEffect, useState } from "react";
+import { motion } from "motion/react";
 
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
@@ -75,8 +76,14 @@ const App = () => {
 
   return (
     // <div className="dark:bg-stone-900 bg-gray-50">
-    // <div className="bg-stone-900">
-    <div className="bg-[#0f1115]">
+    // <motion.div className="bg-stone-900">
+    // <div className="bg-[#0f1115]">
+    <motion.div
+      className="bg-[#0f1115]"
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ amount: 0.8 }}
+    >
       <div className="flex items-center justify-between p-4">
         <div className="flex items-center font-righteous gap-2 max-sm:left-4">
           <a
@@ -112,7 +119,8 @@ const App = () => {
         <hr className="border-1 mb-12 animate" />
         <Footer className="animate" />
       </div>
-    </div>
+      {/* </div> */}
+    </motion.div>
   );
 };
 

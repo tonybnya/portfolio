@@ -1,4 +1,5 @@
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { ReactTyped } from "react-typed";
 import profile from "/assets/images/profile.png";
 import badge from "/assets/images/all-in-open-source-contributor.png";
 import resume from "/assets/docs/CV-tonybnya.pdf";
@@ -16,13 +17,14 @@ const Intro = () => {
         />
         {/* <h1 className="font-righteous text-5xl tracking-wider md:text-3xl max-sm:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-black via-gray-500 to-black dark:from-white dark:via-gray-700 dark:to-white inline-block"> */}
         <h1 className="font-righteous text-5xl tracking-wider md:text-3xl max-sm:text-2xl text-white inline-block">
-          Tony B. NYA
+          <ReactTyped strings={["Tony B. NYA"]} typeSpeed={300} loop />
         </h1>
         {/* <h3 className="dark:text-gray-500 text-black font-righteous text-xl font-medium tracking-wider pt-2 md:text-sm max-sm:text-xs">
           Software Engineer{" "}
         </h3> */}
         <h3 className="text-gray-500 font-righteous text-xl font-medium tracking-wider pt-2 md:text-sm max-sm:text-xs">
-          Software Engineer{" "}
+          {/* Software Engineer{" "} */}
+          <ReactTyped strings={["Software Engineer"]} typeSpeed={100} loop />
         </h3>
         {/* <p className="first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left dark:text-zinc-50 text-black text-justify py-4 font-light text-sm tracking-wider max-sm:text-xs"> */}
         <p className="first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light text-sm tracking-wider max-sm:text-xs">
