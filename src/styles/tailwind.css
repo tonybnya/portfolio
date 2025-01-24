@@ -13,4 +13,20 @@
   translate: 0 0;
 }
 
+.fade {
+  animation: fade-in 30s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  via {
+    opacity: 50;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
 /* TODO: add a slider or carousel for each project card */

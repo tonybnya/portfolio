@@ -27,7 +27,7 @@ const Intro = () => {
           <ReactTyped strings={["Software Engineer"]} typeSpeed={100} loop />
         </h3>
         {/* <p className="first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left dark:text-zinc-50 text-black text-justify py-4 font-light text-sm tracking-wider max-sm:text-xs"> */}
-        <p className="first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light text-sm tracking-wider max-sm:text-xs">
+        <p className="fade first-letter:text-7xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light text-sm tracking-wider max-sm:text-xs">
           As a skilled professional, I&apos;m a Software Engineer Graduated in
           ✨{" "}
           <span className="underline font-bold text-white decoration-pink-500 decoration-2">
