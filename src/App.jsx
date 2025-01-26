@@ -106,17 +106,18 @@ const App = () => {
       </div>
       <div className="container mx-auto px-4 max-sm:px-6">
         <Intro className="animate" />
-        <hr className="border-1 mb-12 animate" />
+        <hr className="border-1 border-[#4A5565] mb-12 animate" />
 
         <SkillsSlider />
 
-        <hr className="border-1 mb-12 animate" />
-        <Projects className="animate" />
-        <hr className="border-1 mb-12 animate" />
+        <hr className="border-1 border-[#4A5565] mb-12 animate" />
+        {/* <Projects className="animate bg-[#1D202A]" /> */}
+        <Projects className="animate bg-white" />
+        <hr className="border-1 border-[#4A5565] mb-12 animate" />
         <Progression className="animate" />
-        <hr className="border-1 mb-12 animate" />
+        <hr className="border-1 border-[#4A5565] mb-12 animate" />
         <Contact className="animate" />
-        <hr className="border-1 mb-12 animate" />
+        <hr className="border-1 border-[#4A5565] mb-12 animate" />
         <Footer className="animate" />
       </div>
       {/* </div> */}

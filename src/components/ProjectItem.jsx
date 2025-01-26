@@ -40,7 +40,8 @@ const ProjectItem = ({
   return (
     // <div className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden">
     // <div className="border-2 border-white rounded-md overflow-hidden">
-    <div className="border-2 border-black rounded-md overflow-hidden">
+    // <div className="border-2 border-black rounded-md overflow-hidden">
+    <div className="border-2 border-[#4A5565] rounded-md overflow-hidden bg-[#030713]">
       <div
         className="relative"
         onMouseEnter={() => setIsAutoPlaying(false)}
@@ -112,7 +113,7 @@ const ProjectItem = ({
             </span>
           ))}
         </p>
-        <div className="flex gap-2 text-gray-600">
+        <div className="flex gap-2 text-gray-400">
           <a
             href={liveUrl}
             target="_blank"

@@ -92,7 +92,7 @@ const Contact = () => {
               placeholder="Name"
               value={formData.name}
               onChange={handleChange}
-              className={`p-2 w-full bg-transparent border-2 rounded-md focus:outline-none ${
+              className={`p-2 w-full bg-transparent border-2 border-[#4A5565] rounded-md focus:outline-none ${
                 errors.name ? "border-red-500" : ""
               }`}
             />
@@ -108,7 +108,7 @@ const Contact = () => {
               placeholder="Email"
               value={formData.email}
               onChange={handleChange}
-              className={`p-2 w-full bg-transparent border-2 rounded-md focus:outline-none ${
+              className={`p-2 w-full bg-transparent border-2 border-[#4A5565] rounded-md focus:outline-none ${
                 errors.email ? "border-red-500" : ""
               }`}
             />
@@ -124,7 +124,7 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange}
               rows="10"
-              className={`p-2 w-full bg-transparent border-2 rounded-md focus:outline-none ${
+              className={`p-2 w-full bg-transparent border-2 border-[#4A5565] rounded-md focus:outline-none ${
                 errors.message ? "border-red-500" : ""
               }`}
             />

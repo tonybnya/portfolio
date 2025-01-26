@@ -27,7 +27,19 @@ const Intro = () => {
           <ReactTyped strings={["Software Engineer"]} typeSpeed={100} loop />
         </h3>
         {/* <p className="first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left dark:text-zinc-50 text-black text-justify py-4 font-light text-sm tracking-wider max-sm:text-xs"> */}
-        <p className="fade first-letter:text-7xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light text-sm tracking-wider max-sm:text-xs">
+
+        <p className="fade first-letter:text-7xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light text-sm tracking-normal max-sm:text-xs">
+          I &apos;m a Software Engineer with a strong foundation in AI, Web
+          Development, and Software Development, holding certifications from
+          ALX, Sayna Academy, and the GitHub All In Open Source program. With a
+          Bachelor&apos;s in Computer Science and nearly a decade of experience
+          in Diplomacy and Public Administration, I bring a unique set of
+          technical expertise, project management, and problem-solving skills.
+          Passionate about leveraging technology to drive innovation, I&apos;m
+          good on solving complex challenges and embracing lifelong learning.
+        </p>
+
+        {/* <p className="fade first-letter:text-7xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light text-sm tracking-wider max-sm:text-xs">
           As a skilled professional, I&apos;m a Software Engineer Graduated in
           ✨{" "}
           <span className="underline font-bold text-white decoration-pink-500 decoration-2">
@@ -91,7 +103,7 @@ const Intro = () => {
           . I&apos;m passionated about leveraging technology to drive innovation
           and solve complex challenges, with growth and lifelong learning
           mindset.
-        </p>
+        </p> */}
 
         <div className="flex gap-2 py-4">
           <Social />
