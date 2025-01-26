@@ -48,13 +48,14 @@ const Progression = () => {
   }, []);
 
   return (
-    // <div className="dark:text-gray-50 text-black">
     <div className="text-gray-50">
       <Title>Progression</Title>
       <div className="flex flex-col md:flex-row justify-center my-20">
         <div className="w-full md:w-7/12">
           {isLoading ? (
-            <Spinner />
+            <div className="flex justify-center">
+              <Spinner />
+            </div>
           ) : error ? (
             <p className="text-red-500">{error}</p>
           ) : (

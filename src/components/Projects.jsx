@@ -48,15 +48,17 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="dark:text-gray-50 text-black">
+    <div className="text-gray-50">
       {/* // TODO: Change the title to 'Portfolio' when I'll separate my personal and side projects with freelance projects */}
       {/* // The Portfolio API should probably be changed for that */}
 
       <Title>Projects</Title>
       <div className="flex flex-col md:flex-row items-center justify-center mb-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
           {isLoading ? (
-            <Spinner />
+            <div className="flex justify-center w-full col-span-1 md:col-span-2 lg:col-span-3">
+              <Spinner />
+            </div>
           ) : error ? (
             <p className="text-red-500">{error}</p>
           ) : (
