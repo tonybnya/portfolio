@@ -119,7 +119,7 @@ const ProjectItem = ({
             target="_blank"
             className="bg-black px-4 py-2 border-2 border-[#4A5565] rounded-md hover:bg-black/10"
           >
-            Live <i class="fa-solid fa-square-up-right"></i>
+            Live <i className="fa-solid fa-square-up-right"></i>
           </a>
           <a
             href={sourceUrl}
