@@ -57,7 +57,7 @@ const Progression = () => {
               <Spinner />
             </div>
           ) : error ? (
-            <p className="text-red-500">{error}</p>
+            <p className="text-red-500 flex justify-center">{error}</p>
           ) : (
             timelines.map((step) => (
               <ProgressionItem
