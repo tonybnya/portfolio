@@ -8,7 +8,7 @@ const ProgressionItem = ({ year, timeline, duration, details }) => {
         {/* <div className="absolute w-3 h-3 bg-black dark:bg-stone-200 rounded-full mt-1.5 -left-1.5 border border-white" /> */}
         {/* <div className="absolute w-3 h-3 bg-white rounded-full mt-1.5 -left-1.5 border border-white" /> */}
         <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-[#4A5565]" />
-        <p className="flex flex-wrap gap-4 flex-row items-center justify-start text-xs md:text-sm">
+        <div className="flex flex-wrap gap-4 flex-row items-center justify-start text-xs md:text-sm">
           {/* <span className="inline-block px-2 py-1 font-semibold text-white bg-stone-900 dark:bg-black rounded-md"> */}
           <span className="inline-block px-2 py-1 font-semibold text-white bg-black rounded-md">
             {year}
@@ -35,7 +35,7 @@ const ProgressionItem = ({ year, timeline, duration, details }) => {
 
             {duration}
           </div>
-        </p>
+        </div>
         <div className="pt-4 flex justify-start">
           <Modal title={timeline} description={details} />
         </div>

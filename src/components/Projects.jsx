@@ -1,26 +1,49 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 
 import ProjectItem from "./ProjectItem";
+import Spinner from "./Spinner";
 import Title from "./Title";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
-  const projectsAPI = "https://portfolio-api-nq76.onrender.com/api/projects";
+  const API_PROJECTS_URL =
+    "https://portfolio-api-nq76.onrender.com/api/projects";
+  const API_OPTIONS = {
+    method: "GET",
+    headers: {
+      accept: "application/json",
+    },
+  };
+
+  const fetchProjects = async () => {
+    setIsLoading(true);
+    setError("");
+
+    try {
+      const response = await fetch(API_PROJECTS_URL, API_OPTIONS);
+      if (!response.ok) {
+        throw new Error("Failed to fetch projects");
+      }
+      const data = await response.json();
+      console.log(data);
+      if (!data || data.length === 0) {
+        setError("No projects found.");
+        setProjects([]);
+        return;
+      }
+      setProjects(data);
+    } catch (error) {
+      console.error(`Error fetching projects: ${error}`);
+      setError("Error fetching projects. Please try again later.");
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const res = await axios.get(projectsAPI);
-
-        setProjects(res.data);
-      } catch (err) {
-        setError(err);
-      }
-    };
-
     fetchProjects();
   }, []);
 
@@ -32,14 +55,14 @@ const Projects = () => {
       <Title>Projects</Title>
       <div className="flex flex-col md:flex-row items-center justify-center mb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {error ? (
-            <p className="py-10 text-center">Error fetching projects!</p>
+          {isLoading ? (
+            <Spinner />
+          ) : error ? (
+            <p className="text-red-500">{error}</p>
           ) : (
             projects.map((project) => (
               <ProjectItem
                 key={project._id}
-                // image={project.images[0]}
-                // TODO: add a slider or carousel for each project card
                 images={project.images}
                 title={project.title}
                 description={project.description}

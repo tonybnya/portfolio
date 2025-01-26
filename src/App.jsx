@@ -112,7 +112,7 @@ const App = () => {
 
         <hr className="border-1 border-[#4A5565] mb-12 animate" />
         {/* <Projects className="animate bg-[#1D202A]" /> */}
-        <Projects className="animate bg-white" />
+        <Projects className="animate" />
         <hr className="border-1 border-[#4A5565] mb-12 animate" />
         <Progression className="animate" />
         <hr className="border-1 border-[#4A5565] mb-12 animate" />
