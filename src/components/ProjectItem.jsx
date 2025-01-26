@@ -105,7 +105,7 @@ const ProjectItem = ({
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="inline-block px-2 py-1 font-semibold border-2 border-black text-gray-400 rounded-md"
+              className="inline-block px-2 py-1 font-semibold border-2 border-[#4A5565] text-gray-400 rounded-md"
               // className="inline-block px-2 py-1 font-semibold border-2 border-gray-50 rounded-md"
               // className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-gray-50 rounded-md"
             >
@@ -117,14 +117,14 @@ const ProjectItem = ({
           <a
             href={liveUrl}
             target="_blank"
-            className="bg-black px-4 py-2 rounded-md hover:bg-black/50"
+            className="bg-black px-4 py-2 border-2 border-[#4A5565] rounded-md hover:bg-black/10"
           >
             Live <i class="fa-solid fa-square-up-right"></i>
           </a>
           <a
             href={sourceUrl}
             target="_blank"
-            className="bg-black px-4 py-2 rounded-md hover:bg-black/50"
+            className="bg-black px-4 py-2 border-2 border-[#4A5565] rounded-md hover:bg-black/10"
           >
             Source <i className="fa-brands fa-github"></i>
           </a>
