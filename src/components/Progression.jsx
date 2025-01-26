@@ -48,7 +48,7 @@ const Progression = () => {
   }, []);
 
   return (
-    <div className="text-gray-50">
+    <div id="progression" className="text-gray-50">
       <Title>Progression</Title>
       <div className="flex flex-col md:flex-row justify-center my-20">
         <div className="w-full md:w-7/12">

@@ -48,7 +48,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="text-gray-50">
+    <div id="projects" className="text-gray-50">
       {/* // TODO: Change the title to 'Portfolio' when I'll separate my personal and side projects with freelance projects */}
       {/* // The Portfolio API should probably be changed for that */}
 

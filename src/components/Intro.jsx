@@ -8,7 +8,10 @@ import Social from "./Social";
 
 const Intro = () => {
   return (
-    <div className="flex justify-center items-center max-lg:flex-col">
+    <div
+      id="intro"
+      className="flex justify-center items-center max-lg:flex-col"
+    >
       <div className="flex flex-col justify-center items-center py-6 w-3/4 mx-auto max-sm:w-full">
         <img
           src={profile}

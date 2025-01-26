@@ -5,7 +5,10 @@ import Title from "./Title";
 
 const SkillsSlider = () => {
   return (
-    <div className="mb-12 flex flex-col justify-center items-center gap-4 text-black dark:text-white">
+    <div
+      id="skills"
+      className="mb-12 flex flex-col justify-center items-center gap-4 text-black dark:text-white"
+    >
       <Title>Skills</Title>
       <Marquee>
         {data.map((skill) => (
