@@ -28,16 +28,12 @@ const App = () => {
 
       <div className="container mx-auto px-4 max-sm:px-6">
         <Intro className="animate" />
-        {/* <hr className="border-[#4A5565] mb-12 animate" /> */}
 
         <SkillsSlider />
-        {/* <hr className="border-[#4A5565] mb-12 animate" /> */}
 
         <Projects className="animate" />
-        {/* <hr className="border-[#4A5565] mb-12 animate" /> */}
 
         <Progression className="animate" />
-        {/* <hr className="border-[#4A5565] mb-12 animate" /> */}
 
         <Contact className="animate" />
         <hr className="border-2 border-[#4A5565] mb-12 animate" />

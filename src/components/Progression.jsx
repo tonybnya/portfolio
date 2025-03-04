@@ -10,7 +10,7 @@ const Progression = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const API_PROJECTS_URL =
-    "https://portfolio-api-nq76.onrender.com/api/timelines";
+    "https://tonybnya-portfolio-api.onrender.com/api/timelines";
   const API_OPTIONS = {
     method: "GET",
     headers: {

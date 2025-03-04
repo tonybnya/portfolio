@@ -10,7 +10,7 @@ const Projects = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const API_PROJECTS_URL =
-    "https://portfolio-api-nq76.onrender.com/api/projects";
+    "https://tonybnya-portfolio-api.onrender.com/api/projects";
   const API_OPTIONS = {
     method: "GET",
     headers: {
