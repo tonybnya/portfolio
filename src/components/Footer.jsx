@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="text-center py-4 text-gray-50">
       <Social />
       <p className="font-light mt-2">
-        &copy; Copyright {new Date().getFullYear()} &bull; All Rights Reserved.
+        &copy; {new Date().getFullYear()} &bull; All Rights Reserved.
       </p>
     </div>
   );
