@@ -9,8 +9,7 @@ const Projects = () => {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  const API_PROJECTS_URL =
-    "https://tonybnya-portfolio-api.onrender.com/api/projects";
+  const API_PROJECTS_URL = import.meta.env.VITE_API_PROJECTS_URL;
   const API_OPTIONS = {
     method: "GET",
     headers: {

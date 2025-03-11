@@ -9,8 +9,7 @@ const Progression = () => {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  const API_PROJECTS_URL =
-    "https://tonybnya-portfolio-api.onrender.com/api/timelines";
+  const API_TIMELINES_URL = import.meta.env.VITE_API_TIMELINES_URL;
   const API_OPTIONS = {
     method: "GET",
     headers: {
@@ -23,7 +22,7 @@ const Progression = () => {
     setError("");
 
     try {
-      const response = await fetch(API_PROJECTS_URL, API_OPTIONS);
+      const response = await fetch(API_TIMELINES_URL, API_OPTIONS);
       if (!response.ok) {
         throw new Error("Failed to fetch timelines");
       }
