@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
 
-import Navbar from "../components/Navbar";
 import Intro from "../components/Intro";
 import SkillsSlider from "../components/SkillsSlider";
 import Projects from "../components/Projects";
@@ -24,8 +23,6 @@ const App = () => {
       whileInView="onscreen"
       viewport={{ amount: 0.8 }}
     >
-      {/* <Navbar /> */}
-
       <div className="container mx-auto px-4 max-sm:px-6">
         <Intro className="animate" />
         <SkillsSlider />
@@ -33,9 +30,9 @@ const App = () => {
         <Progression className="animate" />
         <Contact className="animate" />
 
-        <hr className="border-2 border-[#4A5565] mb-12 animate" />
+        <hr className="border-t border-[4a5565] mb-12 animate" />
 
-        {/* <Footer className="animate" /> */}
+        <Footer className="animate" />
       </div>
     </motion.div>
   );

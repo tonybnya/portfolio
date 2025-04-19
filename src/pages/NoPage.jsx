@@ -29,9 +29,16 @@ const NotFoundPage = () => {
             found!
           </h1>
           <p className="text-lg max-lg:text-sm font-light leading-6 tracking-tight">
-            Home is just a click away. Let&apos;s go back and
+            <a
+              href="https://github.com/tonybnya"
+              target="_blank"
+              className="text-yellow-500 font-bold animate-pulse"
+            >
+              Tony
+            </a>{" "}
+            is just in a click away. Let&apos;s go back and
             <br />
-            continue with me.
+            continue with serious stuff.
           </p>
 
           <a
