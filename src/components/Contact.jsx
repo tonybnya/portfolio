@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Title from "./Title";
 import Button from "./Button";
 
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -58,18 +60,16 @@ const Contact = () => {
         "service_hqan2qq",
         "template_3emhzxb",
         e.target,
-        "rViCArmTeZsa-lczA"
+        "rViCArmTeZsa-lczA",
       )
       .then((response) => {
         console.log("Email sent successfully!", response.status, response.text);
-
         setFormData({
           name: "",
           email: "",
           message: "",
         });
-
-        alert("Email sent successfully!");
+        navigate("/thanks");
       })
       .catch((error) => {
         console.error("Error sending email:", error);
