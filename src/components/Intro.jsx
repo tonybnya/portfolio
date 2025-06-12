@@ -32,14 +32,25 @@ const Intro = () => {
         {/* <p className="first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left dark:text-zinc-50 text-black text-justify py-4 font-light text-sm tracking-wider max-sm:text-xs"> */}
 
         <p className="fade first-letter:text-7xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light text-sm tracking-normal max-sm:text-xs">
-          I &apos;m a Software Engineer with a strong foundation in AI, Web
-          Development, and Software Development, holding certifications from
-          ALX, Sayna Academy, and the GitHub All In Open Source program. With a
-          Bachelor&apos;s in Computer Science and nearly a decade of experience
-          in Diplomacy and Public Administration, I bring a unique set of
-          technical expertise, project management, and problem-solving skills.
-          Passionate about leveraging technology to drive innovation, I&apos;m
-          good on solving complex challenges and embracing lifelong learning.
+          {/* I &apos;m a Software Engineer with a strong foundation in AI, Web */}
+          {/* Development, and Software Development, holding certifications from */}
+          {/* ALX, Sayna Academy, and the GitHub All In Open Source program. With a */}
+          {/* Bachelor&apos;s in Computer Science and nearly a decade of experience */}
+          {/* in Diplomacy and Public Administration, I bring a unique set of */}
+          {/* technical expertise, project management, and problem-solving skills. */}
+          {/* Passionate about leveraging technology to drive innovation, I&apos;m */}
+          {/* good on solving complex challenges and embracing lifelong learning. */}
+          I &apos;m a Full Stack Software Engineer with a strong focus on
+          backend architecture, clean API design, and scalable frontend
+          interfaces. I&apos;m specialized in Python (Flask, FastAPI, Django),
+          JavaScript/TypeScript (Node.js, React, Angular), and modern DevOps
+          practices — backed by hands-on experience leading and building
+          production-grade systems for real-world applications.
+          <br />
+          <br />
+          I&apos;m also passionate about DSA (Data Structures and Algorithms)
+          and System Design — which gives me the ability to break down complex
+          problems into clear, efficient solutions.
         </p>
 
         {/* <p className="fade first-letter:text-7xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light text-sm tracking-wider max-sm:text-xs">
