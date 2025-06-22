@@ -13,7 +13,7 @@ const Navbar = () => {
           >
             <img src="/assets/images/portfolio.svg" alt="logo" />
           </a>
-          <span className="text-gray-50 tracking-wider">Portfolio</span>
+          <span className="text-gray-50 font-dm tracking-wider">Portfolio</span>
         </div>
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -49,7 +49,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#intro"
-                className="block py-2 px-3 text-white font-righteous text-xl max-lg:text-lg hover:underline bg-transparent md:p-0"
+                className="block py-2 px-3 text-white font-dm text-xl max-lg:text-lg hover:underline bg-transparent md:p-0"
                 aria-current="page"
               >
                 Intro
@@ -58,7 +58,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#skills"
-                className="block py-2 px-3 text-white font-righteous text-xl max-lg:text-lg hover:underline bg-transparent md:p-0"
+                className="block py-2 px-3 text-white font-dm text-xl max-lg:text-lg hover:underline bg-transparent md:p-0"
               >
                 Skills
               </a>
@@ -66,7 +66,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#projects"
-                className="block py-2 px-3 text-white font-righteous text-xl max-lg:text-lg hover:underline bg-transparent md:p-0"
+                className="block py-2 px-3 text-white font-dm text-xl max-lg:text-lg hover:underline bg-transparent md:p-0"
               >
                 Projects
               </a>
@@ -74,7 +74,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#progression"
-                className="block py-2 px-3 text-white font-righteous text-xl max-lg:text-lg hover:underline bg-transparent md:p-0"
+                className="block py-2 px-3 text-white font-dm text-xl max-lg:text-lg hover:underline bg-transparent md:p-0"
               >
                 Progression
               </a>
@@ -82,7 +82,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#contact"
-                className="block py-2 px-3 text-white font-righteous text-xl max-lg:text-lg hover:underline bg-transparent md:p-0"
+                className="block py-2 px-3 text-white font-dm text-xl max-lg:text-lg hover:underline bg-transparent md:p-0"
               >
                 Contact
               </a>

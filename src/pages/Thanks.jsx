@@ -53,13 +53,12 @@ const Thanks = () => {
     <div className="flex flex-col items-center justify-center min-h-screen text-white">
       <h1
         id="thanks"
-        className="opacity-0 translate-y-10 text-4xl font-bold mb-4"
+        className="opacity-0 translate-y-10 text-4xl font-bold font-dm mb-4"
       >
         Thank You!
       </h1>
-      <p className="msg text-xl mb-8 text-center max-w-md">
-        I have received your message and will respond to you as soon as
-        possible.
+      <p className="msg text-xl font-mona mb-8 text-center max-w-md">
+        I have received your message and will respond as soon as possible.
       </p>
       <Button
         text="Return Home"

@@ -7,6 +7,9 @@ export default {
       fontFamily: {
         righteous: ["Righteous", "sans-serif"],
         source: ["Source Sans 3", "sans-serif"],
+        modern: ["Modern Negra", "sans-serif"],
+        mona: ["Mona Sans", "sans-serif"],
+        dm: ["DM Serif Text", "serif"],
       },
       dropShadow: {
         custom: "50px 50px 100px white",

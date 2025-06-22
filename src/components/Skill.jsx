@@ -4,7 +4,7 @@ const Skill = ({ svg, title }) => {
       <div className="w-20 h-20 p-2 flex justify-center items-center">
         {svg}
       </div>
-      <p className="font-normal font-righteous text-white">{title}</p>
+      <p className="font-normal font-mona text-white">{title}</p>
     </div>
   );
 };

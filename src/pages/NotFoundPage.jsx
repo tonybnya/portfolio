@@ -18,20 +18,20 @@ const NotFoundPage = () => {
       >
         <div className="flex flex-col items-center gap-3 mb-12">
           <img src={logo} className="h-12 w-12 max-lg:w-10 max-lg:h-10" />
-          <span className="text-4xl max-lg:text-lg font-bold text-white tracking-tight">
+          <span className="text-4xl max-lg:text-lg font-bold font-dm text-white tracking-tight">
             Portfolio
           </span>
         </div>
 
         <div className="text-center space-y-4 mb-12 flex flex-col gap-4">
-          <h1 className="text-4xl max-lg:text-lg font-semibold leading-none tracking-tight">
+          <h1 className="text-4xl max-lg:text-lg font-semibold font-mona leading-none tracking-tight">
             Oops! You have
             <br />
             discovered a world not
             <br />
             found!
           </h1>
-          <p className="text-lg max-lg:text-sm font-light leading-6 tracking-tight">
+          <p className="text-lg max-lg:text-sm font-light font-modern leading-6 tracking-tight">
             <a
               href="https://github.com/tonybnya"
               target="_blank"
@@ -46,7 +46,7 @@ const NotFoundPage = () => {
 
           <a
             href="/"
-            className="uppercase max-sm:text-sm py-2 px-4 rounded-md hover:cursor-pointer hover:bg-[#0f1115]/50 hover:scale-105 bg-[#0f1115]"
+            className="uppercase font-semibold tracking-wide font-dm max-sm:text-sm py-2 px-4 rounded-md hover:cursor-pointer hover:bg-[#0f1115]/50 hover:scale-105 bg-[#0f1115]"
             rel="noopener noreferrer"
             aria-label="Go to home page"
           >
@@ -54,7 +54,7 @@ const NotFoundPage = () => {
           </a>
         </div>
 
-        <div className="mt-12 text-[#8f7d5e] text-sm font-bold">
+        <div className="mt-12 text-[#8f7d5e] text-sm font-bold font-modern">
           <span>Error Code 404</span>
         </div>
       </div>

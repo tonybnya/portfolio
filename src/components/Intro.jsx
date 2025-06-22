@@ -18,14 +18,14 @@ const Intro = () => {
           alt="profile"
           className="inline-block lg:w-24 max-lg:w-16 pb-4 shadow-transparent drop-shadow-custom animate-pulse rounded-full"
         />
-        <h1 className="font-righteous text-5xl tracking-wider md:text-3xl max-sm:text-2xl text-white inline-block">
+        <h1 className="font-dm text-5xl tracking-wider md:text-3xl max-sm:text-2xl text-white inline-block">
           <ReactTyped strings={["Tony B. NYA"]} typeSpeed={300} loop />
         </h1>
-        <h3 className="text-gray-500 font-righteous text-xl font-medium tracking-wider pt-2 md:text-sm max-sm:text-xs">
+        <h3 className="text-gray-500 font-mona text-xl font-medium tracking-wider pt-2 md:text-sm max-sm:text-xs">
           <ReactTyped strings={["Software Engineer"]} typeSpeed={100} loop />
         </h3>
 
-        <p className="fade first-letter:text-7xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light text-sm tracking-normal max-sm:text-xs">
+        <p className="fade first-letter:text-7xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs">
           I &apos;m a Full Stack Software Engineer with a strong focus on
           backend architecture, clean API design, and scalable frontend
           interfaces. I&apos;m specialized in JavaScript/TypeScript (Node.js,
