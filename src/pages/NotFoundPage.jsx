@@ -1,5 +1,5 @@
 import bg from "/assets/images/bg.png";
-import logo from "/portfolio.svg";
+import logo from "/assets/images/portfolio.svg";
 
 const NotFoundPage = () => {
   return (

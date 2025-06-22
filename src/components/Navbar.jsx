@@ -11,7 +11,7 @@ const Navbar = () => {
             href="/"
             className="inline-flex items-center justify-center text-decoration-none bg-black text-white rounded-full w-12 h-12 text-2xl"
           >
-            P
+            <img src="/assets/images/portfolio.svg" alt="logo" />
           </a>
           <span className="text-gray-50 tracking-wider">Portfolio</span>
         </div>
