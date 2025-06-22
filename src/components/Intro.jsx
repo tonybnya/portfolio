@@ -28,8 +28,8 @@ const Intro = () => {
         <p className="fade first-letter:text-7xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light text-sm tracking-normal max-sm:text-xs">
           I &apos;m a Full Stack Software Engineer with a strong focus on
           backend architecture, clean API design, and scalable frontend
-          interfaces. I&apos;m specialized in Python (Flask, FastAPI, Django),
-          JavaScript/TypeScript (Node.js, React, Angular), and modern DevOps
+          interfaces. I&apos;m specialized in JavaScript/TypeScript (Node.js,
+          React, Angular), Python (Flask, FastAPI, Django), and modern DevOps
           practices — backed by hands-on experience leading and building
           production-grade systems for real-world applications.
           <br />
