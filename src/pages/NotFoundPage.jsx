@@ -1,4 +1,4 @@
-import bg from "/bg.png";
+import bg from "/assets/images/bg.png";
 import logo from "/portfolio.svg";
 
 const NotFoundPage = () => {
@@ -12,7 +12,10 @@ const NotFoundPage = () => {
         />
       </div>
 
-      <div className="w-1/2 flex flex-col justify-between max-lg:justify-center items-center p-8 bg-black min-h-screen">
+      <div
+        className="w-1/2 flex flex-col justify-between max-lg:justify-center items-center p-8 bg-black min-h-screen bg-repeat relative"
+        style={{ backgroundImage: "url('/assets/images/noise.jpg')" }}
+      >
         <div className="flex flex-col items-center gap-3 mb-12">
           <img src={logo} className="h-12 w-12 max-lg:w-10 max-lg:h-10" />
           <span className="text-4xl max-lg:text-lg font-bold text-white tracking-tight">
@@ -43,7 +46,7 @@ const NotFoundPage = () => {
 
           <a
             href="/"
-            className="uppercase max-sm:text-sm py-2 px-4 rounded-md hover:cursor-pointer hover:bg-[#602f32]/50 hover:scale-105 bg-[#602f32]"
+            className="uppercase max-sm:text-sm py-2 px-4 rounded-md hover:cursor-pointer hover:bg-[#0f1115]/50 hover:scale-105 bg-[#0f1115]"
             rel="noopener noreferrer"
             aria-label="Go to home page"
           >

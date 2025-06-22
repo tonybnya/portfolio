@@ -7,7 +7,7 @@ import Progression from "../components/Progression";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
-const App = () => {
+const Home = () => {
   const animateElements = document.querySelectorAll(".animate");
 
   animateElements.forEach((element, index) => {
@@ -18,7 +18,6 @@ const App = () => {
 
   return (
     <motion.div
-      className="bg-[#0f1115]"
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ amount: 0.8 }}
@@ -38,4 +37,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;

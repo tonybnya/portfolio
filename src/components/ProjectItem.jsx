@@ -38,9 +38,6 @@ const ProjectItem = ({
   };
 
   return (
-    // <div className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden">
-    // <div className="border-2 border-white rounded-md overflow-hidden">
-    // <div className="border-2 border-black rounded-md overflow-hidden">
     <div className="border-2 border-[#4A5565] rounded-md overflow-hidden bg-[#030713]">
       <div
         className="relative"
@@ -93,7 +90,7 @@ const ProjectItem = ({
           </>
         )}
       </div>
-      {/* <div className="w-full p-4 dark:text-gray-50 text-black"> */}
+
       <div className="w-full p-4 text-gray-50">
         <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-righteous tracking-wide">
           {title}
@@ -106,8 +103,6 @@ const ProjectItem = ({
             <span
               key={index}
               className="inline-block px-2 py-1 font-semibold border-2 border-[#4A5565] text-gray-400 rounded-md"
-              // className="inline-block px-2 py-1 font-semibold border-2 border-gray-50 rounded-md"
-              // className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-gray-50 rounded-md"
             >
               {tag}
             </span>

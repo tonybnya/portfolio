@@ -50,7 +50,7 @@ const Thanks = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#0f1115] text-white">
+    <div className="flex flex-col items-center justify-center min-h-screen text-white">
       <h1
         id="thanks"
         className="opacity-0 translate-y-10 text-4xl font-bold mb-4"
@@ -71,4 +71,3 @@ const Thanks = () => {
 };
 
 export default Thanks;
-
