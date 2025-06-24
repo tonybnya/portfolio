@@ -4,7 +4,8 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-[#0f1115]">
+    // <nav className="bg-[#0f1115]">
+    <nav className="bg-black shadow-lg shadow-white/50 drop-shadow-xl">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div className="flex items-center font-righteous gap-2 max-sm:left-4">
           <a
