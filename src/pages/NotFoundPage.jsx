@@ -46,7 +46,7 @@ const NotFoundPage = () => {
 
           <a
             href="/"
-            className="uppercase font-semibold tracking-wide font-dm max-sm:text-sm py-2 px-4 rounded-md hover:cursor-pointer hover:bg-[#0f1115]/50 hover:scale-105 bg-[#0f1115]"
+            className="uppercase font-semibold tracking-wide font-dm max-sm:text-sm py-2 px-4 rounded-md hover:cursor-pointer hover:bg-black/50 hover:scale-105 bg-black shadow-lg shadow-white/50 drop-shadow-xl"
             rel="noopener noreferrer"
             aria-label="Go to home page"
           >
