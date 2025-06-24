@@ -58,6 +58,14 @@ const Intro = () => {
               icon={<i className="fa-solid fa-envelope animate-bounce"></i>}
             />
           </a>
+
+          <a href="https://self.so/tonybnya" target="_blank">
+            <Button
+              type="button"
+              text="Profile → Page"
+              icon={<i className="fas fa-user animate-bounce"></i>}
+            />
+          </a>
         </div>
 
         <a
