@@ -6,7 +6,32 @@ import resume from "/assets/docs/CV-tonybnya.pdf";
 import Button from "./Button";
 import Social from "./Social";
 
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 const Intro = () => {
+  useGSAP(() => {
+    gsap.to(".personal", {
+      ease: "power1.inOut",
+      opacity: 1,
+      y: 0,
+    });
+
+    gsap.fromTo(
+      ".para",
+      {
+        opacity: 0,
+        y: 50,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        delay: 1,
+        stagger: 0.1,
+      },
+    );
+  });
+
   return (
     <div
       id="intro"
@@ -18,22 +43,22 @@ const Intro = () => {
           alt="profile"
           className="inline-block lg:w-24 max-lg:w-16 pb-4 shadow-transparent drop-shadow-custom animate-pulse rounded-full"
         />
-        <h1 className="font-dm text-5xl tracking-wider md:text-3xl max-sm:text-2xl text-white inline-block">
+        <h1 className="font-dm text-5xl tracking-wider md:text-3xl max-sm:text-2xl text-white inline-block personal opacity-0 translate-y-10">
           <ReactTyped strings={["Tony B. NYA"]} typeSpeed={300} loop />
         </h1>
-        <h3 className="text-gray-500 font-mona text-xl font-medium tracking-wider pt-2 md:text-sm max-sm:text-xs">
+        <h3 className="text-gray-500 font-mona text-xl font-medium tracking-wider pt-2 md:text-sm max-sm:text-xs personal">
           <ReactTyped strings={["Software Engineer"]} typeSpeed={100} loop />
         </h3>
 
-        <p className="fade first-letter:text-7xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs">
+        <p className="first-letter:text-7xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para">
           I &apos;m a Full Stack Software Engineer with a strong focus on
           backend architecture, clean API design, and scalable frontend
           interfaces. I&apos;m specialized in JavaScript/TypeScript (Node.js,
           React, Angular), Python (Flask, FastAPI, Django), and modern DevOps
           practices — backed by hands-on experience leading and building
           production-grade systems for real-world applications.
-          <br />
-          <br />
+        </p>
+        <p className="text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para">
           I&apos;m also passionate about DSA (Data Structures and Algorithms)
           and System Design — which gives me the ability to break down complex
           problems into clear, efficient solutions.
