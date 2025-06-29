@@ -1,6 +1,6 @@
 import Marquee from "react-fast-marquee";
 import Skill from "./Skill";
-import data from "../data/skillsData";
+import skills from "../constants/index.js";
 import Title from "./Title";
 
 const SkillsSlider = () => {
@@ -11,7 +11,7 @@ const SkillsSlider = () => {
     >
       <Title>Skills</Title>
       <Marquee>
-        {data.map((skill) => (
+        {skills.map((skill) => (
           <Skill
             key={skill.id}
             svg={<img src={skill.svg} alt={`${skill.name} logo`} />}
