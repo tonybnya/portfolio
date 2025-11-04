@@ -6,6 +6,10 @@ import NotFoundPage from "./pages/NotFoundPage";
 import Thanks from "./pages/Thanks";
 
 import "./styles/tailwind.css";
+import gsap from "gsap";
+import { ScrollTrigger, SplitText } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
   return (

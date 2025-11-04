@@ -50,19 +50,31 @@ const Intro = () => {
           <ReactTyped strings={["Software Engineer"]} typeSpeed={100} loop />
         </h3>
 
+        {/* <p className="first-letter:text-7xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para"> */}
+        {/*   I &apos;m a Full Stack Software Engineer with a strong focus on */}
+        {/*   backend architecture, clean API design, and scalable frontend */}
+        {/*   interfaces. I&apos;m specialized in JavaScript/TypeScript (Node.js, */}
+        {/*   React, Angular), Python (Flask, FastAPI, Django), and modern DevOps */}
+        {/*   practices — backed by hands-on experience leading and building */}
+        {/*   production-grade systems for real-world applications. */}
+        {/* </p> */}
+        {/* <p className="text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para"> */}
+        {/*   I&apos;m also passionate about DSA (Data Structures and Algorithms) */}
+        {/*   and System Design — which gives me the ability to break down complex */}
+        {/*   problems into clear, efficient solutions. */}
+        {/* </p> */}
+
         <p className="first-letter:text-7xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para">
-          I &apos;m a Full Stack Software Engineer with a strong focus on
-          backend architecture, clean API design, and scalable frontend
-          interfaces. I&apos;m specialized in JavaScript/TypeScript (Node.js,
-          React, Angular), Python (Flask, FastAPI, Django), and modern DevOps
-          practices — backed by hands-on experience leading and building
-          production-grade systems for real-world applications.
+          I &apos;m a software engineer with 5+ years experience specialized in backend engineering with a unique background. I spent nearly a decade working in Diplomacy before transitioning into technology. That experience shaped my ability to communicate clearly, manage stakeholders, and analyze complex systems; skills I now bring into every engineering project I take on.
         </p>
-        <p className="text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para">
-          I&apos;m also passionate about DSA (Data Structures and Algorithms)
-          and System Design — which gives me the ability to break down complex
-          problems into clear, efficient solutions.
-        </p>
+
+        {/* <p className="text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para"> */}
+        {/*   I&apos;m also passionate about DSA (Data Structures and Algorithms) */}
+        {/*   and System Design — which gives me the ability to break down complex */}
+        {/*   problems into clear, efficient solutions. */}
+        {/* </p> */}
+
+        <p className="text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para">I help researchers and innovators achieve academic and technological impact by developing specialized tools that bridge language and technology. For instance, I assisted an international linguist in creating a glossary application for disruptive technologies such as AI, Big Data, and Blockchain, part of his PhD thesis presented at Dalhousie University in Canada, with an 80% approval rating from the thesis committee.</p>
 
         <div className="flex gap-2 py-4">
           <Social />

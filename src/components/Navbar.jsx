@@ -1,11 +1,34 @@
 import { useState } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  useGSAP(() => {
+    const navTween = gsap.timeline({
+      scrollTrigger: {
+        trigger: "nav",
+        start: "bottom top",
+      },
+    });
+
+    navTween.fromTo(
+      "nav",
+      { backgroundColor: "transparent" },
+      {
+        backgroundColor: "#0f111550",
+        backgroundFilter: "blur(10px)",
+        duration: 1,
+        ease: "power1.inOut",
+      },
+    );
+  });
+
   return (
     // <nav className="bg-[#0f1115]">
-    <nav className="bg-black shadow-lg shadow-white/50 drop-shadow-xl">
+    // <nav className="bg-black shadow-lg shadow-white/50 drop-shadow-xl">
+    <nav className="">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div className="flex items-center font-righteous gap-2 max-sm:left-4">
           <a
