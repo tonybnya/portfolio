@@ -65,7 +65,7 @@ const Intro = () => {
         {/* </p> */}
 
         <p className="first-letter:text-7xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para">
-          I &apos;m a software engineer with 3+ years experience specialized in backend engineering with a unique background. I spent nearly a decade working in Diplomacy before transitioning into technology. That experience shaped my ability to communicate clearly, manage stakeholders, and analyze complex systems; skills I now bring into every engineering project I take on.
+          I &apos;m a software engineer with 4+ years experience specialized in backend engineering with a unique background. I spent nearly a decade working in Diplomacy before transitioning into technology. That experience shaped my ability to communicate clearly, manage stakeholders, and analyze complex systems; skills I now bring into every engineering project I take on.
         </p>
 
         {/* <p className="text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para"> */}
