@@ -5,6 +5,7 @@ import badge from "/assets/images/all-in-open-source-contributor.png";
 import resume from "/assets/docs/tonybnya_SWE_CV.pdf";
 import Button from "./Button";
 import Social from "./Social";
+import ASCIIComputerAnimation from './ASCIIComputerAnimation';
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -47,7 +48,7 @@ const Intro = () => {
           <ReactTyped strings={["Tony B. NYA"]} typeSpeed={300} loop />
         </h1>
         <h3 className="text-gray-500 font-mona text-xl font-medium tracking-wider pt-2 md:text-sm max-sm:text-xs personal">
-          <ReactTyped strings={["Software Engineer"]} typeSpeed={100} loop />
+          <ReactTyped strings={["Backend Software Engineer"]} typeSpeed={100} loop />
         </h3>
 
         {/* <p className="first-letter:text-7xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para"> */}
@@ -64,8 +65,13 @@ const Intro = () => {
         {/*   problems into clear, efficient solutions. */}
         {/* </p> */}
 
-        <p className="first-letter:text-7xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para">
-          I &apos;m a software engineer with 4+ years experience specialized in backend engineering with a unique background. I spent nearly a decade working in Diplomacy before transitioning into technology. That experience shaped my ability to communicate clearly, manage stakeholders, and analyze complex systems; skills I now bring into every engineering project I take on.
+        <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-2 first-letter:float-left text-zinc-50 text-justify py-4 font-medium font-mona text-sm tracking-normal max-sm:text-xs para">
+          {/* I &apos;m a software engineer with 4+ years experience specialized in backend engineering with a unique background. I spent nearly a decade working in Diplomacy before transitioning into technology. That experience shaped my ability to communicate clearly, manage stakeholders, and analyze complex systems; skills I now bring into every engineering project I take on. */}
+
+Backend Software Engineer building robust APIs and scalable systems for complex products. Specialized in Python (FastAPI, Flask, Django).<br /><br />
+• Experience across SaaS, Fintech, data, research, and business platforms<br />
+• Built a Glossary app for a PhD-level research system (Canada): 80% approval<br />
+• Results on Local Business apps: +20% bookings · +35% conversion
         </p>
 
         {/* <p className="text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para"> */}
@@ -74,7 +80,7 @@ const Intro = () => {
         {/*   problems into clear, efficient solutions. */}
         {/* </p> */}
 
-        <p className="text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para">I help researchers and innovators achieve academic and technological impact by developing specialized tools that bridge language and technology. For instance, I assisted an international linguist in creating a glossary application for disruptive technologies such as AI, Big Data, and Blockchain, part of his PhD thesis presented at Dalhousie University in Canada, with an 80% approval rating from the thesis committee.</p>
+        {/* <p className="text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para">I help researchers and innovators achieve academic and technological impact by developing specialized tools that bridge language and technology. For instance, I assisted an international linguist in creating a glossary application for disruptive technologies such as AI, Big Data, and Blockchain, part of his PhD thesis presented at Dalhousie University in Canada, with an 80% approval rating from the thesis committee.</p> */}
 
         <div className="flex gap-2 py-4">
           <Social />
@@ -116,13 +122,14 @@ const Intro = () => {
         </a>
       </div>
       <div className="flex flex-col gap-4 justify-center items-center w-full">
-        <DotLottieReact
-          src="https://lottie.host/45e3d71a-c783-4c04-84d7-a529f667c8f8/4zdFKQb256.lottie"
-          loop
-          autoplay
-          width={500}
-          height={500}
-        />
+        <ASCIIComputerAnimation />
+        {/* <DotLottieReact */}
+        {/*   src="https://lottie.host/45e3d71a-c783-4c04-84d7-a529f667c8f8/4zdFKQb256.lottie" */}
+        {/*   loop */}
+        {/*   autoplay */}
+        {/*   width={500} */}
+        {/*   height={500} */}
+        {/* /> */}
       </div>
     </div>
   );
