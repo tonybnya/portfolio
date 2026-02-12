@@ -32,16 +32,17 @@ const NotFoundPage = () => {
             found!
           </h1>
           <p className="text-lg max-lg:text-sm font-light font-modern leading-6 tracking-tight">
-            <a
-              href="https://github.com/tonybnya"
-              target="_blank"
-              className="text-yellow-500 font-bold animate-pulse"
-            >
-              Tony
-            </a>{" "}
-            is just in a click away. Let&apos;s go back and
-            <br />
-            continue with serious stuff.
+            {/* <a */}
+            {/*   href="https://github.com/tonybnya" */}
+            {/*   target="_blank" */}
+            {/*   className="text-yellow-500 font-bold animate-pulse" */}
+            {/* > */}
+            {/*   Tony */}
+            {/* </a>{" "} */}
+            {/* is just in a click away. Let&apos;s go back and */}
+            {/* <br /> */}
+            {/* continue with serious stuff. */}
+            Return to serious stuff.
           </p>
 
           <a
@@ -50,7 +51,8 @@ const NotFoundPage = () => {
             rel="noopener noreferrer"
             aria-label="Go to home page"
           >
-            Go to Home
+            Home
+            {/* Go to Home */}
           </a>
         </div>
 
