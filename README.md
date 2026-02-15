@@ -1,8 +1,7 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repo contains the source code of my portfolio website.
+[Live](https://tonybnya.onrender.com)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[API Source Code](https://github.com/tonybnya/portfolio-api)
+[Admin Panel Source Code](https://github.com/tonybnya/portfolio-api-admin-panel)
