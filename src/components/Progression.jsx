@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 
 import ProgressionItem from "./ProgressionItem";
-import Spinner from "./Spinner";
+// import Spinner from "./Spinner";
+import SkeletonProgression from "./SkeletonProgression";
 import Title from "./Title";
 
 const Progression = () => {
@@ -52,9 +53,7 @@ const Progression = () => {
       <div className="flex flex-col md:flex-row justify-center my-20">
         <div className="w-full md:w-7/12">
           {isLoading ? (
-            <div className="flex justify-center">
-              <Spinner />
-            </div>
+            <SkeletonProgression />
           ) : error ? (
             <p className="text-red-500 font-mona font-semibold tracking-wide flex justify-center">
               {error}

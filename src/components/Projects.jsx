@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 
 import ProjectItem from "./ProjectItem";
-import Spinner from "./Spinner";
+// import Spinner from "./Spinner";
+import SkeletonProject from "./SkeletonProject";
 import Title from "./Title";
 
 const Projects = () => {
@@ -55,9 +56,7 @@ const Projects = () => {
       <div className="flex flex-col md:flex-row items-center justify-center mb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
           {isLoading ? (
-            <div className="flex justify-center w-full col-span-1 md:col-span-2 lg:col-span-3">
-              <Spinner />
-            </div>
+            <SkeletonProject />
           ) : error ? (
             <p className="text-red-500 font-mona font-semibold tracking-wide flex justify-center w-full col-span-1 md:col-span-2 lg:col-span-3 ">
               {error}
