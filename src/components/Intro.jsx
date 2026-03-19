@@ -2,7 +2,7 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { ReactTyped } from "react-typed";
 import profile from "/assets/images/profile.png";
 import badge from "/assets/images/all-in-open-source-contributor.png";
-import resume from "/assets/docs/tonybnya_SWE_CV.pdf";
+import resume from "/assets/docs/tonybnya_backend.pdf";
 import Button from "./Button";
 import Social from "./Social";
 import ASCIIComputerAnimation from './ASCIIComputerAnimation';
