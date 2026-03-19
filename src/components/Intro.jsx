@@ -5,7 +5,8 @@ import badge from "/assets/images/all-in-open-source-contributor.png";
 import resume from "/assets/docs/tonybnya_backend.pdf";
 import Button from "./Button";
 import Social from "./Social";
-import ASCIIComputerAnimation from './ASCIIComputerAnimation';
+import EvenHorizon from './EventHorizon';
+// import ASCIIComputerAnimation from './ASCIIComputerAnimation';
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -122,7 +123,15 @@ Backend Software Engineer building robust APIs and scalable systems for complex 
         </a>
       </div>
       <div className="flex flex-col gap-4 justify-center items-center w-full">
-        <ASCIIComputerAnimation />
+        {/* <ASCIIComputerAnimation /> */}
+        {/* <EvenHorizon /> */}
+        {/* <EvenHorizon className="h-[500px] lg:h-screen" /> */}
+        {/* <div className="w-full h-[500px] lg:h-screen"> */}
+        {/*   <EvenHorizon /> */}
+        {/* </div> */}
+        <div className="w-full h-[500px]">
+          <EvenHorizon />
+        </div>
         {/* <DotLottieReact */}
         {/*   src="https://lottie.host/45e3d71a-c783-4c04-84d7-a529f667c8f8/4zdFKQb256.lottie" */}
         {/*   loop */}
