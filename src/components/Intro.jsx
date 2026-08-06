@@ -42,14 +42,14 @@ const Intro = () => {
       <div className="flex flex-col justify-center items-center py-6 w-3/4 mx-auto max-sm:w-full">
         <img
           src={profile}
-          alt="profile"
-          className="inline-block lg:w-24 max-lg:w-16 pb-4 shadow-transparent drop-shadow-custom animate-pulse rounded-full"
+          alt="Portrait of Tony B. NYA"
+          className="inline-block lg:w-24 max-lg:w-16 pb-4 rounded-full shadow-[0_0_40px_-10px_rgba(255,255,255,0.35)]"
         />
-        <h1 className="font-dm text-5xl tracking-wider md:text-3xl max-sm:text-2xl text-white inline-block personal opacity-0 translate-y-10">
-          <ReactTyped strings={["Tony B. NYA"]} typeSpeed={300} loop />
+        <h1 className="font-dm text-3xl sm:text-4xl lg:text-5xl tracking-wider text-white inline-block personal opacity-0 translate-y-10">
+          <ReactTyped strings={["Tony B. NYA"]} typeSpeed={120} />
         </h1>
-        <h3 className="text-gray-500 font-mona text-xl font-medium tracking-wider pt-2 md:text-sm max-sm:text-xs personal">
-          <ReactTyped strings={["Backend Software Engineer"]} typeSpeed={100} loop />
+        <h3 className="text-gray-500 font-mona text-base sm:text-lg lg:text-xl font-medium tracking-wider pt-2 personal">
+          <ReactTyped strings={["Backend Software Engineer"]} typeSpeed={80} />
         </h3>
 
         {/* <p className="first-letter:text-7xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para"> */}
@@ -92,7 +92,7 @@ Backend Software Engineer building robust APIs and scalable systems for complex 
             <Button
               type="button"
               text="Resume"
-              icon={<i className="fa-solid fa-download animate-bounce"></i>}
+              icon={<i className="fa-solid fa-download"></i>}
             />
           </a>
           {/* <a href="https://self.so/tonybnya" target="_blank"> */}
@@ -106,7 +106,8 @@ Backend Software Engineer building robust APIs and scalable systems for complex 
             <Button
               type="button"
               text="Contact"
-              icon={<i className="fa-solid fa-envelope animate-bounce"></i>}
+              variant="outline"
+              icon={<i className="fa-solid fa-envelope"></i>}
             />
           </a>
         </div>
@@ -114,11 +115,12 @@ Backend Software Engineer building robust APIs and scalable systems for complex 
         <a
           href="https://www.credly.com/earner/earned/badge/d11a9129-997c-4a1d-8ec7-7ec66c08c477"
           target="_blank"
+          aria-label="View All in Open Source Contributor badge on Credly"
         >
           <img
             src={badge}
-            alt=""
-            className="inline-block w-28 animate-pulse hover:animate-none hover:scale-150"
+            alt="All in Open Source Contributor badge"
+            className="inline-block w-28 transition-transform duration-300 hover:scale-110"
           />
         </a>
       </div>
@@ -129,7 +131,7 @@ Backend Software Engineer building robust APIs and scalable systems for complex 
         {/* <div className="w-full h-[500px] lg:h-screen"> */}
         {/*   <EvenHorizon /> */}
         {/* </div> */}
-        <div className="w-full h-[500px]">
+        <div className="w-full max-w-md lg:max-w-none h-[340px] sm:h-[420px] lg:h-[500px]">
           <EvenHorizon />
         </div>
         {/* <DotLottieReact */}
