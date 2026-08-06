@@ -26,18 +26,16 @@ const Navbar = () => {
   });
 
   return (
-    // <nav className="bg-[#0f1115]">
-    // <nav className="bg-black shadow-lg shadow-white/50 drop-shadow-xl">
     <nav className="">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div className="flex items-center font-righteous gap-2 max-sm:left-4">
           <a
             href="/"
+            aria-label="Tony B. NYA home"
             className="inline-flex items-center justify-center text-decoration-none bg-black text-white rounded-full w-12 h-12 text-2xl"
           >
-            <img src="/assets/images/portfolio.svg" alt="logo" />
+            <img src="/assets/images/portfolio.svg" alt="" />
           </a>
-          {/* <span className="text-gray-50 font-dm tracking-wider">Portfolio</span> */}
         </div>
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -48,7 +46,7 @@ const Navbar = () => {
         >
           <span className="sr-only">Open main menu</span>
           <svg
-            className="w-5 h-5 text-white shadow-lg shadow-white/50 drop-shadow-xl"
+            className="w-5 h-5 text-[#4A5565]"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -73,7 +71,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#intro"
-                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-dm text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent md:p-0 shadow-lg shadow-white/50 drop-shadow-xl"
+                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-dm text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent shadow-lg shadow-white/50 drop-shadow-xl"
                 aria-current="page"
               >
                 Intro
@@ -82,7 +80,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#skills"
-                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-dm text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent md:p-0 shadow-lg shadow-white/50 drop-shadow-xl"
+                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-dm text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent shadow-lg shadow-white/50 drop-shadow-xl"
               >
                 Skills
               </a>
@@ -90,7 +88,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#projects"
-                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-dm text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent md:p-0 shadow-lg shadow-white/50 drop-shadow-xl"
+                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-dm text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent shadow-lg shadow-white/50 drop-shadow-xl"
               >
                 Projects
               </a>
@@ -98,7 +96,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#progression"
-                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-dm text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent md:p-0 shadow-lg shadow-white/50 drop-shadow-xl"
+                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-dm text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent shadow-lg shadow-white/50 drop-shadow-xl"
               >
                 Progression
               </a>
@@ -106,7 +104,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#contact"
-                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-dm text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent md:p-0 shadow-lg shadow-white/50 drop-shadow-xl"
+                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-dm text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent shadow-lg shadow-white/50 drop-shadow-xl"
               >
                 Contact
               </a>

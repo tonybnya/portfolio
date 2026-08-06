@@ -28,7 +28,6 @@ const Progression = () => {
         throw new Error("Failed to fetch timelines");
       }
       const data = await response.json();
-      console.log(data);
       if (!data || data.length === 0) {
         setError("No timelines found.");
         setTimelines([]);

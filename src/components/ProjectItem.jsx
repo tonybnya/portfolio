@@ -112,14 +112,14 @@ const ProjectItem = ({
           <a
             href={liveUrl}
             target="_blank"
-            className="bg-black px-4 py-2 border-2 border-[#4A5565] rounded-md hover:bg-black/10 font-modern"
+            className="px-4 py-2 border-2 border-[#4A5565] rounded-md hover:bg-black/10 font-modern"
           >
             Live <i className="fa-solid fa-square-up-right"></i>
           </a>
           <a
             href={sourceUrl}
             target="_blank"
-            className="bg-black px-4 py-2 border-2 border-[#4A5565] rounded-md hover:bg-black/10 font-modern"
+            className="px-4 py-2 border-2 border-[#4A5565] rounded-md hover:bg-black/10 font-modern"
           >
             Source <i className="fa-brands fa-github"></i>
           </a>

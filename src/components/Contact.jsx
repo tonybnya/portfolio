@@ -13,6 +13,7 @@ const Contact = () => {
     message: "",
   });
   const [errors, setErrors] = useState({});
+  const [formError, setFormError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const validateForm = () => {
@@ -48,6 +49,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setFormError("");
 
     if (!validateForm()) {
       return;
@@ -62,8 +64,7 @@ const Contact = () => {
         e.target,
         "rViCArmTeZsa-lczA",
       )
-      .then((response) => {
-        console.log("Email sent successfully!", response.status, response.text);
+      .then(() => {
         setFormData({
           name: "",
           email: "",
@@ -73,7 +74,7 @@ const Contact = () => {
       })
       .catch((error) => {
         console.error("Error sending email:", error);
-        alert(`Error sending email: ${error.text || "Unknown error"}`);
+        setFormError("Could not send your message. Please try again.");
       })
       .finally(() => {
         setIsSubmitting(false);
@@ -90,6 +91,7 @@ const Contact = () => {
               type="text"
               name="name"
               placeholder="Name"
+              aria-label="Your name"
               value={formData.name}
               onChange={handleChange}
               className={`p-2 w-full bg-transparent border-2 border-[#4A5565] rounded-md focus:outline-none ${
@@ -97,7 +99,7 @@ const Contact = () => {
               }`}
             />
             {errors.name && (
-              <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+              <p className="text-red-500 font-mona text-sm mt-1">{errors.name}</p>
             )}
           </div>
 
@@ -106,6 +108,7 @@ const Contact = () => {
               type="email"
               name="email"
               placeholder="Email"
+              aria-label="Your email"
               value={formData.email}
               onChange={handleChange}
               className={`p-2 w-full bg-transparent border-2 border-[#4A5565] rounded-md focus:outline-none ${
@@ -113,7 +116,7 @@ const Contact = () => {
               }`}
             />
             {errors.email && (
-              <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+              <p className="text-red-500 font-mona text-sm mt-1">{errors.email}</p>
             )}
           </div>
 
@@ -121,6 +124,7 @@ const Contact = () => {
             <textarea
               name="message"
               placeholder="Message"
+              aria-label="Your message"
               value={formData.message}
               onChange={handleChange}
               rows="10"
@@ -129,16 +133,22 @@ const Contact = () => {
               }`}
             />
             {errors.message && (
-              <p className="text-red-500 font-mona font-semibold tracking-wide text-sm mt-1">
+              <p className="text-red-500 font-mona text-sm mt-1">
                 {errors.message}
               </p>
             )}
           </div>
 
+          {formError && (
+            <p className="text-red-500 font-mona text-sm mb-4 text-center" role="alert">
+              {formError}
+            </p>
+          )}
+
           <Button
             type="submit"
             text={isSubmitting ? "Sending..." : "Work With Me"}
-            icon={<i className="fa-solid fa-paper-plane animate-bounce"></i>}
+            icon={<i className="fa-solid fa-paper-plane"></i>}
             disabled={isSubmitting}
           />
         </form>

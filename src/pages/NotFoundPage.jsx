@@ -17,46 +17,35 @@ const NotFoundPage = () => {
         style={{ backgroundImage: "url('/assets/images/noise.jpg')" }}
       >
         <div className="flex flex-col items-center gap-3 mb-12">
-          <img src={logo} className="h-12 w-12 max-lg:w-10 max-lg:h-10" />
-          <span className="text-4xl max-lg:text-lg font-bold font-dm text-white tracking-tight">
+          <img src={logo} alt="Portfolio logo" className="h-12 w-12 max-lg:w-10 max-lg:h-10" />
+          <span className="text-4xl max-lg:text-lg font-dm text-white tracking-wider">
             Portfolio
           </span>
         </div>
 
         <div className="text-center space-y-4 mb-12 flex flex-col gap-4">
-          <h1 className="text-4xl max-lg:text-lg font-semibold font-mona leading-none tracking-tight">
+          <h1 className="text-4xl max-lg:text-lg font-dm leading-tight tracking-wider">
             Oops! You have
             <br />
             discovered a world not
             <br />
             found!
           </h1>
-          <p className="text-lg max-lg:text-sm font-light font-modern leading-6 tracking-tight">
-            {/* <a */}
-            {/*   href="https://github.com/tonybnya" */}
-            {/*   target="_blank" */}
-            {/*   className="text-yellow-500 font-bold animate-pulse" */}
-            {/* > */}
-            {/*   Tony */}
-            {/* </a>{" "} */}
-            {/* is just in a click away. Let&apos;s go back and */}
-            {/* <br /> */}
-            {/* continue with serious stuff. */}
+          <p className="text-lg max-lg:text-sm font-modern leading-6 tracking-normal">
             Return to serious stuff.
           </p>
 
           <a
             href="/"
-            className="uppercase font-semibold tracking-wide font-dm max-sm:text-sm py-2 px-4 rounded-md hover:cursor-pointer hover:bg-black/50 hover:scale-105 bg-black shadow-lg shadow-white/50 drop-shadow-xl"
+            className="uppercase font-medium tracking-wide font-dm max-sm:text-sm py-2 px-4 rounded-md hover:cursor-pointer hover:bg-black/50 hover:scale-105 bg-black shadow-lg shadow-white/50 drop-shadow-xl"
             rel="noopener noreferrer"
             aria-label="Go to home page"
           >
             Home
-            {/* Go to Home */}
           </a>
         </div>
 
-        <div className="mt-12 text-[#8f7d5e] text-sm font-bold font-modern">
+        <div className="mt-12 text-[#9ca3af] text-sm font-bold font-modern">
           <span>Error Code 404</span>
         </div>
       </div>

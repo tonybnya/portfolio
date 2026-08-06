@@ -28,7 +28,6 @@ const Projects = () => {
         throw new Error("Failed to fetch projects");
       }
       const data = await response.json();
-      console.log(data);
       if (!data || data.length === 0) {
         setError("No projects found.");
         setProjects([]);

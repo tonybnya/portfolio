@@ -6,7 +6,7 @@ const SkeletonProgression = () => {
             {[1, 2, 3].map((item) => (
                 <div
                     key={item}
-                    className="flex flex-col md-flex-row relative border-l border-[#4A5565] h-32"
+                    className="flex flex-col relative border-l border-[#4A5565] h-32"
                 >
                     <div className="mb-10 ml-4 w-full text-left">
                         <div className="absolute w-3 h-3 bg-[#4A5565] rounded-full mt-1.5 -left-1.5 border border-[#4A5565]" />

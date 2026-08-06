@@ -1,11 +1,10 @@
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { ReactTyped } from "react-typed";
 import profile from "/assets/images/profile.png";
 import badge from "/assets/images/all-in-open-source-contributor.png";
-import resume from "/assets/docs/tonybnya_backend.pdf";
+import resume from "/assets/docs/cv_tonybnya.pdf";
 import Button from "./Button";
 import Social from "./Social";
-import EvenHorizon from './EventHorizon';
+import EvenHorizon from "./EventHorizon";
 // import ASCIIComputerAnimation from './ASCIIComputerAnimation';
 
 import { useGSAP } from "@gsap/react";
@@ -68,11 +67,17 @@ const Intro = () => {
 
         <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-2 first-letter:float-left text-zinc-50 text-justify py-4 font-medium font-mona text-sm tracking-normal max-sm:text-xs para">
           {/* I &apos;m a software engineer with 4+ years experience specialized in backend engineering with a unique background. I spent nearly a decade working in Diplomacy before transitioning into technology. That experience shaped my ability to communicate clearly, manage stakeholders, and analyze complex systems; skills I now bring into every engineering project I take on. */}
-
-Backend Software Engineer building robust APIs and scalable systems for complex products. Specialized in Python (FastAPI, Flask, Django).<br /><br />
-• Experience across SaaS, Fintech, data, research, and business platforms<br />
-• Built a Glossary app for a PhD-level research system (Canada): 80% approval<br />
-• Results on Local Business apps: +20% bookings · +35% conversion
+          Backend Software Engineer building robust APIs and scalable systems
+          for complex products. Specialized in Python (FastAPI, Flask, Django).
+          <br />
+          <br />
+          • Experience across SaaS, Fintech, data, research, and business
+          platforms
+          <br />
+          • Built a Glossary app for a PhD-level research system (Canada): 80%
+          approval
+          <br />• Results on Local Business apps: +20% bookings · +35%
+          conversion
         </p>
 
         {/* <p className="text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para"> */}
