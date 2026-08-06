@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Title from "./Title";
 import Button from "./Button";
@@ -7,6 +7,7 @@ import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const navigate = useNavigate();
+  const isSending = useRef(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -49,11 +50,13 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setFormError("");
 
-    if (!validateForm()) {
+    if (isSending.current || !validateForm()) {
       return;
     }
+
+    isSending.current = true;
+    setFormError("");
 
     setIsSubmitting(true);
 
@@ -77,6 +80,7 @@ const Contact = () => {
         setFormError("Could not send your message. Please try again.");
       })
       .finally(() => {
+        isSending.current = false;
         setIsSubmitting(false);
       });
   };
