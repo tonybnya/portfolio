@@ -10,7 +10,7 @@ const ProgressionItem = ({ year, timeline, duration, details }) => {
             {year}
           </span>
           <h3 className="text-lg font-dm text-white">{timeline}</h3>
-          <div className="my-1 text-sm font-modern flex items-center gap-1 leading-none text-stone-400">
+          <div className="my-1 text-sm font-mona flex items-center gap-1 leading-none text-stone-400">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

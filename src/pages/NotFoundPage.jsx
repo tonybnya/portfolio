@@ -45,7 +45,7 @@ const NotFoundPage = () => {
           </a>
         </div>
 
-        <div className="mt-12 text-[#9ca3af] text-sm font-bold font-modern">
+        <div className="mt-12 text-[#9ca3af] text-sm font-bold font-mona">
           <span>Error Code 404</span>
         </div>
       </div>
