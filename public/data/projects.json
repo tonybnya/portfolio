@@ -2,7 +2,7 @@
   {
     "_id": "6657aa5836c711adaac6eae6",
     "title": "Developer Portfolio",
-    "description": "Building a sleek portfolio website with React, Tailwind, and Vite to showcase my skills and projects elegantly, and elevate my online presence with modern technology stack. Seamlessly navigate through responsive design.",
+    "description": "Static-first React portfolio built on a custom type-led design system, with content edited through a React Admin panel, stored in MongoDB, and compiled into committed static JSON at every build - delivering zero-latency reads with no runtime API dependency on the live site.",
     "tags": [
       "EmailJS",
       "Lottie",
@@ -26,7 +26,7 @@
     "liveUrl": "https://tonybnya-portfolio.onrender.com",
     "sourceUrl": "https://github.com/tonybnya/portfolio",
     "createdAt": "2024-05-29T22:21:12.210Z",
-    "updatedAt": "2026-02-16T13:34:29.196Z",
+    "updatedAt": "2026-08-07T15:36:53.196Z",
     "__v": 0
   },
   {
