@@ -16,6 +16,7 @@
       "stone": { "role": "neutral", "displayName": "Stone", "canonical": "#a8a29e", "tonalRamp": ["#272625", "#4f4c4a", "#76726f", "#9e9894", "#bdb6b2", "#d8d0cb", "#ede4de", "#faf1eb"], "purpose": "Timeline duration labels." },
       "ember-oxide": { "role": "secondary", "displayName": "Ember Oxide", "canonical": "#862019", "tonalRamp": ["#601712", "#c12e24", "#ff4536", "#ff5c48", "#ff6e56", "#ff7e62", "#ff8a6c", "#ff9272"], "purpose": "Rare warm telemetry glow accent; heat signature, never a fill." },
       "abyss-blue": { "role": "secondary", "displayName": "Abyss Blue", "canonical": "#062A5A", "tonalRamp": ["#062a5b", "#0c55b6", "#127fff", "#18aaff", "#1dccff", "#21e8ff", "#24ffff", "#26ffff"], "purpose": "Rare cool telemetry glow accent; cold counterpart to Ember Oxide." },
+      "amber-signal": { "role": "secondary", "displayName": "Amber Signal", "canonical": "#FFBA00", "tonalRamp": ["#5c4300", "#9c7200", "#d49d00", "#ffba00", "#ffc633", "#ffd35c", "#ffdf85", "#ffe9a8"], "purpose": "The single hot accent allowed as a solid stroke/text color: primary CTA borders (hero Resume/Contact) and the hero role subtitle. Stays scarce; never a fill or gradient." },
       "signal-red": { "role": "neutral", "displayName": "Signal Red", "canonical": "#ef4444", "tonalRamp": ["#581919", "#af3232", "#ff4b4b", "#ff6464", "#ff7878", "#ff8888", "#ff9696", "#ff9e9e"], "purpose": "Functional form-error state only." }
     },
     "typographyMeta": {

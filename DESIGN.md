@@ -14,6 +14,7 @@ colors:
   stone: "#a8a29e"
   ember-oxide: "#862019"
   abyss-blue: "#062A5A"
+  amber-signal: "#FFBA00"
   signal-red: "#ef4444"
 typography:
   display:
@@ -139,12 +140,13 @@ A disciplined monochrome palette with one signature light source and two rare te
 ### Accent (scarce, telemetry-only)
 - **Ember Oxide** (#862019): rare warm glow accent, tokenized as a decorative drop shadow. Use as a heat signature, never as a fill.
 - **Abyss Blue** (#062A5A): rare cool glow accent, tokenized as a decorative drop shadow. The cold counterpart to Ember Oxide.
+- **Amber Signal** (#FFBA00): the single hot accent allowed as a *solid stroke and text color*. Reserved for primary CTA borders (the hero Resume and Contact buttons) and the hero role subtitle, "Backend Software Engineer". Like Ember, it stays scarce: it never fills a surface, never graduates into a gradient, and never spreads beyond ~5% of any screen.
 - **Signal Red** (#ef4444): functional error state only — form validation borders and messages.
 
 ### Named Rules
 **The Glow Rule.** The white halo is the only light source. Soft gray shadows and colored gradients are banned from the system; depth is flat fills plus the halo.
 
-**The Ember Rarity Rule.** Ember Oxide and Abyss Blue appear only as rare accent glows. If either covers more than ~5% of a screen, it is no longer telemetry — it is a leak.
+**The Ember Rarity Rule.** Ember Oxide, Abyss Blue, and Amber Signal appear only as rare accent glows / strokes / text. If any covers more than ~5% of a screen, it is no longer telemetry — it is a leak. Amber is the one exception allowed as a solid stroke (CTA borders) and a text color (the role subtitle); Ember and Abyss remain glow-only, never fills.
 
 **The Slate Line Rule.** Containment is a 2px Halo Slate border or flat separation — never a tinted panel or a card that lifts the background.
 

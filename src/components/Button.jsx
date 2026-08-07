@@ -1,8 +1,8 @@
-const Button = ({ type, text, icon, onClick, disabled, variant = "primary" }) => {
+const Button = ({ type, text, icon, onClick, disabled, variant = "primary", cta = false }) => {
   const styles =
     variant === "outline"
-      ? "text-white border-2 border-[#4A5565] hover:border-white/60 hover:bg-white/5"
-      : "text-white bg-black hover:bg-black/50 hover:scale-105 shadow-lg shadow-white/50 drop-shadow-xl";
+      ? `text-white border-2 ${cta ? "border-[#FFBA00]" : "border-[#4A5565] hover:border-white/60"} hover:bg-white/5`
+      : `text-white bg-black hover:bg-black/50 hover:scale-105 shadow-lg shadow-white/50 drop-shadow-xl ${cta ? "border-2 border-[#FFBA00]" : ""}`;
 
   return (
     <button

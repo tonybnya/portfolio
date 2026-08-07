@@ -47,7 +47,7 @@ const Intro = () => {
         <h1 className="font-dm text-3xl sm:text-4xl lg:text-5xl tracking-wider text-white inline-block personal opacity-0 translate-y-10">
           <ReactTyped strings={["Tony B. NYA"]} typeSpeed={120} />
         </h1>
-        <h3 className="text-gray-500 font-mona text-base sm:text-lg lg:text-xl font-medium tracking-wider pt-2 personal">
+        <h3 className="font-mona text-base sm:text-lg lg:text-xl font-medium tracking-wider pt-2 text-[#FFBA00] personal">
           <ReactTyped strings={["Backend Software Engineer"]} typeSpeed={80} />
         </h3>
 
@@ -97,6 +97,7 @@ const Intro = () => {
             <Button
               type="button"
               text="Resume"
+              cta
               icon={<i className="fa-solid fa-download"></i>}
             />
           </a>
@@ -112,6 +113,7 @@ const Intro = () => {
               type="button"
               text="Contact"
               variant="outline"
+              cta
               icon={<i className="fa-solid fa-envelope"></i>}
             />
           </a>
