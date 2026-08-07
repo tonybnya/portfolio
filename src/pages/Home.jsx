@@ -19,7 +19,7 @@ const Home = () => {
 
       <Footer />
 
-      <div className="pb-10">
+      <div className="flex justify-end pt-6 pb-4">
         <Button
           type="button"
           text="Back to Top"
@@ -27,6 +27,7 @@ const Home = () => {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         />
       </div>
+      <hr className="border-t border-[#4A5565]" />
     </div>
   );
 };
