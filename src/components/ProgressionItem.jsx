@@ -5,19 +5,19 @@ const ProgressionItem = ({ year, timeline, duration, details }) => {
     <ol className="flex flex-col relative border-l border-[#4A5565]">
       <li className="mb-10 ml-4">
         <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-[#4A5565]" />
-        <div className="flex flex-nowrap gap-4 flex-row items-center justify-start text-xs md:text-sm">
-          <span className="inline-block px-2 py-1 font-semibold font-mono text-white bg-black rounded-md">
+        <div className="flex flex-wrap sm:flex-nowrap gap-x-3 gap-y-1 flex-row items-center justify-start text-xs">
+          <span className="inline-block px-2 py-0.5 text-[0.65rem] font-semibold font-mono text-white bg-black rounded-md">
             {year}
           </span>
-          <h3 className="text-sm md:text-base font-mono text-white whitespace-nowrap">{timeline}</h3>
-          <div className="my-1 text-sm font-mono flex items-center gap-1 leading-none text-stone-400">
+          <h3 className="text-xs sm:text-sm font-mono text-[#FFBA00] whitespace-nowrap">{timeline}</h3>
+          <div className="my-1 text-[0.65rem] sm:text-xs font-mono flex items-center gap-1 leading-none text-stone-400">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6"
+              className="w-3.5 h-3.5"
             >
               <path
                 strokeLinecap="round"
