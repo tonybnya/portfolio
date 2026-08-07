@@ -18,29 +18,29 @@ colors:
   signal-red: "#ef4444"
 typography:
   display:
-    fontFamily: "Righteous, sans-serif"
+    fontFamily: "\"JetBrains Mono\", \"Fira Code\", monospace"
     fontSize: "clamp(2rem, 5vw, 3rem)"
     fontWeight: 400
     lineHeight: 1.1
   headline:
-    fontFamily: "\"DM Serif Text\", serif"
+    fontFamily: "\"JetBrains Mono\", \"Fira Code\", monospace"
     fontSize: "clamp(1.5rem, 4vw, 3rem)"
     fontWeight: 400
     lineHeight: 1.2
     letterSpacing: "0.05em"
   title:
-    fontFamily: "\"DM Serif Text\", serif"
+    fontFamily: "\"JetBrains Mono\", \"Fira Code\", monospace"
     fontSize: "1.125rem"
     fontWeight: 400
     lineHeight: 1.4
     letterSpacing: "0.03em"
   body:
-    fontFamily: "\"Mona Sans\", sans-serif"
+    fontFamily: "system-ui, sans-serif"
     fontSize: "0.9375rem"
     fontWeight: 400
     lineHeight: 1.6
   label:
-    fontFamily: "\"Modern Negra\", sans-serif"
+    fontFamily: "\"JetBrains Mono\", \"Fira Code\", monospace"
     fontSize: "0.8125rem"
     lineHeight: 1.2
 rounded:
@@ -107,7 +107,7 @@ components:
 
 **Creative North Star: "The Observatory Console"**
 
-The portfolio is a quiet instrument panel for a backend engineer. Every surface reads as machined hardware against deep space: flat near-black and navy planes, crisp 2px slate borders, serif headings set like engraved labels, and a single diffuse white-glow halo that behaves like the console's only illumination. The physics-based Event Horizon black hole is the lens the whole system looks through — the artifact leads, the interface recedes.
+The portfolio is a quiet instrument panel for a backend engineer. Every surface reads as machined hardware against deep space: flat near-black and navy planes, crisp 2px slate borders, mono headings set like engraved labels, and a single diffuse white-glow halo that behaves like the console's only illumination. The physics-based Event Horizon black hole is the lens the whole system looks through — the artifact leads, the interface recedes.
 
 The atmosphere is deliberate and minimal. Whitespace and restraint carry as much signal as the glow; nothing pulses for attention beyond the hero. Depth comes from the white halo and a fine grain overlay, never from soft gray shadows or gradients. The monochrome commitment is total: accent color is treated as a scarce resource, reserved for rare warm/cool glows that read as telemetry, not decoration.
 
@@ -115,7 +115,7 @@ The atmosphere is deliberate and minimal. Whitespace and restraint carry as much
 - Monochrome instrument UI: black + near-black blue surfaces, white text, slate borders
 - The white-glow halo (`shadow-white/50` + `drop-shadow-xl`) is the signature depth and accent move
 - Flat dark fills by default; 2px slate borders define containment
-- Serif headlines (DM Serif Text) over a variable humanist sans body (Mona Sans)
+- Mono headlines (JetBrains Mono) over a humanist system-ui sans body
 - A WebGL black-hole simulation is the single hero artifact; everything else stays quiet
 - Small radii (6–8px) and 2px borders make controls feel machined and tactile
 
@@ -152,22 +152,21 @@ A disciplined monochrome palette with one signature light source and two rare te
 
 ## Typography
 
-**Display Font:** Righteous (sans-serif) — brand marks only (navbar logo).
-**Headline Font:** DM Serif Text (serif) — every section title, the hero name, buttons.
-**Body Font:** Mona Sans (variable sans-serif, 200–900) — all reading and UI copy.
-**Label/Mono Font:** Modern Negra (custom demo typeface) — durations, tags, link buttons.
+**Display/Headline Font:** JetBrains Mono (monospace) — every section title, the hero name, buttons, labels, tags, durations, footer.
+**Body Font:** system-ui (native sans) — all reading and UI copy: descriptions, paragraphs, error messages.
+**Mono Alt:** Fira Code falls back inside the mono stack when JetBrains Mono is unavailable.
 
-**Character:** A serif-over-sans pairing that reads as engraved instrumentation over a clean humanist terminal. The serif carries the identity; the variable sans carries the information density.
+**Character:** A mono-led instrument console over warm humanist reading text. JetBrains Mono carries the identity, chrome, and data-density; system-ui stays quiet for anything meant to be read rather than scanned.
 
 ### Hierarchy
-- **Display** (Righteous, 400, clamp(2rem→3rem), lh 1.1): brand identity only — navbar logo.
-- **Headline** (DM Serif Text, 400, clamp(1.5rem→3rem), lh 1.2, +0.05em): section titles, the typed hero name, the not-found page.
-- **Title** (DM Serif Text, 400, 1.125rem, lh 1.4, +0.03em): project titles, timeline titles, buttons, modal headers.
-- **Body** (Mona Sans, 400, 0.9375rem, lh 1.6): paragraphs, descriptions, form placeholders. Justified reading in intro/project copy; keep lines ~60–75ch.
-- **Label** (Modern Negra, 400, 0.8125rem, lh 1.2): durations, tags, Live/Source link labels, footer.
+- **Display** (JetBrains Mono, 400, clamp(2rem→3rem), lh 1.1): the typed hero name.
+- **Headline** (JetBrains Mono, 400, clamp(1.5rem→3rem), lh 1.2, +0.05em): section titles, the not-found page, the navbar logo text.
+- **Title** (JetBrains Mono, 400, 1.125rem, lh 1.4, +0.03em): project titles, timeline titles, buttons, modal headers, nav links.
+- **Body** (system-ui, 400, 0.9375rem, lh 1.6): paragraphs, descriptions, form placeholders. Justified reading in intro/project copy; keep lines ~60–75ch.
+- **Label** (JetBrains Mono, 400, 0.8125rem, lh 1.2): durations, tags, Live/Source link labels, footer, year badges, error codes.
 
 ### Named Rules
-**The Serif Headline Rule.** Every heading is DM Serif Text. Mona Sans is body-only; it never leads a heading.
+**The Mono Lead Rule.** Every heading and label is JetBrains Mono. The system-ui body never leads a heading.
 
 ## Layout
 
@@ -197,12 +196,12 @@ Every control is instrument-hard and tactile: crisp 2px slate borders, black fil
 
 ### Buttons
 - **Shape:** rounded-md (6px), 2px border on outline variants.
-- **Primary:** Obsidian fill, Star White DM Serif text, `px-8 py-3`, `tracking-wider`, centered (`mr-auto ml-auto`), with the Instrument Halo.
+- **Primary:** Obsidian fill, Star White JetBrains Mono text, `px-8 py-3`, `tracking-wider`, centered (`mr-auto ml-auto`), with the Instrument Halo.
 - **Hover / Focus:** primary → `bg-black/50` + `scale-105`; outline → `bg-black/10`; modal OK → `bg-black/90`. Transitions are quick and direct.
-- **Secondary / Outline:** transparent fill, 2px Halo Slate border, Star White text (Details button, Live/Source links). Live/Source links set their label in Modern Negra.
+- **Secondary / Outline:** transparent fill, 2px Halo Slate border, Star White text (Details button, Live/Source links). Live/Source links set their label in JetBrains Mono.
 
 ### Chips (tags)
-- **Style:** transparent fill, 2px Halo Slate border, Dust text, rounded-md, Modern Negra face. Year badges invert to Obsidian fill + white text.
+- **Style:** transparent fill, 2px Halo Slate border, Dust text, rounded-md, JetBrains Mono face. Year badges invert to Obsidian fill + white text.
 
 ### Cards / Containers
 - **Corner Style:** rounded-md (6px).
@@ -217,7 +216,7 @@ Every control is instrument-hard and tactile: crisp 2px slate borders, black fil
 - **Error / Disabled:** Signal Red stroke + message; submitting state shows "Sending...".
 
 ### Navigation
-- **Style:** transparent at rest, scrolled fill `#0f1115` at 50% opacity with 10px backdrop blur; links are Star White DM Serif (1.25rem, scale-105 on hover); the brand is a circular Obsidian chip with the portfolio mark; mobile menu is a hamburger below `md` with `aria-expanded`.
+- **Style:** transparent at rest, scrolled fill `#0f1115` at 50% opacity with 10px backdrop blur; links are Star White JetBrains Mono (1.25rem, scale-105 on hover); the brand is a circular Obsidian chip with the portfolio mark; mobile menu is a hamburger below `md` with `aria-expanded`.
 
 ### Signature Component — Event Horizon
 A 515-line WebGL/GLSL physically-based black-hole simulation: gravitational lensing, a tilted accretion disk, and a procedural star field, exposed through uniforms (`u_rotationSpeed`, `u_diskIntensity`, `u_tilt`, `u_chromatic`). It is the hero artifact of the intro, rendered full-width at ~500px tall, with a standalone `event-horizon.html` companion. Nothing else in the system animates for attention — this is the one spectacle.
@@ -230,7 +229,7 @@ Projects and timeline load as skeletons: Void Blue Deep cards with a 5%-white gr
 ### Do:
 - **Do** keep surfaces flat dark fills; let the white-glow halo supply lift on interactive elements only.
 - **Do** use 2px Halo Slate borders for containment on cards, tags, inputs, and outline buttons.
-- **Do** set every heading in DM Serif Text and every body paragraph in Mona Sans.
+- **Do** set every heading and label in JetBrains Mono and every body paragraph in system-ui.
 - **Do** use rounded-md (6px) as the default corner; reserve `rounded-full` for interactive points.
 - **Do** treat the Event Horizon as the single hero artifact and keep competing hero animations out.
 - **Do** keep accent color (Ember Oxide / Abyss Blue) below ~5% of any screen.

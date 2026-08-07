@@ -23,8 +23,8 @@
       "display": { "displayName": "Display", "purpose": "Brand identity only: navbar logo and Event Horizon title." },
       "headline": { "displayName": "Headline", "purpose": "Section titles, hero name, and not-found page." },
       "title": { "displayName": "Title", "purpose": "Project titles, timeline titles, buttons, modal headers." },
-      "body": { "displayName": "Body", "purpose": "Paragraphs, descriptions, and form placeholders in Mona Sans." },
-      "label": { "displayName": "Label", "purpose": "Durations, tags, and Live/Source link labels in Modern Negra." }
+      "body": { "displayName": "Body", "purpose": "Paragraphs, descriptions, and form placeholders in system-ui." },
+      "label": { "displayName": "Label", "purpose": "Durations, tags, and Live/Source link labels in JetBrains Mono." }
     },
     "shadows": [
       { "name": "Instrument Halo", "value": "0 10px 15px -3px rgba(255,255,255,0.5)", "purpose": "Signature ambient glow on buttons, title pills, and nav links." },
@@ -48,9 +48,9 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "The single action CTA: black fill, serif label, Instrument Halo.",
+      "description": "The single action CTA: black fill, JetBrains Mono label, Instrument Halo.",
       "html": "<button class=\"ds-btn-primary\">Work With Me</button>",
-      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:#000000;color:#ffffff;font-family:'DM Serif Text',serif;font-size:1rem;letter-spacing:0.05em;padding:12px 32px;border-radius:6px;border:none;box-shadow:0 10px 15px -3px rgba(255,255,255,0.5);transition:background .2s,transform .2s;cursor:pointer;}.ds-btn-primary:hover{background:rgba(0,0,0,0.5);transform:scale(1.05);}.ds-btn-primary:focus-visible{outline:2px solid #ffffff;outline-offset:2px;}"
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:#000000;color:#ffffff;font-family:'JetBrains Mono',monospace;font-size:1rem;letter-spacing:0.05em;padding:12px 32px;border-radius:6px;border:none;box-shadow:0 10px 15px -3px rgba(255,255,255,0.5);transition:background .2s,transform .2s;cursor:pointer;}.ds-btn-primary:hover{background:rgba(0,0,0,0.5);transform:scale(1.05);}.ds-btn-primary:focus-visible{outline:2px solid #ffffff;outline-offset:2px;}"
     },
     {
       "name": "Outline Button",
@@ -58,7 +58,7 @@
       "refersTo": "button-outline",
       "description": "Secondary action: transparent, 2px Halo Slate border (Live/Source/Details).",
       "html": "<button class=\"ds-btn-outline\">Live</button>",
-      "css": ".ds-btn-outline{display:inline-flex;align-items:center;gap:8px;background:rgba(3,3,19,0.9);color:#ffffff;font-family:'Modern Negra',sans-serif;font-size:0.9rem;padding:8px 32px;border:2px solid #4A5565;border-radius:6px;transition:background .2s,transform .2s;cursor:pointer;}.ds-btn-outline:hover{background:rgba(0,0,0,0.1);}.ds-btn-outline:focus-visible{outline:2px solid #ffffff;outline-offset:2px;}"
+      "css": ".ds-btn-outline{display:inline-flex;align-items:center;gap:8px;background:rgba(3,3,19,0.9);color:#ffffff;font-family:'JetBrains Mono',monospace;font-size:0.9rem;padding:8px 32px;border:2px solid #4A5565;border-radius:6px;transition:background .2s,transform .2s;cursor:pointer;}.ds-btn-outline:hover{background:rgba(0,0,0,0.1);}.ds-btn-outline:focus-visible{outline:2px solid #ffffff;outline-offset:2px;}"
     },
     {
       "name": "Text Input",
@@ -66,57 +66,57 @@
       "refersTo": "input",
       "description": "Transparent fill, 2px Halo Slate stroke; error swaps stroke to Signal Red.",
       "html": "<input class=\"ds-input\" placeholder=\"Name\" />",
-      "css": ".ds-input{background:transparent;color:#ffffff;width:100%;padding:8px;font-family:'Mona Sans',sans-serif;font-size:1rem;border:2px solid #4A5565;border-radius:6px;transition:border-color .2s;}.ds-input::placeholder{color:#6b7280;}.ds-input:focus{outline:none;border-color:#ffffff;}.ds-input-error{border-color:#ef4444;}"
+      "css": ".ds-input{background:transparent;color:#ffffff;width:100%;padding:8px;font-family:system-ui,sans-serif;font-size:1rem;border:2px solid #4A5565;border-radius:6px;transition:border-color .2s;}.ds-input::placeholder{color:#6b7280;}.ds-input:focus{outline:none;border-color:#ffffff;}.ds-input-error{border-color:#ef4444;}"
     },
     {
       "name": "Section Title Pill",
       "kind": "chip",
       "refersTo": "title-pill",
-      "description": "Obsidian capsule holding each serif section heading.",
+      "description": "Obsidian capsule holding each JetBrains Mono section heading.",
       "html": "<div class=\"ds-title-pill\">Projects</div>",
-      "css": ".ds-title-pill{background:#000000;color:#ffffff;font-family:'DM Serif Text',serif;font-size:1.875rem;letter-spacing:0.05em;text-align:center;padding:16px 24px;width:200px;margin:0 auto;border-radius:24px;box-shadow:0 10px 15px -3px rgba(255,255,255,0.5);}"
+      "css": ".ds-title-pill{background:#000000;color:#ffffff;font-family:'JetBrains Mono',monospace;font-size:1.875rem;letter-spacing:0.05em;text-align:center;padding:16px 24px;width:200px;margin:0 auto;border-radius:24px;box-shadow:0 10px 15px -3px rgba(255,255,255,0.5);}"
     },
     {
       "name": "Tag Chip",
       "kind": "chip",
       "refersTo": "tag",
-      "description": "Project technology tags: transparent, 2px slate border, Modern Negra label.",
+      "description": "Project technology tags: transparent, 2px slate border, JetBrains Mono label.",
       "html": "<span class=\"ds-tag\">FastAPI</span>",
-      "css": ".ds-tag{display:inline-block;background:transparent;color:#9ca3af;border:2px solid #4A5565;border-radius:6px;padding:2px 8px;font-family:'Modern Negra',sans-serif;font-size:0.8125rem;}"
+      "css": ".ds-tag{display:inline-block;background:transparent;color:#9ca3af;border:2px solid #4A5565;border-radius:6px;padding:2px 8px;font-family:'JetBrains Mono',monospace;font-size:0.8125rem;}"
     },
     {
       "name": "Skill Card",
       "kind": "card",
       "refersTo": "skill-card",
-      "description": "Obsidian tile with a large technology glyph and Mona Sans label.",
+      "description": "Obsidian tile with a large technology glyph and JetBrains Mono label.",
       "html": "<div class=\"ds-skill-card\"><img src=\"\" alt=\"React logo\" /><span>React.js</span></div>",
-      "css": ".ds-skill-card{background:#000000;border-radius:12px;box-shadow:0 4px 6px -1px rgba(0,0,0,0.2);padding:24px;display:flex;flex-direction:column;align-items:center;gap:16px;transition:background .2s;}.ds-skill-card img{width:80px;height:80px;object-fit:contain;}.ds-skill-card span{color:#ffffff;font-family:'Mona Sans',sans-serif;font-weight:400;}.ds-skill-card:hover{background:#030313;}"
+      "css": ".ds-skill-card{background:#000000;border-radius:12px;box-shadow:0 4px 6px -1px rgba(0,0,0,0.2);padding:24px;display:flex;flex-direction:column;align-items:center;gap:16px;transition:background .2s;}.ds-skill-card img{width:80px;height:80px;object-fit:contain;}.ds-skill-card span{color:#ffffff;font-family:system-ui,sans-serif;font-weight:400;}.ds-skill-card:hover{background:#030313;}"
     },
     {
       "name": "Project Card",
       "kind": "card",
       "refersTo": "project-card",
-      "description": "The evidence container: Void Blue Deep surface, 2px slate border, image + serif title.",
+      "description": "The evidence container: Void Blue Deep surface, 2px slate border, image + JetBrains Mono title.",
       "html": "<div class=\"ds-project-card\"><img src=\"\" alt=\"project\" /><div class=\"ds-project-body\"><h3>Project Title</h3><p>Description</p></div></div>",
-      "css": ".ds-project-card{background:#030713;border:2px solid #4A5565;border-radius:6px;overflow:hidden;}.ds-project-card img{display:block;width:100%;height:192px;object-fit:cover;}.ds-project-body{padding:16px;color:#f9fafb;}.ds-project-body h3{font-family:'DM Serif Text',serif;font-size:1.25rem;letter-spacing:0.03em;margin:0 0 12px;}.ds-project-body p{font-family:'Mona Sans',sans-serif;font-weight:300;line-height:1.6;margin:0;}"
+      "css": ".ds-project-card{background:#030713;border:2px solid #4A5565;border-radius:6px;overflow:hidden;}.ds-project-card img{display:block;width:100%;height:192px;object-fit:cover;}.ds-project-body{padding:16px;color:#f9fafb;}.ds-project-body h3{font-family:'JetBrains Mono',monospace;font-size:1.25rem;letter-spacing:0.03em;margin:0 0 12px;}.ds-project-body p{font-family:system-ui,sans-serif;font-weight:300;line-height:1.6;margin:0;}"
     },
     {
       "name": "Nav Link",
       "kind": "nav",
       "refersTo": "nav-link",
-      "description": "Star White DM Serif link with hover scale; nav fills navy + blur on scroll.",
+      "description": "Star White JetBrains Mono link with hover scale; nav fills navy + blur on scroll.",
       "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link\" href=\"#projects\">Projects</a></nav>",
-      "css": ".ds-nav-link{display:inline-block;color:#ffffff;font-family:'DM Serif Text',serif;font-size:1.25rem;letter-spacing:0.03em;padding:8px 12px;text-decoration:none;transition:transform .2s;}.ds-nav-link:hover{transform:scale(1.05);}.ds-nav-link:focus-visible{outline:2px solid #ffffff;outline-offset:2px;}"
+      "css": ".ds-nav-link{display:inline-block;color:#ffffff;font-family:'JetBrains Mono',monospace;font-size:1.25rem;letter-spacing:0.03em;padding:8px 12px;text-decoration:none;transition:transform .2s;}.ds-nav-link:hover{transform:scale(1.05);}.ds-nav-link:focus-visible{outline:2px solid #ffffff;outline-offset:2px;}"
     }
   ],
   "narrative": {
     "northStar": "The Observatory Console",
-    "overview": "The portfolio is a quiet instrument panel for a backend engineer. Every surface reads as machined hardware against deep space: flat near-black and navy planes, crisp 2px slate borders, serif headings set like engraved labels, and a single diffuse white-glow halo that behaves like the console's only illumination. The physics-based Event Horizon black hole is the lens the whole system looks through — the artifact leads, the interface recedes. The atmosphere is deliberate and minimal. Whitespace and restraint carry as much signal as the glow; nothing pulses for attention beyond the hero. Depth comes from the white halo and a fine grain overlay, never from soft gray shadows or gradients. The monochrome commitment is total: accent color is treated as a scarce resource, reserved for rare warm/cool glows that read as telemetry, not decoration.",
+    "overview": "The portfolio is a quiet instrument panel for a backend engineer. Every surface reads as machined hardware against deep space: flat near-black and navy planes, crisp 2px slate borders, mono headings set like engraved labels, and a single diffuse white-glow halo that behaves like the console's only illumination. The physics-based Event Horizon black hole is the lens the whole system looks through — the artifact leads, the interface recedes. The atmosphere is deliberate and minimal. Whitespace and restraint carry as much signal as the glow; nothing pulses for attention beyond the hero. Depth comes from the white halo and a fine grain overlay, never from soft gray shadows or gradients. The monochrome commitment is total: accent color is treated as a scarce resource, reserved for rare warm/cool glows that read as telemetry, not decoration.",
     "keyCharacteristics": [
       "Monochrome instrument UI: black + near-black blue surfaces, white text, slate borders",
       "The white-glow halo is the signature depth and accent move",
       "Flat dark fills by default; 2px slate borders define containment",
-      "Serif headlines over a variable humanist sans body",
+      "Mono headlines (JetBrains Mono) over a humanist system-ui sans body",
       "A WebGL black-hole simulation is the single hero artifact",
       "Small radii (6-8px) and 2px borders make controls feel machined"
     ],
@@ -124,13 +124,13 @@
       { "name": "The Glow Rule", "body": "The white halo is the only light source. Soft gray shadows and colored gradients are banned; depth is flat fills plus the halo.", "section": "elevation" },
       { "name": "The Ember Rarity Rule", "body": "Ember Oxide and Abyss Blue appear only as rare accent glows. If either covers more than ~5% of a screen, it is no longer telemetry.", "section": "colors" },
       { "name": "The Slate Line Rule", "body": "Containment is a 2px Halo Slate border or flat separation, never a tinted panel.", "section": "colors" },
-      { "name": "The Serif Headline Rule", "body": "Every heading is DM Serif Text. Mona Sans is body-only.", "section": "typography" },
+      { "name": "The Mono Lead Rule", "body": "Every heading and label is JetBrains Mono. The system-ui body never leads a heading.", "section": "typography" },
       { "name": "The Flat-By-Default Rule", "body": "Surfaces are flat at rest; the halo appears only on interactive elements and the title pill, never as a resting backdrop.", "section": "elevation" }
     ],
     "dos": [
       "Do keep surfaces flat dark fills; let the white-glow halo supply lift on interactive elements only.",
       "Do use 2px Halo Slate borders for containment on cards, tags, inputs, and outline buttons.",
-      "Do set every heading in DM Serif Text and every body paragraph in Mona Sans.",
+      "Do set every heading and label in JetBrains Mono and every body paragraph in system-ui.",
       "Do use rounded-md (6px) as the default corner; reserve rounded-full for interactive points.",
       "Do treat the Event Horizon as the single hero artifact and keep competing hero animations out.",
       "Do keep accent colors below ~5% of any screen."

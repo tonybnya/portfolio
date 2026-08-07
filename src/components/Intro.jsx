@@ -44,10 +44,10 @@ const Intro = () => {
           alt="Portrait of Tony B. NYA"
           className="inline-block lg:w-24 max-lg:w-16 pb-4 rounded-full shadow-[0_0_40px_-10px_rgba(255,255,255,0.35)]"
         />
-        <h1 className="font-dm text-3xl sm:text-4xl lg:text-5xl tracking-wider text-white inline-block personal opacity-0 translate-y-10">
+        <h1 className="font-mono text-3xl sm:text-4xl lg:text-5xl tracking-wider text-white inline-block personal opacity-0 translate-y-10">
           <ReactTyped strings={["Tony B. NYA"]} typeSpeed={120} />
         </h1>
-        <h3 className="font-mona text-base sm:text-lg lg:text-xl font-medium tracking-wider pt-2 text-[#FFBA00] personal">
+        <h3 className="font-mono text-base sm:text-lg lg:text-xl font-medium tracking-wider pt-2 text-[#FFBA00] personal">
           <ReactTyped strings={["Backend Software Engineer"]} typeSpeed={80} />
         </h3>
 
@@ -65,7 +65,7 @@ const Intro = () => {
         {/*   problems into clear, efficient solutions. */}
         {/* </p> */}
 
-        <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-2 first-letter:float-left text-zinc-50 text-justify py-4 font-medium font-mona text-sm tracking-normal max-sm:text-xs para">
+        <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-2 first-letter:float-left text-zinc-50 text-justify py-4 font-medium font-sans text-sm tracking-normal max-sm:text-xs para">
           {/* I &apos;m a software engineer with 4+ years experience specialized in backend engineering with a unique background. I spent nearly a decade working in Diplomacy before transitioning into technology. That experience shaped my ability to communicate clearly, manage stakeholders, and analyze complex systems; skills I now bring into every engineering project I take on. */}
           Backend Software Engineer building robust APIs and scalable systems
           for complex products. Specialized in Python (FastAPI, Flask, Django).

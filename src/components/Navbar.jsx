@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <nav className="">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <div className="flex items-center font-righteous gap-2 max-sm:left-4">
+        <div className="flex items-center font-mono gap-2 max-sm:left-4">
           <a
             href="/"
             aria-label="Tony B. NYA home"
@@ -71,7 +71,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#intro"
-                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-dm text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent shadow-lg shadow-white/50 drop-shadow-xl"
+                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-mono text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent shadow-lg shadow-white/50 drop-shadow-xl"
                 aria-current="page"
               >
                 Intro
@@ -80,7 +80,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#skills"
-                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-dm text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent shadow-lg shadow-white/50 drop-shadow-xl"
+                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-mono text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent shadow-lg shadow-white/50 drop-shadow-xl"
               >
                 Skills
               </a>
@@ -88,7 +88,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#projects"
-                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-dm text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent shadow-lg shadow-white/50 drop-shadow-xl"
+                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-mono text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent shadow-lg shadow-white/50 drop-shadow-xl"
               >
                 Projects
               </a>
@@ -96,7 +96,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#progression"
-                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-dm text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent shadow-lg shadow-white/50 drop-shadow-xl"
+                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-mono text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent shadow-lg shadow-white/50 drop-shadow-xl"
               >
                 Progression
               </a>
@@ -104,7 +104,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#contact"
-                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-dm text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent shadow-lg shadow-white/50 drop-shadow-xl"
+                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-mono text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent shadow-lg shadow-white/50 drop-shadow-xl"
               >
                 Contact
               </a>

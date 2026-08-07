@@ -24,11 +24,11 @@ const Thanks = () => {
     <div className="flex flex-col items-center justify-center min-h-screen text-white">
       <h1
         id="thanks"
-        className="text-4xl font-dm mb-4 tracking-wider"
+        className="text-4xl font-mono mb-4 tracking-wider"
       >
         Thank You!
       </h1>
-      <p className="msg font-mona mb-8 text-center max-w-md">
+      <p className="msg font-sans mb-8 text-center max-w-md">
         I have received your message and will respond as soon as possible.
       </p>
       <Button

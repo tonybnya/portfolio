@@ -57,7 +57,7 @@ const Projects = () => {
           {isLoading ? (
             <SkeletonProject />
           ) : error ? (
-            <p className="text-red-500 font-mona font-semibold tracking-wide flex justify-center w-full col-span-1 md:col-span-2 lg:col-span-3 ">
+            <p className="text-red-500 font-sans font-semibold tracking-wide flex justify-center w-full col-span-1 md:col-span-2 lg:col-span-3 ">
               {error}
             </p>
           ) : (

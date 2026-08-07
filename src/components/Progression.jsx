@@ -54,7 +54,7 @@ const Progression = () => {
           {isLoading ? (
             <SkeletonProgression />
           ) : error ? (
-            <p className="text-red-500 font-mona font-semibold tracking-wide flex justify-center">
+            <p className="text-red-500 font-sans font-semibold tracking-wide flex justify-center">
               {error}
             </p>
           ) : (

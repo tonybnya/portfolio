@@ -103,7 +103,7 @@ const Contact = () => {
               }`}
             />
             {errors.name && (
-              <p className="text-red-500 font-mona text-sm mt-1">{errors.name}</p>
+              <p className="text-red-500 font-sans text-sm mt-1">{errors.name}</p>
             )}
           </div>
 
@@ -120,7 +120,7 @@ const Contact = () => {
               }`}
             />
             {errors.email && (
-              <p className="text-red-500 font-mona text-sm mt-1">{errors.email}</p>
+              <p className="text-red-500 font-sans text-sm mt-1">{errors.email}</p>
             )}
           </div>
 
@@ -137,14 +137,14 @@ const Contact = () => {
               }`}
             />
             {errors.message && (
-              <p className="text-red-500 font-mona text-sm mt-1">
+              <p className="text-red-500 font-sans text-sm mt-1">
                 {errors.message}
               </p>
             )}
           </div>
 
           {formError && (
-            <p className="text-red-500 font-mona text-sm mb-4 text-center" role="alert">
+            <p className="text-red-500 font-sans text-sm mb-4 text-center" role="alert">
               {formError}
             </p>
           )}

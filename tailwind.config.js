@@ -5,11 +5,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        righteous: ["Righteous", "sans-serif"],
-        source: ["Source Sans 3", "sans-serif"],
-        modern: ["Modern Negra", "sans-serif"],
-        mona: ["Mona Sans", "sans-serif"],
-        dm: ["DM Serif Text", "serif"],
+        mono: ['"JetBrains Mono"', '"Fira Code"', "monospace"],
+        sans: ["system-ui", "sans-serif"],
       },
       dropShadow: {
         custom: "50px 50px 100px white",
