@@ -119,5 +119,33 @@
     "createdAt": "2026-08-07T15:53:40.941Z",
     "updatedAt": "2026-08-07T15:59:13.880Z",
     "__v": 0
+  },
+  {
+    "_id": "6a7603af0be5d3882ebc00e3",
+    "title": "Lingora",
+    "description": "A production-grade translation service with a fallback architecture. Lingora chains three translation engines - Gemini AI (primary), DeepLX, and LibreTranslate - so when one provider degrades or times out, the next takes over automatically. Users get one thing: a clean, correctly-translated answer, every time. No dead-end errors, no provider lock-in.",
+    "tags": [
+      "FastAPI",
+      "Python",
+      "PostgreSQL (prod)",
+      "SQLite (dev)",
+      "Google Gemini",
+      "DeepLX",
+      "LibreTranslate ",
+      "Jinja2",
+      "vanilla JS",
+      "GSAP",
+      "Tailwind CSS v4"
+    ],
+    "images": [
+      "https://i.postimg.cc/5yyH7mc3/lingora-1.png",
+      "https://i.postimg.cc/KjjKq5Xr/lingora-2.png",
+      "https://i.postimg.cc/C55ZP4yk/lingora-3.png"
+    ],
+    "liveUrl": "https://lingora-d80bdc9f.fastapicloud.dev/",
+    "sourceUrl": "https://github.com/tonybnya/lingora",
+    "createdAt": "2026-08-07T16:11:26.027Z",
+    "updatedAt": "2026-08-07T16:11:26.027Z",
+    "__v": 0
   }
 ]
