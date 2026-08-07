@@ -23,7 +23,7 @@ const Modal = ({ title, description }) => {
     <div>
       <button
         onClick={() => setIsOpen(true)}
-        className="group flex justify-start items-center text-center tracking-wide gap-3 mr-auto ml-auto px-8 py-1 w-max text-base font-mono rounded-md text-white border-2 border-[#4A5565] bg-[#030313] hover:bg-black"
+        className="group flex justify-start items-center text-center tracking-wide gap-3 mr-auto ml-auto px-6 py-2 w-max text-base font-mono rounded-md text-white border-2 border-[#4A5565] bg-[#030313] hover:bg-black"
       >
         Details
       </button>

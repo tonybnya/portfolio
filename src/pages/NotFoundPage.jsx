@@ -3,8 +3,8 @@ import logo from "/assets/images/portfolio.svg";
 
 const NotFoundPage = () => {
   return (
-    <div className="min-h-screen flex text-white">
-      <div className="w-1/2 h-screen">
+    <div className="min-h-screen flex flex-col lg:flex-row text-white">
+      <div className="w-full h-44 sm:h-56 lg:w-1/2 lg:h-screen">
         <img
           src={bg}
           alt="Background illustration"
@@ -13,7 +13,7 @@ const NotFoundPage = () => {
       </div>
 
       <div
-        className="w-1/2 flex flex-col justify-between max-lg:justify-center items-center p-8 bg-black min-h-screen bg-repeat relative"
+        className="w-full lg:w-1/2 flex flex-col justify-between max-lg:justify-center items-center px-6 py-10 sm:px-8 bg-black lg:min-h-screen bg-repeat relative"
         style={{ backgroundImage: "url('/assets/images/noise.jpg')" }}
       >
         <div className="flex flex-col items-center gap-3 mb-12">
