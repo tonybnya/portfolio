@@ -58,15 +58,17 @@ const Progression = () => {
               {error}
             </p>
           ) : (
-            timelines.map((step) => (
-              <ProgressionItem
-                key={step._id}
-                year={step.year}
-                timeline={step.timeline}
-                duration={step.duration}
-                details={step.details}
-              />
-            ))
+            <ol className="flex flex-col relative border-l border-[#4A5565]">
+              {timelines.map((step) => (
+                <ProgressionItem
+                  key={step._id}
+                  year={step.year}
+                  timeline={step.timeline}
+                  duration={step.duration}
+                  details={step.details}
+                />
+              ))}
+            </ol>
           )}
         </div>
       </div>

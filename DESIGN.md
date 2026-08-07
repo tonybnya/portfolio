@@ -43,6 +43,10 @@ typography:
     fontFamily: "\"JetBrains Mono\", \"Fira Code\", monospace"
     fontSize: "0.8125rem"
     lineHeight: 1.2
+  labelMicro:
+    fontFamily: "\"JetBrains Mono\", \"Fira Code\", monospace"
+    fontSize: "0.65rem"
+    lineHeight: 1.2
 rounded:
   sm: "6px"
   md: "8px"
@@ -163,7 +167,7 @@ A disciplined monochrome palette with one signature light source and two rare te
 - **Headline** (JetBrains Mono, 400, clamp(1.5rem→3rem), lh 1.2, +0.05em): section titles, the not-found page, the navbar logo text.
 - **Title** (JetBrains Mono, 400, 1.125rem, lh 1.4, +0.03em): project titles, timeline titles, buttons, modal headers, nav links.
 - **Body** (system-ui, 400, 0.9375rem, lh 1.6): paragraphs, descriptions, form placeholders. Justified reading in intro/project copy; keep lines ~60–75ch.
-- **Label** (JetBrains Mono, 400, 0.8125rem, lh 1.2): durations, tags, Live/Source link labels, footer, year badges, error codes.
+- **Label** (JetBrains Mono, 400, 0.8125rem, lh 1.2): durations, tags, Live/Source link labels, footer, year badges, error codes. A micro step at 0.65rem is reserved for inline meta that must not wrap: the year badge and timeline duration within a Progression row.
 
 ### Named Rules
 **The Mono Lead Rule.** Every heading and label is JetBrains Mono. The system-ui body never leads a heading.
