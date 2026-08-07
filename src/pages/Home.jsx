@@ -4,6 +4,7 @@ import Projects from "../components/Projects";
 import Progression from "../components/Progression";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Button from "../components/Button";
 
 const Home = () => {
   return (
@@ -17,6 +18,15 @@ const Home = () => {
       <hr className="border-t border-[#4A5565] mb-12" />
 
       <Footer />
+
+      <div className="pb-10">
+        <Button
+          type="button"
+          text="Back to Top"
+          icon={<i className="fa-solid fa-arrow-up"></i>}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        />
+      </div>
     </div>
   );
 };
