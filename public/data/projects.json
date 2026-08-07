@@ -120,5 +120,31 @@
     "createdAt": "2026-03-17T15:10:47.839Z",
     "updatedAt": "2026-03-17T15:10:47.839Z",
     "__v": 0
+  },
+  {
+    "_id": "6a75ff860be5d3882ebc00d2",
+    "title": "Jobacker - AI job application copilot",
+    "description": "An end-to-end job search assistant that scores your resume against any job description, generates tailored cover letters and ATS-optimized resumes, and tracks every application through a Kanban pipeline - in one place.",
+    "tags": [
+      "Node.js",
+      "Express",
+      "Zod",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "GSAP",
+      "PostgreSQL",
+      "InsForge",
+      "Google Gemini"
+    ],
+    "images": [
+      "https://i.postimg.cc/qq1f18cC/jobacker-1.png"
+    ],
+    "liveUrl": "https://zx9378vs.insforge.site/",
+    "sourceUrl": "https://github.com/tonybnya/jobacker",
+    "createdAt": "2026-08-07T15:53:40.941Z",
+    "updatedAt": "2026-08-07T15:53:40.941Z",
+    "__v": 0
   }
 ]
