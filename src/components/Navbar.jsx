@@ -34,7 +34,8 @@ const Navbar = () => {
             aria-label="Tony B. NYA home"
             className="inline-flex items-center justify-center text-decoration-none bg-black text-white rounded-full w-12 h-12 text-2xl"
           >
-            <img src="/assets/images/portfolio.svg" alt="" />
+            {/* <img src="/assets/images/portfolio.svg" alt="" /> */}
+            <img src="/assets/images/profile.png" alt="" />
           </a>
         </div>
         <button
