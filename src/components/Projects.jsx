@@ -10,7 +10,7 @@ const Projects = () => {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  const API_PROJECTS_URL = import.meta.env.VITE_API_PROJECTS_URL;
+  const API_PROJECTS_URL = `${import.meta.env.BASE_URL}data/projects.json`;
   const API_OPTIONS = {
     method: "GET",
     headers: {

@@ -1,0 +1,112 @@
+[
+  {
+    "_id": "685c487222a8b41a59bdb240",
+    "year": 2025,
+    "timeline": "Freelance Career Focus",
+    "duration": "Ongoing",
+    "details": "I'm currently working as a Freelance Lead Developer, delivering full-stack web solutions for clients across diverse industries. I led the development of a bilingual glossary application, GLOTECHT, supporting a PhD research project at Dalhousie University with an 80% approval rating from the thesis committee. For Abibi Meublés, I built and deployed a feature-rich e-commerce platform with secure checkout, role-based dashboards, and responsive UI/UX, contributing to a 20% increase in apartment reservations. Additionally, I developed a custom car sales web application for Chaouch Auto, integrating advanced search, filtering, and admin features that achieved a 35% conversion rate among previously contacted clients. These projects strengthened my expertise in Flask, FastAPI, SQLite, Tailwind, and modern REST API design, while refining my ability to translate client needs into impactful, scalable digital products.",
+    "createdAt": "2025-06-25T19:05:21.924Z",
+    "updatedAt": "2025-11-13T13:28:47.894Z",
+    "__v": 0
+  },
+  {
+    "_id": "685c47b222a8b41a59bdb23b",
+    "year": 2025,
+    "timeline": "Graduated Top 10% – Imagine Job Booster Program",
+    "duration": "1 month",
+    "details": "In June 2025, I completed the Imagine Job Booster, graduating in the top 10% of my cohort. This intensive program focused on preparing tech professionals for the European job market through coaching, technical assessments, and profile optimization. As part of the experience, I sharpened my communication, interview, and personal branding skills — and earned a place in the selective Imagine Fellowship Program to continue my job search with tailored guidance.",
+    "createdAt": "2025-06-25T19:02:09.307Z",
+    "updatedAt": "2025-06-25T19:02:09.307Z",
+    "__v": 0
+  },
+  {
+    "_id": "67d1225017e040f37204b48e",
+    "year": 2025,
+    "timeline": "HNG Internship",
+    "duration": "1 month",
+    "details": "Completed an intensive month-long internship at HNG, working on six real-world projects across backend development, API integrations, DevOps, and automation. Gained hands-on experience with FastAPI, Flask, Node.js, CI/CD pipelines, Docker, and Nginx while building scalable APIs, deploying applications, and integrating third-party services. This experience sharpened my problem-solving skills, deepened my understanding of software deployment, and reinforced my ability to deliver efficient, production-ready solutions in a fast-paced environment.",
+    "createdAt": "2025-03-12T05:57:36.546Z",
+    "updatedAt": "2025-03-12T05:57:36.546Z",
+    "__v": 0
+  },
+  {
+    "_id": "67d1220e17e040f37204b489",
+    "year": 2024,
+    "timeline": "AI Career Essentials Certified - ALX",
+    "duration": "8 weeks",
+    "details": "Achieving certification in ALX's AI Career Essentials program marked a key step in mastering AI literacy and tools. This comprehensive program blended technical training, hands-on simulations, and professional development, equipping me to confidently navigate real-world AI challenges and contribute effectively to the rapidly evolving tech landscape.",
+    "createdAt": "2025-03-12T05:56:30.701Z",
+    "updatedAt": "2025-03-12T05:56:30.701Z",
+    "__v": 0
+  },
+  {
+    "_id": "67d121f317e040f37204b484",
+    "year": 2024,
+    "timeline": "Open Source Contributor - All In Open Source by GitHub",
+    "duration": "3 months",
+    "details": "As an Open Source Developer with the All In Open Source program by GitHub, I collaborated on community-driven projects by resolving issues, reviewing pull requests, and contributing upstream through Git and GitHub; enhancing project quality and maintainability. I also took part in cross-functional hackathons, where I applied agile methodologies and peer programming to design innovative, time-bound solutions recognized for their technical excellence and teamwork. In parallel, I engaged in professional development workshops focused on technical communication, portfolio building, and interview readiness, which strengthened my documentation skills and overall preparedness for real-world software collaboration.",
+    "createdAt": "2025-03-12T05:56:03.743Z",
+    "updatedAt": "2025-11-13T11:19:14.880Z",
+    "__v": 0
+  },
+  {
+    "_id": "67d1219e17e040f37204b47f",
+    "year": 2023,
+    "timeline": "Software Engineer - ALX",
+    "duration": "12 months",
+    "details": "Completed an intensive 12-month software engineering program by ALX, mastering programming languages (C, Python, JavaScript), data structures, algorithms, system design, and agile practices. Through hands-on projects and real-world simulations, I developed proficiency in version control, software design patterns, databases, and collaborative problem-solving. This transformative journey equipped me with a growth mindset, technical expertise, and the skills to innovate and excel in the dynamic field of software engineering.",
+    "createdAt": "2025-03-12T05:54:38.742Z",
+    "updatedAt": "2025-03-12T05:54:38.742Z",
+    "__v": 0
+  },
+  {
+    "_id": "67d1217317e040f37204b47a",
+    "year": 2022,
+    "timeline": "Front-End Web Developer - Sayna Academy",
+    "duration": "6 months",
+    "details": "Completed a 6-month Talent4Startups (T4SU) program with Sayna Academy, specializing in Front-End development using React, Angular, and Figma. Through hands-on projects and professional internships, I gained practical experience solving real-world challenges, refining my technical skills, and building a strong foundation in Front-End development.",
+    "createdAt": "2025-03-12T05:53:55.746Z",
+    "updatedAt": "2025-03-12T05:53:55.746Z",
+    "__v": 0
+  },
+  {
+    "_id": "67d1215517e040f37204b477",
+    "year": 2021,
+    "timeline": "Consultant - Team Solutions",
+    "duration": "4 years",
+    "details": "As a Consultant at Team Solutions, I led the company’s transition into the fields of drone technology and surveillance systems, designing innovative, data-driven solutions that enhanced client security and marketing capabilities. I provided end-to-end technical consulting, from system architecture and deployment to hands-on training in drone operation and maintenance. This role deepened my expertise in emerging technologies, automation, and technical problem-solving, while delivering measurable improvements in clients’ operational performance and technological independence.",
+    "createdAt": "2025-03-12T05:53:25.129Z",
+    "updatedAt": "2025-11-13T11:23:52.239Z",
+    "__v": 0
+  },
+  {
+    "_id": "67d1212817e040f37204b472",
+    "year": 2013,
+    "timeline": "Ambassador's Head of Office & IT - Embassy of Cameroon in Congo",
+    "duration": "8 years",
+    "details": "As Head of the Ambassador’s Private Office and IT Lead at the Embassy of Cameroon in Congo, I managed high-level diplomatic operations, coordinating protocols, meetings, and official communications to streamline administrative workflows and strengthen intergovernmental relations. I also modernized the Embassy’s IT infrastructure, implementing secure networking systems and data management protocols that reduced technical downtime and improved communication efficiency. Additionally, I led cross-functional teams in high-stakes diplomatic initiatives, leveraging technology and strategic planning to ensure seamless execution of events and uphold the Embassy’s operational excellence.",
+    "createdAt": "2025-03-12T05:52:40.962Z",
+    "updatedAt": "2025-11-13T11:24:47.612Z",
+    "__v": 0
+  },
+  {
+    "_id": "67d1210217e040f37204b46d",
+    "year": 2012,
+    "timeline": "Intern - Cameroon Postal Services HQ",
+    "duration": "6 months",
+    "details": "Completed a 6-month internship at the General Direction of Cameroon Postal Services, applying my Computer Science training to real-world challenges. Collaborated on projects focused on modernizing postal operations through technology, gaining hands-on experience in software development, data analysis, and system optimization. This role strengthened my problem-solving, teamwork, and communication skills while contributing to the organization's digital transformation.",
+    "createdAt": "2025-03-12T05:52:02.130Z",
+    "updatedAt": "2025-03-12T05:52:02.130Z",
+    "__v": 0
+  },
+  {
+    "_id": "67d120e517e040f37204b468",
+    "year": 2008,
+    "timeline": "Bachelor's Degree - Computer Science",
+    "duration": "3 years",
+    "details": "Earned a Bachelor’s Degree in Computer Science from the Siantou Higher Institute of Technology, Yaounde. This rigorous 3-year program combined theoretical knowledge with hands-on projects, covering programming languages, algorithms, data structures, and software engineering. Internships and industry collaborations provided valuable real-world experience, building a solid foundation for my career in technology.",
+    "createdAt": "2025-03-12T05:51:33.294Z",
+    "updatedAt": "2025-03-12T05:51:33.294Z",
+    "__v": 0
+  }
+]

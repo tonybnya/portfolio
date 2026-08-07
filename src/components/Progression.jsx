@@ -10,7 +10,7 @@ const Progression = () => {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  const API_TIMELINES_URL = import.meta.env.VITE_API_TIMELINES_URL;
+  const API_TIMELINES_URL = `${import.meta.env.BASE_URL}data/timelines.json`;
   const API_OPTIONS = {
     method: "GET",
     headers: {

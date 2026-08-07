@@ -1,0 +1,124 @@
+[
+  {
+    "_id": "6657aa5836c711adaac6eae6",
+    "title": "Developer Portfolio",
+    "description": "Building a sleek portfolio website with React, Tailwind, and Vite to showcase my skills and projects elegantly, and elevate my online presence with modern technology stack. Seamlessly navigate through responsive design.",
+    "tags": [
+      "EmailJS",
+      "Lottie",
+      "Motion",
+      "React",
+      "Tailwind",
+      "GSAP",
+      "React Admin",
+      "MongoDB",
+      "Node.js"
+    ],
+    "images": [
+      "https://i.postimg.cc/qRk40w1v/developer-portfolio-image-1.png",
+      "https://i.postimg.cc/Kjjb3zSX/developer-portfolio-image-2.png",
+      "https://i.postimg.cc/gJNd0h7q/developer-portfolio-image-3.png",
+      "https://i.postimg.cc/SKLkw37P/developer-portfolio-image-4.png",
+      "https://i.postimg.cc/gj7WVWmx/developer-portfolio-image-5.png",
+      "https://i.postimg.cc/zvXQyDWM/portfolio-api-admin-panel-1.png",
+      "https://i.postimg.cc/xCP7jNkM/portfolio-api-admin-panel-2.png"
+    ],
+    "liveUrl": "https://tonybnya-portfolio.onrender.com",
+    "sourceUrl": "https://github.com/tonybnya/portfolio",
+    "createdAt": "2024-05-29T22:21:12.210Z",
+    "updatedAt": "2026-02-16T13:34:29.196Z",
+    "__v": 0
+  },
+  {
+    "_id": "6737ff6e8ff56a3da0e257c9",
+    "title": "GloTechT",
+    "description": "GloTechT is an \"English-French Glossary of Terms Related to Disruptive Technologies (Big Data • AI • Blockchain)\". GloTechT is part of the thesis of an international linguist, for a PhD in Linguistics at Dalhousie University (Halifax, NS, Canada). It results with an 80% approval rating from the thesis committee.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Tailwind",
+      "Flask",
+      "SQLite",
+      "GitHub Actions"
+    ],
+    "images": [
+      "https://i.postimg.cc/Jz9SH5zv/glotecht-1.png",
+      "https://i.postimg.cc/sX9FrGy8/glotecht-2.png",
+      "https://i.postimg.cc/RFzryLrK/glotecht-3.png",
+      "https://i.postimg.cc/pVCNcjs5/glotecht-4.png",
+      "https://i.postimg.cc/J0QWFkNB/glotecht-5.png",
+      "https://i.postimg.cc/3JxsswqS/glotecht-6.png"
+    ],
+    "liveUrl": "https://glotecht.com",
+    "sourceUrl": "https://glotecht.com",
+    "createdAt": "2024-11-16T02:11:58.162Z",
+    "updatedAt": "2026-02-16T15:00:37.668Z",
+    "__v": 0
+  },
+  {
+    "_id": "6993238d671568f3120fe189",
+    "title": "Flight Tracker",
+    "description": "Flight Tracker is a full-stack flight tracking application with real-time data visualization on 2D maps and a 3D globe. Built with React and Flask, the system integrates external aviation APIs, interactive Leaflet maps, and Three.js rendering to display live flight routes with high reliability and optimized API performance.",
+    "tags": [
+      "React",
+      "Flask",
+      "Leaflet",
+      "Tailwind",
+      "Vercel",
+      "Three Fiber",
+      "Three.js",
+      "AviationStack API",
+      "Requests",
+      "REST API",
+      "Vercel"
+    ],
+    "images": [
+      "https://i.postimg.cc/c4cc3fTF/flight-tracker-1.png",
+      "https://i.postimg.cc/KcP7XnXR/flight-tracker-2.png",
+      "https://i.postimg.cc/nzCH4KvG/flight-tracker-3.png",
+      "https://i.postimg.cc/gjpRDxvZ/flight_tracker_4.png"
+    ],
+    "liveUrl": "https://flight-tracker-theta.vercel.app",
+    "sourceUrl": "https://github.com/tonybnya/flight-tracker",
+    "createdAt": "2026-02-16T14:02:52.816Z",
+    "updatedAt": "2026-03-17T15:39:08.350Z",
+    "__v": 0
+  },
+  {
+    "_id": "69b96f0302072a5f2f4da94f",
+    "title": "PayLite",
+    "description": "PayLite is a real-time fintech dashboard platform featuring a secure digital wallet, transaction engine, and admin panel. It's designed for scalability and low-latency operations, the system supports 10k+ users with ACID-safe transactions, JWT-secured APIs, and optimized PostgreSQL queries.",
+    "tags": [
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "Axios",
+      "Flask",
+      "SQLAlchemy",
+      "JWT",
+      "RBAC",
+      "REST API",
+      "PostgreSQL",
+      "Docker",
+      "Vercel",
+      "Hugging Face"
+    ],
+    "images": [
+      "https://i.postimg.cc/vTmJd0S0/paylite_1.png",
+      "https://i.postimg.cc/j2jprMFx/paylite_2.png",
+      "https://i.postimg.cc/3NwsHtcJ/paylite_3.png",
+      "https://i.postimg.cc/L5scMxb2/paylite_4.png",
+      "https://i.postimg.cc/tJgKHBM4/paylite_5.png",
+      "https://i.postimg.cc/vTmJd0Nm/paylite_6.png",
+      "https://i.postimg.cc/ZnD1Y6GZ/paylite_7.png",
+      "https://i.postimg.cc/mk60Z7vZ/paylite_8.png",
+      "https://i.postimg.cc/0jHL57Tk/paylite_9.png"
+    ],
+    "liveUrl": "https://paylite.vercel.app",
+    "sourceUrl": "https://github.com/tonybnya/paylite",
+    "createdAt": "2026-03-17T15:10:47.839Z",
+    "updatedAt": "2026-03-17T15:10:47.839Z",
+    "__v": 0
+  }
+]
