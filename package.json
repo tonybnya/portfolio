@@ -10,7 +10,7 @@
     "sync:data": "node scripts/sync-data.mjs",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run sync:data && npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
