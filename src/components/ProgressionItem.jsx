@@ -2,7 +2,7 @@ import Modal from "./Modal";
 
 const ProgressionItem = ({ year, timeline, duration, details }) => {
   return (
-    <li className="relative mb-10 ml-4">
+    <li className="mb-10 ml-4">
       <span
         aria-hidden="true"
         className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-[#4A5565]"
