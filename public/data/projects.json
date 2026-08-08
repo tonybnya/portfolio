@@ -147,5 +147,35 @@
     "createdAt": "2026-08-07T16:11:26.027Z",
     "updatedAt": "2026-08-07T16:11:26.027Z",
     "__v": 0
+  },
+  {
+    "_id": "6a77a1b5cf48889bd59444a3",
+    "title": "Abibi Meublés",
+    "description": "A full-stack platform for managing and booking furnished apartment rentals for a client in Douala (Cameroon), with a customer-facing booking flow and an admin back-office. Engineered a 5-step booking system with real-time availability checks, guest info collection; walked customers from apartment discovery (interactive Leaflet map + filters) through confirmation, with PDF receipt generation, WhatsApp support, and email notifications. Delivered an admin dashboard for managing apartments, reservations, and clients behind JWT-based role-gated routes.",
+    "tags": [
+      "FastAPI",
+      "SQLAlchemy",
+      "SQLite",
+      "Pydantic",
+      "JWT",
+      "Bcrypt",
+      "RBAC",
+      "React",
+      "Tailwind CSS",
+      "Leaflet",
+      "jspdf"
+    ],
+    "images": [
+      "https://i.postimg.cc/ZqnVJ1TB/abibi-1.png",
+      "https://i.postimg.cc/wBM09S6h/abibi-2.png",
+      "https://i.postimg.cc/tgJ29LX7/abibi-3.png",
+      "https://i.postimg.cc/L8NxKHMn/abibi-4.png",
+      "https://i.postimg.cc/PqJ2dBt1/abibi-5.png"
+    ],
+    "liveUrl": "https://www.abibimeubles.com",
+    "sourceUrl": "https://www.abibimeubles.com",
+    "createdAt": "2026-08-08T21:37:56.596Z",
+    "updatedAt": "2026-08-08T21:37:56.596Z",
+    "__v": 0
   }
 ]
