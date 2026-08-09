@@ -1,5 +1,6 @@
 import bg from "/assets/images/bg.png";
-import logo from "/assets/images/portfolio.svg";
+import logo from "/assets/images/profile.png";
+// import logo from "/assets/images/portfolio.svg";
 
 const NotFoundPage = () => {
   return (
@@ -17,7 +18,11 @@ const NotFoundPage = () => {
         style={{ backgroundImage: "url('/assets/images/noise.jpg')" }}
       >
         <div className="flex flex-col items-center gap-3 mb-12">
-          <img src={logo} alt="Portfolio logo" className="h-12 w-12 max-lg:w-10 max-lg:h-10" />
+          <img
+            src={logo}
+            alt="Portfolio logo"
+            className="h-12 w-12 max-lg:w-10 max-lg:h-10"
+          />
           <span className="text-4xl max-lg:text-lg font-mono text-white tracking-wider">
             Portfolio
           </span>
