@@ -15,7 +15,7 @@ const Navbar = () => {
 
     navTween.fromTo(
       "nav",
-      { backgroundColor: "transparent", backdropFilter: "blur(0px)" },
+      { backgroundColor: "black", backdropFilter: "blur(0px)" },
       {
         backgroundColor: "#0f111550",
         backdropFilter: "blur(10px)",
@@ -28,26 +28,25 @@ const Navbar = () => {
   return (
     <nav className="">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <div className="flex items-center font-mono gap-2 max-sm:left-4">
+        <div className="flex items-center font-sans gap-2 max-sm:left-4">
           <a
             href="/"
             aria-label="Tony B. NYA home"
             className="inline-flex items-center justify-center text-decoration-none bg-black text-white rounded-full w-12 h-12 text-2xl"
           >
-            {/* <img src="/assets/images/portfolio.svg" alt="" /> */}
             <img src="/assets/images/profile.png" alt="" />
           </a>
         </div>
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#4A5565] rounded-lg md:hidden hover:text-white"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#1d1d1d] rounded-lg md:hidden hover:text-white"
           aria-controls="navbar-default"
           aria-expanded={isMenuOpen}
         >
           <span className="sr-only">Open main menu</span>
           <svg
-            className="w-5 h-5 text-[#4A5565]"
+            className="w-5 h-5 text-[#1d1d1d]"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -72,7 +71,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#intro"
-                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-mono text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent shadow-lg shadow-white/50 drop-shadow-xl"
+                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-sans text-xl max-lg:text-lg hover:scale-105 rounded-md bg-[#050403] shadow-lg shadow-white/50 drop-shadow-xl"
                 aria-current="page"
               >
                 Intro
@@ -81,7 +80,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#skills"
-                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-mono text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent shadow-lg shadow-white/50 drop-shadow-xl"
+                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-sans text-xl max-lg:text-lg hover:scale-105 rounded-md bg-[#050403] shadow-lg shadow-white/50 drop-shadow-xl"
               >
                 Skills
               </a>
@@ -89,7 +88,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#projects"
-                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-mono text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent shadow-lg shadow-white/50 drop-shadow-xl"
+                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-sans text-xl max-lg:text-lg hover:scale-105 rounded-md bg-[#050403] shadow-lg shadow-white/50 drop-shadow-xl"
               >
                 Projects
               </a>
@@ -97,7 +96,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#progression"
-                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-mono text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent shadow-lg shadow-white/50 drop-shadow-xl"
+                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-sans text-xl max-lg:text-lg hover:scale-105 rounded-md bg-[#050403] shadow-lg shadow-white/50 drop-shadow-xl"
               >
                 Progression
               </a>
@@ -105,7 +104,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#contact"
-                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-mono text-xl max-lg:text-lg hover:scale-105 rounded-md bg-transparent shadow-lg shadow-white/50 drop-shadow-xl"
+                className="block py-2 px-3 lg:px-4 lg:py-2 md:px-4 md:py-2 text-white font-sans text-xl max-lg:text-lg hover:scale-105 rounded-md bg-[#050403] shadow-lg shadow-white/50 drop-shadow-xl"
               >
                 Contact
               </a>

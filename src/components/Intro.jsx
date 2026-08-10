@@ -5,7 +5,6 @@ import resume from "/assets/docs/cv_tonybnya.pdf";
 import Button from "./Button";
 import Social from "./Social";
 import EvenHorizon from "./EventHorizon";
-// import ASCIIComputerAnimation from './ASCIIComputerAnimation';
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -44,29 +43,14 @@ const Intro = () => {
           alt="Portrait of Tony B. NYA"
           className="inline-block lg:w-24 max-lg:w-16 pb-4 rounded-full shadow-[0_0_40px_-10px_rgba(255,255,255,0.35)]"
         />
-        <h1 className="font-mono text-3xl sm:text-4xl lg:text-5xl tracking-wider text-white inline-block personal opacity-0 translate-y-10">
+        <h1 className="font-sans text-3xl sm:text-4xl lg:text-5xl font-medium tracking-normal text-white inline-block personal opacity-0 translate-y-10">
           <ReactTyped strings={["Tony B. NYA"]} typeSpeed={120} />
         </h1>
-        <h3 className="font-mono text-base sm:text-lg lg:text-xl font-medium tracking-wider pt-2 text-[#FFBA00] personal">
+        <h3 className="font-neonderthaw text-2xl sm:text-3xl lg:text-4xl font-normal tracking-normal pt-3 text-[#FFBA00]/70 personal">
           <ReactTyped strings={["Backend Software Engineer"]} typeSpeed={80} />
         </h3>
 
-        {/* <p className="first-letter:text-7xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para"> */}
-        {/*   I &apos;m a Full Stack Software Engineer with a strong focus on */}
-        {/*   backend architecture, clean API design, and scalable frontend */}
-        {/*   interfaces. I&apos;m specialized in JavaScript/TypeScript (Node.js, */}
-        {/*   React, Angular), Python (Flask, FastAPI, Django), and modern DevOps */}
-        {/*   practices — backed by hands-on experience leading and building */}
-        {/*   production-grade systems for real-world applications. */}
-        {/* </p> */}
-        {/* <p className="text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para"> */}
-        {/*   I&apos;m also passionate about DSA (Data Structures and Algorithms) */}
-        {/*   and System Design — which gives me the ability to break down complex */}
-        {/*   problems into clear, efficient solutions. */}
-        {/* </p> */}
-
-        <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-2 first-letter:float-left text-zinc-50 text-justify py-4 font-medium font-sans text-sm tracking-normal max-sm:text-xs para">
-          {/* I &apos;m a software engineer with 4+ years experience specialized in backend engineering with a unique background. I spent nearly a decade working in Diplomacy before transitioning into technology. That experience shaped my ability to communicate clearly, manage stakeholders, and analyze complex systems; skills I now bring into every engineering project I take on. */}
+        <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-2 first-letter:float-left text-zinc-50 text-justify py-4 font-medium font-sans text-sm tracking-normal max-sm:text-xs para hyphens-auto ">
           Backend Software Engineer building robust APIs and scalable systems
           for complex products. Specialized in Python (FastAPI, Flask, Django).
           <br />
@@ -79,14 +63,6 @@ const Intro = () => {
           <br />• Results on Local Business apps: +20% bookings · +35%
           conversion
         </p>
-
-        {/* <p className="text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para"> */}
-        {/*   I&apos;m also passionate about DSA (Data Structures and Algorithms) */}
-        {/*   and System Design — which gives me the ability to break down complex */}
-        {/*   problems into clear, efficient solutions. */}
-        {/* </p> */}
-
-        {/* <p className="text-zinc-50 text-justify py-4 font-light font-mona text-sm tracking-normal max-sm:text-xs para">I help researchers and innovators achieve academic and technological impact by developing specialized tools that bridge language and technology. For instance, I assisted an international linguist in creating a glossary application for disruptive technologies such as AI, Big Data, and Blockchain, part of his PhD thesis presented at Dalhousie University in Canada, with an 80% approval rating from the thesis committee.</p> */}
 
         <div className="flex gap-2 py-4">
           <Social />
@@ -101,13 +77,6 @@ const Intro = () => {
               icon={<i className="fa-solid fa-download"></i>}
             />
           </a>
-          {/* <a href="https://self.so/tonybnya" target="_blank"> */}
-          {/*   <Button */}
-          {/*     type="button" */}
-          {/*     text="Profile → Page" */}
-          {/*     icon={<i className="fas fa-user animate-bounce"></i>} */}
-          {/*   /> */}
-          {/* </a> */}
           <a href="#contact">
             <Button
               type="button"
@@ -132,22 +101,9 @@ const Intro = () => {
         </a>
       </div>
       <div className="flex flex-col gap-4 justify-center items-center w-full">
-        {/* <ASCIIComputerAnimation /> */}
-        {/* <EvenHorizon /> */}
-        {/* <EvenHorizon className="h-[500px] lg:h-screen" /> */}
-        {/* <div className="w-full h-[500px] lg:h-screen"> */}
-        {/*   <EvenHorizon /> */}
-        {/* </div> */}
         <div className="w-full max-w-md lg:max-w-none h-[340px] sm:h-[420px] lg:h-[500px]">
           <EvenHorizon />
         </div>
-        {/* <DotLottieReact */}
-        {/*   src="https://lottie.host/45e3d71a-c783-4c04-84d7-a529f667c8f8/4zdFKQb256.lottie" */}
-        {/*   loop */}
-        {/*   autoplay */}
-        {/*   width={500} */}
-        {/*   height={500} */}
-        {/* /> */}
       </div>
     </div>
   );

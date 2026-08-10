@@ -14,7 +14,7 @@ const Home = () => {
       <Progression />
       <Contact />
 
-      <hr className="border-t border-[#4A5565] mb-12" />
+      <hr className="border-t border-[#1d1d1d] mb-12" />
 
       <Footer />
 
@@ -31,3 +31,4 @@ const Home = () => {
 };
 
 export default Home;
+

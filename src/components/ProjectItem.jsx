@@ -9,7 +9,7 @@ const ProjectItem = ({
   sourceUrl,
 }) => {
   // TODO: add an icon near to each title - the icon/logo of the project
-  // The Portfolio API should probably be changed for that
+  // The Portfolio API need to be changed for that
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
@@ -38,7 +38,7 @@ const ProjectItem = ({
   };
 
   return (
-    <div className="border-2 border-[#4A5565] rounded-md overflow-hidden bg-[#030713]">
+    <div className="border-2 border-[#1d1d1d] rounded-md overflow-hidden bg-[#050403]">
       <div
         className="relative"
         onMouseEnter={() => setIsAutoPlaying(false)}
@@ -92,7 +92,7 @@ const ProjectItem = ({
       </div>
 
       <div className="w-full p-4 text-gray-50">
-        <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-mono tracking-wide">
+        <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-sans font-medium tracking-normal">
           {title}
         </h3>
         <p className="text-justify mb-3 font-normal font-sans text-[0.9375rem] leading-relaxed">
@@ -102,7 +102,7 @@ const ProjectItem = ({
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="inline-block px-2 py-1 font-mono border-2 border-[#4A5565] text-gray-400 rounded-md"
+              className="inline-block px-2 py-1 font-mono border-2 border-[#1d1d1d] text-[#1d1d1d] rounded-md"
             >
               {tag}
             </span>
@@ -112,14 +112,14 @@ const ProjectItem = ({
           <a
             href={liveUrl}
             target="_blank"
-            className="px-4 py-2 border-2 border-[#4A5565] rounded-md hover:bg-black/10 font-mono"
+            className="px-4 py-2 border-2 border-[#1d1d1d] rounded-md hover:bg-black/10 font-sans"
           >
             Live <i className="fa-solid fa-square-up-right"></i>
           </a>
           <a
             href={sourceUrl}
             target="_blank"
-            className="px-4 py-2 border-2 border-[#4A5565] rounded-md hover:bg-black/10 font-mono"
+            className="px-4 py-2 border-2 border-[#1d1d1d] rounded-md hover:bg-black font-sans"
           >
             Source <i className="fa-brands fa-github"></i>
           </a>

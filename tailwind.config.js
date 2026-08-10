@@ -5,8 +5,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        mono: ['"JetBrains Mono"', '"Fira Code"', "monospace"],
-        sans: ["system-ui", "sans-serif"],
+        mono: ["JetBrains Mono", "Fira Code", "monospace"],
+        sans: ["EB Garamond", "Georgia", "serif"],
+        neonderthaw: ["Neonderthaw", "cursive"],
       },
       dropShadow: {
         custom: "50px 50px 100px white",
@@ -18,3 +19,4 @@ export default {
   },
   plugins: [],
 };
+

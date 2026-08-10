@@ -1,6 +1,5 @@
 import bg from "/assets/images/bg.png";
 import logo from "/assets/images/profile.png";
-// import logo from "/assets/images/portfolio.svg";
 
 const NotFoundPage = () => {
   return (
@@ -23,13 +22,13 @@ const NotFoundPage = () => {
             alt="Portfolio logo"
             className="h-12 w-12 max-lg:w-10 max-lg:h-10"
           />
-          <span className="text-4xl max-lg:text-lg font-mono text-white tracking-wider">
+          <span className="text-4xl max-lg:text-lg font-sans font-medium text-white tracking-normal">
             Portfolio
           </span>
         </div>
 
         <div className="text-center space-y-4 mb-12 flex flex-col gap-4">
-          <h1 className="text-4xl max-lg:text-lg font-mono leading-tight tracking-wider">
+          <h1 className="text-4xl max-lg:text-lg font-sans font-medium leading-tight tracking-normal">
             Oops! You have
             <br />
             discovered a world not
@@ -42,7 +41,7 @@ const NotFoundPage = () => {
 
           <a
             href="/"
-            className="uppercase font-medium tracking-wide font-mono max-sm:text-sm py-2 px-4 rounded-md hover:cursor-pointer hover:bg-black/50 hover:scale-105 bg-black shadow-lg shadow-white/50 drop-shadow-xl"
+            className="uppercase font-medium tracking-wide font-sans max-sm:text-sm py-2 px-4 rounded-md hover:cursor-pointer hover:bg-black/50 hover:scale-105 bg-black shadow-lg shadow-white/50 drop-shadow-xl"
             rel="noopener noreferrer"
             aria-label="Go to home page"
           >
@@ -50,7 +49,7 @@ const NotFoundPage = () => {
           </a>
         </div>
 
-        <div className="mt-12 text-[#9ca3af] text-sm font-bold font-mono">
+        <div className="mt-12 text-[#ffba00] text-sm font-bold font-mono">
           <span>Error Code 404</span>
         </div>
       </div>

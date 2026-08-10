@@ -24,7 +24,7 @@ const Thanks = () => {
     <div className="flex flex-col items-center justify-center min-h-screen text-white">
       <h1
         id="thanks"
-        className="text-4xl font-mono mb-4 tracking-wider"
+        className="text-4xl font-sans font-medium mb-4 tracking-normal"
       >
         Thank You!
       </h1>
