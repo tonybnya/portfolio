@@ -303,7 +303,7 @@ export default function EventHorizon({
     if (!canvas) return;
 
     const prefersReduced = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
+      "(prefers-reduced-motion: reduce)",
     ).matches;
 
     const gl = canvas.getContext("webgl", {
@@ -324,7 +324,7 @@ export default function EventHorizon({
     gl.bufferData(
       gl.ARRAY_BUFFER,
       new Float32Array([-1, -1, 3, -1, -1, 3]),
-      gl.STATIC_DRAW
+      gl.STATIC_DRAW,
     );
     const aPos = gl.getAttribLocation(prog, "a_pos");
     gl.enableVertexAttribArray(aPos);
@@ -449,7 +449,10 @@ export default function EventHorizon({
   const onMouseMove = useCallback((e) => {
     const s = stateRef.current;
     if (!s.mouseDown) return;
-    s.tilt = Math.max(-0.8, Math.min(0.8, s.tilt + (e.clientY - s.lastMY) * 0.003));
+    s.tilt = Math.max(
+      -0.8,
+      Math.min(0.8, s.tilt + (e.clientY - s.lastMY) * 0.003),
+    );
     s.rotate += (e.clientX - s.lastMX) * 0.003;
     s.lastMX = e.clientX;
     s.lastMY = e.clientY;
@@ -471,7 +474,10 @@ export default function EventHorizon({
     e.preventDefault();
     const s = stateRef.current;
     if (!s.mouseDown) return;
-    s.tilt = Math.max(-0.8, Math.min(0.8, s.tilt + (e.touches[0].clientY - s.lastMY) * 0.003));
+    s.tilt = Math.max(
+      -0.8,
+      Math.min(0.8, s.tilt + (e.touches[0].clientY - s.lastMY) * 0.003),
+    );
     s.rotate += (e.touches[0].clientX - s.lastMX) * 0.003;
     s.lastMX = e.touches[0].clientX;
     s.lastMY = e.touches[0].clientY;
@@ -482,21 +488,9 @@ export default function EventHorizon({
   }, []);
 
   return (
-    <div className={`relative w-full h-full overflow-hidden bg-[#0a0a0a] ${className}`}>
-      {/* Label */}
-      {/* <span */}
-      {/*   className="absolute top-5 left-6 z-10 pointer-events-none select-none" */}
-      {/*   style={{ */}
-      {/*     fontFamily: "'SF Mono', 'Fira Code', 'Cascadia Code', monospace", */}
-      {/*     fontSize: "11px", */}
-      {/*     letterSpacing: "0.15em", */}
-      {/*     textTransform: "uppercase", */}
-      {/*     color: "rgba(200, 149, 108, 0.5)", */}
-      {/*   }} */}
-      {/* > */}
-      {/*   Event Horizon */}
-      {/* </span> */}
-
+    <div
+      className={`relative w-full h-full overflow-hidden bg-[#0a0a0a] ${className}`}
+    >
       {/* WebGL canvas */}
       <canvas
         ref={canvasRef}

@@ -98,12 +98,14 @@ const Contact = () => {
               aria-label="Your name"
               value={formData.name}
               onChange={handleChange}
-              className={`p-2 w-full bg-transparent border-2 border-[#4A5565] rounded-md focus:outline-none ${
+              className={`p-2 w-full bg-transparent placeholder:text-[#1d1d1d] border-2 border-[#1d1d1d] rounded-md focus:outline-none ${
                 errors.name ? "border-red-500" : ""
               }`}
             />
             {errors.name && (
-              <p className="text-red-500 font-sans text-sm mt-1">{errors.name}</p>
+              <p className="text-red-500 font-sans text-sm mt-1">
+                {errors.name}
+              </p>
             )}
           </div>
 
@@ -115,12 +117,14 @@ const Contact = () => {
               aria-label="Your email"
               value={formData.email}
               onChange={handleChange}
-              className={`p-2 w-full bg-transparent border-2 border-[#4A5565] rounded-md focus:outline-none ${
+              className={`p-2 w-full bg-transparent placeholder:text-[#1d1d1d] border-2 border-[#1d1d1d] rounded-md focus:outline-none ${
                 errors.email ? "border-red-500" : ""
               }`}
             />
             {errors.email && (
-              <p className="text-red-500 font-sans text-sm mt-1">{errors.email}</p>
+              <p className="text-red-500 font-sans text-sm mt-1">
+                {errors.email}
+              </p>
             )}
           </div>
 
@@ -132,7 +136,7 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange}
               rows="10"
-              className={`p-2 w-full bg-transparent border-2 border-[#4A5565] rounded-md focus:outline-none ${
+              className={`p-2 w-full bg-transparent placeholder:text-[#1d1d1d] border-2 border-[#1d1d1d] rounded-md focus:outline-none ${
                 errors.message ? "border-red-500" : ""
               }`}
             />
@@ -144,7 +148,10 @@ const Contact = () => {
           </div>
 
           {formError && (
-            <p className="text-red-500 font-sans text-sm mb-4 text-center" role="alert">
+            <p
+              className="text-red-500 font-sans text-sm mb-4 text-center"
+              role="alert"
+            >
               {formError}
             </p>
           )}
@@ -154,6 +161,7 @@ const Contact = () => {
             text={isSubmitting ? "Sending..." : "Work With Me"}
             icon={<i className="fa-solid fa-paper-plane"></i>}
             disabled={isSubmitting}
+            variant="outline"
           />
         </form>
       </div>

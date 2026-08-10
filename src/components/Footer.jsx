@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="text-center py-4 text-gray-50">
       <Social />
-      <p className="font-mono text-sm mt-2 text-gray-50">
+      <p className="font-sans text-sm italic mt-2 text-[#1d1d1d]">
         &copy; {new Date().getFullYear()} &bull; All Rights Reserved &bull;
       </p>
     </div>

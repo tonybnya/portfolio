@@ -5,13 +5,15 @@ const ProgressionItem = ({ year, timeline, duration, details }) => {
     <li className="mb-10 ml-4">
       <span
         aria-hidden="true"
-        className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-[#4A5565]"
+        className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-[#1d1d1d]"
       ></span>
       <div className="flex flex-wrap sm:flex-nowrap gap-x-3 gap-y-1 flex-row items-center justify-start text-xs">
         <span className="inline-block px-2 py-0.5 text-[0.65rem] font-semibold font-mono text-white bg-black rounded-md">
           {year}
         </span>
-        <h3 className="text-xs sm:text-sm font-mono text-[#FFBA00] whitespace-nowrap">{timeline}</h3>
+        <h3 className="text-xs sm:text-sm font-sans font-medium text-[#FFBA00]/70 whitespace-nowrap">
+          {timeline}
+        </h3>
         <div className="my-1 text-[0.65rem] sm:text-xs font-mono flex items-center gap-1 leading-none text-stone-400">
           <svg
             xmlns="http://www.w3.org/2000/svg"

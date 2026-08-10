@@ -49,7 +49,7 @@ const Projects = () => {
   return (
     <div id="projects" className="text-gray-50">
       {/* // TODO: Change the title to 'Portfolio' when I'll separate my personal and side projects with freelance projects */}
-      {/* // The Portfolio API should probably be changed for that */}
+      {/* // The Portfolio API need to be changed for that */}
 
       <Title>Projects</Title>
       <div className="flex flex-col md:flex-row items-center justify-center mb-12">

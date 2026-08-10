@@ -18,27 +18,33 @@ colors:
   signal-red: "#ef4444"
 typography:
   display:
-    fontFamily: "\"JetBrains Mono\", \"Fira Code\", monospace"
+    fontFamily: "\"EB Garamond\", Georgia, serif"
     fontSize: "clamp(2rem, 5vw, 3rem)"
-    fontWeight: 400
+    fontWeight: 500
     lineHeight: 1.1
   headline:
-    fontFamily: "\"JetBrains Mono\", \"Fira Code\", monospace"
+    fontFamily: "\"EB Garamond\", Georgia, serif"
     fontSize: "clamp(1.5rem, 4vw, 3rem)"
-    fontWeight: 400
-    lineHeight: 1.2
-    letterSpacing: "0.05em"
+    fontWeight: 500
+    lineHeight: 1.15
+    letterSpacing: "0"
   title:
-    fontFamily: "\"JetBrains Mono\", \"Fira Code\", monospace"
+    fontFamily: "\"EB Garamond\", Georgia, serif"
     fontSize: "1.125rem"
-    fontWeight: 400
+    fontWeight: 500
     lineHeight: 1.4
-    letterSpacing: "0.03em"
+    letterSpacing: "0"
   body:
-    fontFamily: "system-ui, sans-serif"
+    fontFamily: "\"EB Garamond\", Georgia, serif"
     fontSize: "0.9375rem"
     fontWeight: 400
     lineHeight: 1.6
+  accent:
+    fontFamily: "\"Neonderthaw\", cursive"
+    fontSize: "clamp(1.5rem, 3vw, 2.25rem)"
+    fontWeight: 400
+    lineHeight: 1.1
+    letterSpacing: "0"
   label:
     fontFamily: "\"JetBrains Mono\", \"Fira Code\", monospace"
     fontSize: "0.8125rem"
@@ -111,7 +117,7 @@ components:
 
 **Creative North Star: "The Observatory Console"**
 
-The portfolio is a quiet instrument panel for a backend engineer. Every surface reads as machined hardware against deep space: flat near-black and navy planes, crisp 2px slate borders, mono headings set like engraved labels, and a single diffuse white-glow halo that behaves like the console's only illumination. The physics-based Event Horizon black hole is the lens the whole system looks through — the artifact leads, the interface recedes.
+The portfolio is a quiet instrument panel for a backend engineer. Every surface reads as machined hardware against deep space: flat near-black and navy planes, crisp 2px slate borders, an EB Garamond serif carrying the voice, and a single diffuse white-glow halo that behaves like the console's only illumination. The physics-based Event Horizon black hole is the lens the whole system looks through — the artifact leads, the interface recedes.
 
 The atmosphere is deliberate and minimal. Whitespace and restraint carry as much signal as the glow; nothing pulses for attention beyond the hero. Depth comes from the white halo and a fine grain overlay, never from soft gray shadows or gradients. The monochrome commitment is total: accent color is treated as a scarce resource, reserved for rare warm/cool glows that read as telemetry, not decoration.
 
@@ -119,7 +125,7 @@ The atmosphere is deliberate and minimal. Whitespace and restraint carry as much
 - Monochrome instrument UI: black + near-black blue surfaces, white text, slate borders
 - The white-glow halo (`shadow-white/50` + `drop-shadow-xl`) is the signature depth and accent move
 - Flat dark fills by default; 2px slate borders define containment
-- Mono headlines (JetBrains Mono) over a humanist system-ui sans body
+- EB Garamond serif leads every heading, title, and reading surface; JetBrains Mono is demoted to data chrome — year badges, durations, tags, error codes
 - A WebGL black-hole simulation is the single hero artifact; everything else stays quiet
 - Small radii (6–8px) and 2px borders make controls feel machined and tactile
 
@@ -156,21 +162,22 @@ A disciplined monochrome palette with one signature light source and two rare te
 
 ## Typography
 
-**Display/Headline Font:** JetBrains Mono (monospace) — every section title, the hero name, buttons, labels, tags, durations, footer.
-**Body Font:** system-ui (native sans) — all reading and UI copy: descriptions, paragraphs, error messages.
-**Mono Alt:** Fira Code falls back inside the mono stack when JetBrains Mono is unavailable.
+**Display/Headline/Body Font:** EB Garamond (serif) — the typed hero name, every section title, project titles, timeline titles, button text, modal headers, nav links, paragraphs, descriptions, and error messages. The serif is the system's voice: warm, readable, and quietly distinct against the machined dark planes.
+**Accent Font:** Neonderthaw (display script) — reserved for the single hero role subtitle, "Backend Software Engineer", set in Amber Signal. It appears nowhere else. The flourish is the one typographic spectacle beneath the Event Horizon.
+**Data Font:** JetBrains Mono (monospace) — demoted to genuine data and chrome labels only: year badges, timeline durations, project tags, the "Error Code 404" line, and the ASCII animation. Fira Code falls back inside the mono stack when JetBrains Mono is unavailable.
 
-**Character:** A mono-led instrument console over warm humanist reading text. JetBrains Mono carries the identity, chrome, and data-density; system-ui stays quiet for anything meant to be read rather than scanned.
+**Character:** A serif-led instrument console. EB Garamond carries identity and reading; JetBrains Mono stays quiet for things meant to be scanned as data, not read as prose. The Neonderthaw tagline is the single hand-written signature on the console.
 
 ### Hierarchy
-- **Display** (JetBrains Mono, 400, clamp(2rem→3rem), lh 1.1): the typed hero name.
-- **Headline** (JetBrains Mono, 400, clamp(1.5rem→3rem), lh 1.2, +0.05em): section titles, the not-found page, the navbar logo text.
-- **Title** (JetBrains Mono, 400, 1.125rem, lh 1.4, +0.03em): project titles, timeline titles, buttons, modal headers, nav links.
-- **Body** (system-ui, 400, 0.9375rem, lh 1.6): paragraphs, descriptions, form placeholders. Justified reading in intro/project copy; keep lines ~60–75ch.
-- **Label** (JetBrains Mono, 400, 0.8125rem, lh 1.2): durations, tags, Live/Source link labels, footer, year badges, error codes. A micro step at 0.65rem is reserved for inline meta that must not wrap: the year badge and timeline duration within a Progression row.
+- **Display** (EB Garamond, 500, clamp(2rem→3rem), lh 1.1): the typed hero name.
+- **Headline** (EB Garamond, 500, clamp(1.5rem→3rem), lh 1.15, tracking 0): section titles, the not-found page, the navbar logo text.
+- **Title** (EB Garamond, 500, 1.125rem, lh 1.4, tracking 0): project titles, timeline titles, buttons, modal headers, nav links.
+- **Body** (EB Garamond, 400, 0.9375rem, lh 1.6): paragraphs, descriptions, form placeholders. Justified reading in intro/project copy; keep lines ~60–75ch.
+- **Accent** (Neonderthaw, 400, clamp(1.5rem→2.25rem), lh 1.1): the hero role subtitle only. Set in Amber Signal.
+- **Label** (JetBrains Mono, 400, 0.8125rem, lh 1.2): project tags, error codes. A micro step at 0.65rem is reserved for inline meta that must not wrap: the year badge and timeline duration within a Progression row.
 
 ### Named Rules
-**The Mono Lead Rule.** Every heading and label is JetBrains Mono. The system-ui body never leads a heading.
+**The Garamond Lead Rule.** Every heading, title, button, and body paragraph is EB Garamond. JetBrains Mono never leads a heading; it appears only on data labels and chrome. Neonderthaw appears only on the hero role subtitle.
 
 ## Layout
 
@@ -200,12 +207,12 @@ Every control is instrument-hard and tactile: crisp 2px slate borders, black fil
 
 ### Buttons
 - **Shape:** rounded-md (6px), 2px border on outline variants.
-- **Primary:** Obsidian fill, Star White JetBrains Mono text, `px-8 py-3`, `tracking-wider`, centered (`mr-auto ml-auto`), with the Instrument Halo.
+- **Primary:** Obsidian fill, Star White EB Garamond text, `px-8 py-3`, `tracking-normal`, centered (`mr-auto ml-auto`), with the Instrument Halo.
 - **Hover / Focus:** primary → `bg-black/50` + `scale-105`; outline → `bg-black/10`; modal OK → `bg-black/90`. Transitions are quick and direct.
-- **Secondary / Outline:** transparent fill, 2px Halo Slate border, Star White text (Details button, Live/Source links). Live/Source links set their label in JetBrains Mono.
+- **Secondary / Outline:** transparent fill, 2px Halo Slate border, Star White text (Details button, Live/Source links). Live/Source links set their label in EB Garamond.
 
 ### Chips (tags)
-- **Style:** transparent fill, 2px Halo Slate border, Dust text, rounded-md, JetBrains Mono face. Year badges invert to Obsidian fill + white text.
+- **Style:** transparent fill, 2px Halo Slate border, Dust text, rounded-md, JetBrains Mono face (data/chrome labels only). Year badges invert to Obsidian fill + white text.
 
 ### Cards / Containers
 - **Corner Style:** rounded-md (6px).
@@ -220,7 +227,7 @@ Every control is instrument-hard and tactile: crisp 2px slate borders, black fil
 - **Error / Disabled:** Signal Red stroke + message; submitting state shows "Sending...".
 
 ### Navigation
-- **Style:** transparent at rest, scrolled fill `#0f1115` at 50% opacity with 10px backdrop blur; links are Star White JetBrains Mono (1.25rem, scale-105 on hover); the brand is a circular Obsidian chip with the portfolio mark; mobile menu is a hamburger below `md` with `aria-expanded`.
+- **Style:** transparent at rest, scrolled fill `#0f1115` at 50% opacity with 10px backdrop blur; links are Star White EB Garamond (1.25rem, scale-105 on hover); the brand is a circular Obsidian chip with the portfolio mark; mobile menu is a hamburger below `md` with `aria-expanded`.
 
 ### Signature Component — Event Horizon
 A 515-line WebGL/GLSL physically-based black-hole simulation: gravitational lensing, a tilted accretion disk, and a procedural star field, exposed through uniforms (`u_rotationSpeed`, `u_diskIntensity`, `u_tilt`, `u_chromatic`). It is the hero artifact of the intro, rendered full-width at ~500px tall, with a standalone `event-horizon.html` companion. Nothing else in the system animates for attention — this is the one spectacle.
@@ -233,7 +240,7 @@ Projects and timeline load as skeletons: Void Blue Deep cards with a 5%-white gr
 ### Do:
 - **Do** keep surfaces flat dark fills; let the white-glow halo supply lift on interactive elements only.
 - **Do** use 2px Halo Slate borders for containment on cards, tags, inputs, and outline buttons.
-- **Do** set every heading and label in JetBrains Mono and every body paragraph in system-ui.
+- **Do** set every heading, title, button, and body paragraph in EB Garamond; reserve JetBrains Mono for data labels (year badges, durations, tags, error codes); reserve Neonderthaw for the hero role subtitle alone.
 - **Do** use rounded-md (6px) as the default corner; reserve `rounded-full` for interactive points.
 - **Do** treat the Event Horizon as the single hero artifact and keep competing hero animations out.
 - **Do** keep accent color (Ember Oxide / Abyss Blue) below ~5% of any screen.

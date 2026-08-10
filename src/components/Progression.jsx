@@ -58,7 +58,7 @@ const Progression = () => {
               {error}
             </p>
           ) : (
-            <ol className="flex flex-col relative border-l border-[#4A5565]">
+            <ol className="flex flex-col relative border-l border-[#1d1d1d]">
               {timelines.map((step) => (
                 <ProgressionItem
                   key={step._id}
