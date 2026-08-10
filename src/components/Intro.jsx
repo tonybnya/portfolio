@@ -46,7 +46,7 @@ const Intro = () => {
         <h1 className="font-sans text-3xl sm:text-4xl lg:text-5xl font-medium tracking-normal text-white inline-block personal opacity-0 translate-y-10">
           <ReactTyped strings={["Tony B. NYA"]} typeSpeed={120} />
         </h1>
-        <h3 className="font-neonderthaw text-2xl sm:text-3xl lg:text-4xl font-normal tracking-normal pt-3 text-[#FFBA00]/70 personal">
+        <h3 className="font-playfair italic text-xl sm:text-3xl lg:text-4xl font-normal tracking-normal pt-3 text-[#FFBA00]/70 personal">
           <ReactTyped strings={["Backend Software Engineer"]} typeSpeed={80} />
         </h3>
 
