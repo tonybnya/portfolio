@@ -22,7 +22,7 @@ const Home = () => {
         type="button"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         aria-label="Back to top of page"
-        className="fixed bottom-6 right-6 z-50 w-12 h-12 inline-flex items-center justify-center rounded-full bg-black border-2 border-[#FFBA00] text-[#FFBA00] shadow-lg shadow-[#FFBA00]/40 hover:scale-110 hover:bg-black/60 transition-transform cursor-pointer"
+        className="fixed bottom-6 right-6 z-50 w-12 h-12 inline-flex items-center justify-center rounded-full bg-black border-2 border-[#FFBA00] text-[#FFBA00]/70 shadow-lg shadow-[#FFBA00]/40 hover:scale-110 hover:bg-black/60 transition-transform cursor-pointer"
       >
         <i className="fa-solid fa-arrow-up text-lg" aria-hidden="true"></i>
       </button>
