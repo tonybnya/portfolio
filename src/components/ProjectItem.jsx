@@ -111,7 +111,7 @@ const ProjectItem = ({
       </div>
 
       <div className="w-full p-4 text-gray-50">
-        <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-sans font-medium tracking-normal">
+        <h3 className="text-lg text-[#ffba00]/70 md:text-xl mb-2 md:mb-3 font-sans font-medium tracking-normal">
           {title}
         </h3>
         <p className="text-justify mb-3 font-normal font-sans text-[0.9375rem] leading-relaxed">
@@ -133,14 +133,14 @@ const ProjectItem = ({
             "hover:bg-black/10",
             <>
               Live <i className="fa-solid fa-square-up-right"></i>
-            </>
+            </>,
           )}
           {linkButton(
             sourceUrl,
             "hover:bg-black",
             <>
               Source <i className="fa-brands fa-github"></i>
-            </>
+            </>,
           )}
         </div>
       </div>
