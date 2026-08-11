@@ -2,7 +2,7 @@
   {
     "_id": "6657aa5836c711adaac6eae6",
     "title": "Developer Portfolio",
-    "description": "Static-first React portfolio built on a custom type-led design system, with content edited through a React Admin panel, stored in MongoDB, and compiled into committed static JSON at every build - delivering zero-latency reads with no runtime API dependency on the live site.",
+    "description": "Static-first React portfolio built on a custom design system, with content edited through a React Admin panel, stored in MongoDB, and compiled into committed static JSON at every build - delivering zero-latency reads with no runtime API dependency on the live site.",
     "tags": [
       "EmailJS",
       "Lottie",
@@ -15,18 +15,15 @@
       "Node.js"
     ],
     "images": [
-      "https://i.postimg.cc/qRk40w1v/developer-portfolio-image-1.png",
-      "https://i.postimg.cc/Kjjb3zSX/developer-portfolio-image-2.png",
-      "https://i.postimg.cc/gJNd0h7q/developer-portfolio-image-3.png",
-      "https://i.postimg.cc/SKLkw37P/developer-portfolio-image-4.png",
-      "https://i.postimg.cc/gj7WVWmx/developer-portfolio-image-5.png",
+      "https://i.postimg.cc/6QGtczYy/portfolio-1.png",
+      "https://i.postimg.cc/Dzbn65B0/portfolio-2.png",
       "https://i.postimg.cc/zvXQyDWM/portfolio-api-admin-panel-1.png",
       "https://i.postimg.cc/xCP7jNkM/portfolio-api-admin-panel-2.png"
     ],
     "liveUrl": "https://tonybnya-portfolio.onrender.com",
     "sourceUrl": "https://github.com/tonybnya/portfolio",
     "createdAt": "2024-05-29T22:21:12.210Z",
-    "updatedAt": "2026-08-07T15:36:53.196Z",
+    "updatedAt": "2026-08-11T11:11:01.149Z",
     "__v": 0
   },
   {
@@ -53,7 +50,7 @@
     "liveUrl": "https://glotecht.com",
     "sourceUrl": "https://glotecht.com",
     "createdAt": "2024-11-16T02:11:58.162Z",
-    "updatedAt": "2026-02-16T15:00:37.668Z",
+    "updatedAt": "2026-08-11T10:56:53.523Z",
     "__v": 0
   },
   {
