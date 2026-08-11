@@ -1,5 +1,24 @@
 import { useEffect, useState } from "react";
 
+const linkButton = (url, hoverClass, children) => {
+  if (url) {
+    return (
+      <a
+        href={url}
+        target="_blank"
+        className={`px-4 py-2 border-2 border-[#1d1d1d] rounded-md font-sans ${hoverClass}`}
+      >
+        {children}
+      </a>
+    );
+  }
+  return (
+    <span className="px-4 py-2 border-2 border-[#1d1d1d] rounded-md font-sans opacity-40 cursor-not-allowed">
+      {children}
+    </span>
+  );
+};
+
 const ProjectItem = ({
   images,
   title,
@@ -109,20 +128,20 @@ const ProjectItem = ({
           ))}
         </p>
         <div className="flex gap-2 text-gray-400">
-          <a
-            href={liveUrl}
-            target="_blank"
-            className="px-4 py-2 border-2 border-[#1d1d1d] rounded-md hover:bg-black/10 font-sans"
-          >
-            Live <i className="fa-solid fa-square-up-right"></i>
-          </a>
-          <a
-            href={sourceUrl}
-            target="_blank"
-            className="px-4 py-2 border-2 border-[#1d1d1d] rounded-md hover:bg-black font-sans"
-          >
-            Source <i className="fa-brands fa-github"></i>
-          </a>
+          {linkButton(
+            liveUrl,
+            "hover:bg-black/10",
+            <>
+              Live <i className="fa-solid fa-square-up-right"></i>
+            </>
+          )}
+          {linkButton(
+            sourceUrl,
+            "hover:bg-black",
+            <>
+              Source <i className="fa-brands fa-github"></i>
+            </>
+          )}
         </div>
       </div>
     </div>
