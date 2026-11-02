@@ -60,7 +60,7 @@ const Intro = () => {
           • Experience across SaaS, Fintech, data, research, and business
           platforms
           <br />
-          • Built a Glossary app for a PhD-level research system (Canada): 80%
+          • Built a Glossary app for a PhD-level research system (Canada): 90%
           approval
           <br />• Results on Local Business apps: +20% bookings · +35%
           conversion
@@ -103,11 +103,9 @@ const Intro = () => {
         </a>
       </div>
       <div className="flex flex-col gap-4 justify-center items-center w-full">
-        {
-          /* <div className="w-full max-w-md lg:max-w-none h-[340px] sm:h-[420px] lg:h-[500px]">
+        {/* <div className="w-full max-w-md lg:max-w-none h-[340px] sm:h-[420px] lg:h-[500px]">
             <EvenHorizon />
-          </div> */
-        }
+          </div> */}
         <div className="w-full max-w-md lg:max-w-none">
           <DeskComputer theme="light" />
         </div>
