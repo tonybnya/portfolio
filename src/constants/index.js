@@ -114,6 +114,36 @@ const data = [
     name: "TypeScript",
     svg: "/assets/svg/ts.svg",
   },
+  {
+    id: 24,
+    name: "Docker",
+    svg: "/assets/svg/docker.svg",
+  },
+  {
+    id: 25,
+    name: "Claude",
+    svg: "/assets/svg/claude.svg",
+  },
+  {
+    id: 26,
+    name: "Gemini",
+    svg: "/assets/svg/gemini.svg",
+  },
+  {
+    id: 27,
+    name: "OpenCode",
+    svg: "/assets/svg/opencode.svg",
+  },
+  {
+    id: 28,
+    name: "Git",
+    svg: "/assets/svg/git.svg",
+  },
+  {
+    id: 29,
+    name: "GitHub",
+    svg: "/assets/svg/github.svg",
+  },
 ];
 
 export default data;
