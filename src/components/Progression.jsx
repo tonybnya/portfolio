@@ -5,6 +5,10 @@ import ProgressionItem from "./ProgressionItem";
 import SkeletonProgression from "./SkeletonProgression";
 import Title from "./Title";
 
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
 const Progression = () => {
   const [timelines, setTimelines] = useState([]);
   const [error, setError] = useState("");
@@ -46,11 +50,45 @@ const Progression = () => {
     fetchTimelines();
   }, []);
 
+  /* the rail ignites from the top only once the real rows exist */
+  useGSAP(
+    () => {
+      if (!timelines.length) return;
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      gsap.fromTo(
+        ".progression-rail",
+        { scaleY: 0 },
+        {
+          scaleY: 1,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".progression-track",
+            start: "top 78%",
+            end: "bottom 55%",
+            scrub: 0.5,
+          },
+        },
+      );
+      ScrollTrigger.refresh();
+    },
+    { dependencies: [timelines.length] },
+  );
+
   return (
     <div id="progression" className="text-gray-50">
       <Title>Progression</Title>
       <div className="flex flex-col md:flex-row justify-center my-20">
-        <div className="w-full md:w-7/12">
+        <div className="relative w-full md:w-7/12 progression-track">
+          {/* the track is shared by skeleton and list states */}
+          <span
+            aria-hidden="true"
+            className="absolute left-0 top-0 bottom-0 w-[2px] bg-[#1d1d1d]"
+          />
+          <span
+            aria-hidden="true"
+            className="progression-rail absolute left-0 top-0 bottom-0 w-[2px] origin-top bg-gradient-to-b from-[#FFBA00]/90 via-white/70 to-transparent"
+            style={{ transform: "scaleY(0)" }}
+          />
           {isLoading ? (
             <SkeletonProgression />
           ) : error ? (
@@ -58,7 +96,7 @@ const Progression = () => {
               {error}
             </p>
           ) : (
-            <ol className="flex flex-col relative border-l border-[#1d1d1d]">
+            <ol className="flex flex-col">
               {timelines.map((step) => (
                 <ProgressionItem
                   key={step._id}

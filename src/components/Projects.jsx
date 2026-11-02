@@ -61,9 +61,10 @@ const Projects = () => {
               {error}
             </p>
           ) : (
-            projects.map((project) => (
+            projects.map((project, index) => (
               <ProjectItem
                 key={project._id}
+                index={index}
                 images={project.images}
                 title={project.title}
                 description={project.description}

@@ -98,7 +98,7 @@ const Contact = () => {
               aria-label="Your name"
               value={formData.name}
               onChange={handleChange}
-              className={`p-2 w-full bg-transparent placeholder:text-[#1d1d1d] border-2 border-[#1d1d1d] rounded-md focus:outline-none ${
+              className={`p-2 w-full bg-transparent placeholder:text-[#9ca3af]/70 border-2 border-[#4A5565] rounded-md focus:outline-none focus:border-[#FFBA00] transition-colors ${
                 errors.name ? "border-red-500" : ""
               }`}
             />
@@ -117,7 +117,7 @@ const Contact = () => {
               aria-label="Your email"
               value={formData.email}
               onChange={handleChange}
-              className={`p-2 w-full bg-transparent placeholder:text-[#1d1d1d] border-2 border-[#1d1d1d] rounded-md focus:outline-none ${
+              className={`p-2 w-full bg-transparent placeholder:text-[#9ca3af]/70 border-2 border-[#4A5565] rounded-md focus:outline-none focus:border-[#FFBA00] transition-colors ${
                 errors.email ? "border-red-500" : ""
               }`}
             />
@@ -136,7 +136,7 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange}
               rows="10"
-              className={`p-2 w-full bg-transparent placeholder:text-[#1d1d1d] border-2 border-[#1d1d1d] rounded-md focus:outline-none ${
+              className={`p-2 w-full bg-transparent placeholder:text-[#9ca3af]/70 border-2 border-[#4A5565] rounded-md focus:outline-none focus:border-[#FFBA00] transition-colors resize-y ${
                 errors.message ? "border-red-500" : ""
               }`}
             />
