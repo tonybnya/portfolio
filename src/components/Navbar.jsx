@@ -40,13 +40,13 @@ const Navbar = () => {
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#1d1d1d] rounded-lg md:hidden hover:text-white"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[#4A5565] rounded-lg md:hidden hover:text-white"
           aria-controls="navbar-default"
           aria-expanded={isMenuOpen}
         >
           <span className="sr-only">Open main menu</span>
           <svg
-            className="w-5 h-5 text-[#1d1d1d]"
+            className="w-5 h-5 text-[#4A5565]"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

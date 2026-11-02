@@ -6,7 +6,7 @@ const SkeletonProject = () => {
       {[1, 2, 3, 4, 5, 6].map((item) => (
         <div
           key={item}
-          className="border-2 border-[#1d1d1d] rounded-md overflow-hidden bg-[#050403]"
+          className="border-2 border-[#4A5565] rounded-md overflow-hidden bg-[#050403]"
         >
           <Skeleton className="w-full h-36 md:h-48" />
           <div className="w-full p-4">

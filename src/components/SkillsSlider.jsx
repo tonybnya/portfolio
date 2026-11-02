@@ -10,7 +10,7 @@ const SkillsSlider = () => {
       className="mb-20 flex flex-col justify-center items-center gap-4 text-black dark:text-white"
     >
       <Title>Skills</Title>
-      <Marquee>
+      <Marquee className="skills-mask">
         {skills.map((skill) => (
           <Skill
             key={skill.id}

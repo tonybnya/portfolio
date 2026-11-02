@@ -1,11 +1,47 @@
+import { useRef } from "react";
 import Modal from "./Modal";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const ProgressionItem = ({ year, timeline, duration, details }) => {
+  const liRef = useRef(null);
+  const dotRef = useRef(null);
+
+  /* each row rises from the left and its dot ignites once */
+  useGSAP(
+    () => {
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      gsap.from(liRef.current, {
+        opacity: 0,
+        x: -26,
+        filter: "blur(5px)",
+        duration: 0.9,
+        ease: "expo.out",
+        scrollTrigger: { trigger: liRef.current, start: "top 90%", once: true },
+      });
+      gsap.fromTo(
+        dotRef.current,
+        { backgroundColor: "rgba(0, 0, 0, 0)", borderColor: "rgba(74, 85, 101, 0.4)" },
+        {
+          backgroundColor: "rgba(255, 186, 0, 0.9)",
+          borderColor: "rgba(255, 186, 0, 0.9)",
+          boxShadow: "0 0 10px rgba(255, 186, 0, 0.5)",
+          duration: 0.5,
+          delay: 0.5,
+          ease: "power2.out",
+          scrollTrigger: { trigger: liRef.current, start: "top 90%", once: true },
+        },
+      );
+    },
+    { dependencies: [] },
+  );
+
   return (
-    <li className="mb-10 ml-4">
+    <li ref={liRef} className="mb-10 ml-4">
       <span
+        ref={dotRef}
         aria-hidden="true"
-        className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-[#1d1d1d]"
+        className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border-2 border-[#4A5565]/40"
       ></span>
       <div className="flex flex-wrap sm:flex-nowrap gap-x-3 gap-y-1 flex-row items-center justify-start text-xs">
         <span className="inline-block px-2 py-0.5 text-[0.65rem] font-semibold font-mono text-white bg-black rounded-md">

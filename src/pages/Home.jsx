@@ -4,17 +4,23 @@ import Projects from "../components/Projects";
 import Progression from "../components/Progression";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Starfield from "../components/Starfield";
+import ScrollChoreo from "../components/ScrollChoreo";
+import ConsoleChrome from "../components/ConsoleChrome";
 
 const Home = () => {
   return (
     <div className="container mx-auto px-4 max-sm:px-6">
+      <Starfield />
+      <ConsoleChrome />
+      <ScrollChoreo />
       <Intro />
       <SkillsSlider />
       <Projects />
       <Progression />
       <Contact />
 
-      <hr className="border-t border-[#1d1d1d] mb-12" />
+      <hr className="border-t border-[#4A5565]/40 mb-12" />
 
       <Footer />
 
