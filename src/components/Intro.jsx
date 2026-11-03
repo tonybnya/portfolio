@@ -48,22 +48,23 @@ const Intro = () => {
         <h1 className="font-sans text-3xl sm:text-4xl lg:text-5xl font-medium tracking-normal text-white inline-block personal opacity-0 translate-y-10">
           <ReactTyped strings={["Tony B. NYA"]} typeSpeed={120} />
         </h1>
-        <h3 className="font-neonderthaw text-2xl sm:text-4xl lg:text-5xl font-normal tracking-normal pt-3 text-[#FFBA00] personal">
+        <h3 className="font-mono text-[0.8125rem] sm:text-xs uppercase tracking-[0.35em] pt-3 text-[#FFBA00] personal">
           <ReactTyped strings={["Backend Software Engineer"]} typeSpeed={80} />
         </h3>
 
         <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-gray-100 first-letter:mr-2 first-letter:float-left text-zinc-50 text-justify py-4 font-medium font-sans text-sm tracking-normal max-sm:text-xs para hyphens-auto ">
           Backend Software Engineer building robust APIs and scalable systems
-          for complex products. Specialized in Python (FastAPI, Flask, Django).
+          for complex products. Python-first (FastAPI, Flask, Django), with a
+          React/TypeScript edge and an AI-amplified workflow.
           <br />
           <br />
-          • Experience across SaaS, Fintech, data, research, and business
-          platforms
+          • Proven across SaaS, Fintech, data, research, and business platforms
           <br />
-          • Built a Glossary app for a PhD-level research system (Canada): 90%
-          approval
-          <br />• Results on Local Business apps: +20% bookings · +35%
-          conversion
+          • PhD-level research system (Canada): glossary app with 90% approval
+          <br />
+          • Local business results: +20% bookings · +35% conversion
+          <br />
+          • I ship faster with AI: sharper code, cleaner delivery, zero fluff
         </p>
 
         <div className="flex gap-2 py-4">

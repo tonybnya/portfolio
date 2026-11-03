@@ -28,7 +28,7 @@ const ProjectItem = ({
   tags,
   liveUrl,
   sourceUrl,
-  index = 0,
+  index = 0, // eslint-disable-line react/prop-types -- repo convention: no prop-types anywhere
 }) => {
   // TODO: add an icon near to each title - the icon/logo of the project
   // The Portfolio API need to be changed for that

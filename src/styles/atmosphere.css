@@ -33,7 +33,7 @@ html {
   background: #050403;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1d1d1d;
+  background: #4a556566;
   border-radius: 9999px;
   border: 2px solid #050403;
 }
@@ -42,7 +42,7 @@ html {
 }
 
 html {
-  scrollbar-color: #1d1d1d #050403;
+  scrollbar-color: #4a556566 #050403;
   scrollbar-width: thin;
 }
 
