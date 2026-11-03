@@ -133,7 +133,7 @@ const ConsoleChrome = () => {
           SYS.OBS <strong ref={clockRef}>--:--:-- UTC</strong>
         </span>
         <span>
-          SEC.LOADED <strong ref={sectionRef}>INTRO</strong>
+          SEC. <strong ref={sectionRef}>INTRO</strong>
         </span>
         <span>
           SCROLL.PCT <strong className="hud-accent" ref={scrollRef}>0%</strong>
