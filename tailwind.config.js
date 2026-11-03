@@ -7,8 +7,6 @@ export default {
       fontFamily: {
         mono: ["JetBrains Mono", "Fira Code", "monospace"],
         sans: ["EB Garamond", "Georgia", "serif"],
-        neonderthaw: ["Neonderthaw", "cursive"],
-        playfair: ["Playfair Display", "serif"],
       },
       dropShadow: {
         custom: "50px 50px 100px white",
